@@ -1,0 +1,2972 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\begin_preamble
+\usepackage{quran}
+\usepackage{polyglossia}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{subfig}
+\usepackage{caption}
+\usepackage{wallpaper}
+\usepackage{url}
+%% uncomment this if you're using beamer presentations
+%\usepackage{calc}
+%\usepackage{datetime}
+%\usepackage{pdflscape}
+%\usepackage{chngcntr}
+%\usepackage{multimedia}
+%\usepackage{animate}
+\usepackage{bidi} 
+
+%\ThisCenterWallPaper{.5}{back.jpg}
+
+% uncomment this if you're using beamer poster
+%\PassOptionsToPackage{%
+%   orientation=portrait, % possible: portrait, landscape
+%    size=a0,% possible: a0b, a0, a1, a2, a3, a4, custom (with width=<val>,height=<val>)
+%    scale=1.4,% scaling of fonts
+%    debug% give verbose warnings and error messages
+%}{beamerposter}
+
+% uncomment this if you're using beamer for presentations
+%\usetheme{PaloAlto}
+%\usecolortheme{sidebartab}
+%\usecolortheme{rose}
+%\setbeamertemplate{blocks}[rounded]
+
+%\allowdisplaybreaks
+
+%\let\makebeamertitle\relax
+%% best available temps: Goettingen CambridgeUS Copenhagen Singapore Warsaw Dresden Frankfurt
+
+%Format of the code listing caption
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\linewidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+
+
+%\setmainlanguage{english}
+%\setotherlanguage{arabic}
+%\chapterfont{\color{teal}}
+%\partfont{\color{teal}}
+%\sectionfont{\color{teal}}
+%\subsectionfont{\color{teal}}
+%\subsubsectionfont{\color{teal}}
+%\setmainfont{LM Roman 10}
+%% use this only in two-column documents, also,
+%% you might want to change the margin for a two-column doc
+%\setlength{\columnseprule}{0.0pt}
+%\setlength{\columnsep}{1cm} %you don't need this if you edited the separation margin in the settings of margin
+%
+%
+%
+\renewcommand{\arraystretch}{2}
+%\setlength{\extrarowheight}{1.5em}
+%
+%
+%% This code below is from user karlkoeller on stackoverflow
+%% https://tex.stackexchange.com/a/366170
+%\makeatletter
+%\renewenvironment{abstract}{%
+%    \if@twocolumn
+%      \section*{\abstractname}%
+%    \else %% <- here I've removed \small
+%      \begin{center}%
+%        {\bfseries \Large\abstractname\vspace{\z@}}%  %% <- here I've added \Large
+%      \end{center}%
+%      \quotation
+%    \fi}
+%    {\if@twocolumn\else\endquotation\fi}
+%\makeatother
+%
+%
+%
+% these lines below are from user David Woitkowski
+%% It is to edit title font
+%\makeatletter\meaning\@maketitle\makeatother 
+\makeatletter
+\def\@maketitle{
+	\newpage
+	\null
+	\vskip 1.5em
+	\begin {center}
+	\let \footnote \thanks
+	\let \LTRfootnote \LTRthanks
+	\let \RTLfootnote \RTLthanks
+	{\Huge  \bfseries \color{black} \@title \par }
+	\vskip 2em
+	{	\large
+		\lineskip .5em
+%		\begin {tabular}[t]{c}
+		{\bfseries \color{black} \@author }
+%		\end {tabular}
+		\par
+	}
+	\vskip 1.5em
+	{\large \@date }
+	\end {center}
+	\par
+	\vskip 2em
+}
+
+
+%\makeatother
+%
+%
+%
+%
+%
+
+\lstdefinelanguage{myMatlab}{
+  language     = Matlab,
+  morekeywords = {inf,Inf,nan,NaN,true,false,warning,error,groot,clearvars,switch,case,otherwise,continue,classdef,handle,Abstract,AllowedSubclasses,Hidden,Sealed,properties,methods,Access,SetAccess,GetAccess,protected,private},
+  morestring=**[d]{"}
+}
+
+\newcommand*{\blankpage}{%
+  \begin{otherlanguage}{english}
+	\thispagestyle{empty}
+    \vspace*{\fill}
+%    \hfill
+    \begin{center}
+      \emph{This page is intentionally left blank!}
+    \end{center}
+    \vspace{\fill}
+%    \thispagestyle{empty}
+  \end{otherlanguage}
+  \clearpage
+}
+
+
+\makeatletter
+\renewcommand*\cleardoublepage{\clearpage%
+    \if@twoside
+        \ifodd\c@page\else
+        \blankpage
+        \fi
+    \fi
+}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Amiri"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 3
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=blue,anchorcolor=blue,filecolor=blue,menucolor=blue,runcolor=blue,urlcolor=blue,citecolor=blue,pdfpagelayout=TwoPageRight,pdfstartview=Fit"
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2.7cm
+\rightmargin 1.8cm
+\bottommargin 2.5cm
+\headsep 0.4cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "breaklines=true,numbers=left,commentstyle={\color[rgb]{0,0.5,0}},keywordstyle={\color{blue}},stringstyle={\color{magenta}},tabsize=4,basicstyle={\ttfamily},columns=fullflexible"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Report | Cruise Missile Design
+\end_layout
+
+\begin_layout Author
+Ahmed Salah Hammad Ahmed
+\end_layout
+
+\begin_layout Chapter*
+Acknowledgement
+\end_layout
+
+\begin_layout Itemize
+T/A.
+ Ahmed Yousry.
+\end_layout
+
+\begin_layout Itemize
+Eng.
+ Ahmed Samy.
+\end_layout
+
+\begin_layout Chapter
+Missile Aerodynamic Design 
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+As this project involved the first-time design of a cruise missile,Our primary
+ objective was to establish a foundational framework for cruise missile
+ design.The initial geometry was derived from the well-known AGM-86B-ALCM
+ cruise missile.
+ Approximate dimensions of this reference missile were adopted and subsequently
+ modified to meet our mission-specific requirements.Following the geometric
+ definition, mass properties and moments of inertia for all lifting surfaces
+ were computed based on methodologies outlined in an academic paper 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "massandinertia"
+literal "true"
+
+\end_inset
+
+.
+ With the geometry and inertial characteristics established, the next step
+ involved determining stability derivatives and trim velocity.
+ These calculations were performed using the Athena Vortex Lattice (AVL)
+ program, a computational tool suited for aerodynamic analysis.
+ A three-dimensional CAD model was then developed using Autodesk Fusion,
+ ensuring accurate representation of aerodynamic surfaces, control mechanisms,
+ and internal structural components.
+ This step was critical for subsequent analyses, as it provided a precise
+ digital prototype for simulation and validation.The integration of CAD modeling
+ with aerodynamic simulations ensured a systematic approach to the design
+ process, facilitating iterative improvements and optimization.
+ This methodology not only provided a starting point for cruise missile
+ development but also demonstrated the importance of combining digital design
+ tools with theoretical and computational analyses in aerospace engineering
+ applications.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Goemetry estimation 
+\end_layout
+
+\begin_layout Standard
+As mentioned,The AGM-86B is the reference missile to approximate the dimensions
+ of our missile.
+ The AGM-86B is an Air-Launched Cruise Missile (ALCM), developed by Boeing
+ for the U.S.
+ Air Force, serves as a benchmark in cruise missile design due to its proven
+ aerodynamic efficiency and operational success.
+ Its geometry reflects a conventional cruise missile configuration, optimized
+ for subsonic flight, long-range endurance, and low radar cross-section.
+ Our design Goemetry was based on......
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AGM-86B Cruise Missile
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Designed Cruise Missile
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Legnth
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.32m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wingspan
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.66m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Diameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.62m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Takeoff Weight
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1450kg
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300Kg
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Range
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300Km
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+AGM-86B vs Designed Cruise Missile
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Mass and Moment of Inertia Estimation
+\end_layout
+
+\begin_layout Section
+Athena Vortice Lattice (AVL)
+\end_layout
+
+\begin_layout Standard
+The Athena Vortex Lattice (AVL) is a computational tool developed by Mark
+ Drela at MIT for aerodynamic analysis of aircraft and missile configurations.
+ Based on vortex lattice theory (VLT), AVL provides rapid estimations of
+ stability derivatives, lift distribution, and control effectiveness for
+ slender bodies in inviscid, incompressible flow.
+ Its efficiency and open-source availability make it a preferred choice
+ for preliminary design phases in aerospace engineering, including cruise
+ missile development.
+\end_layout
+
+\begin_layout Subsection
+Vortex Lattice Theory (VLT)
+\end_layout
+
+\begin_layout Standard
+The Vortex Lattice Theory (VLT) is a numerical computational technique used
+ in aerodynamics to predict the lift distribution and stability characteristics
+ of lifting surfaces.
+ As a potential flow method, it solves the Laplace equation for inviscid,
+ incompressible, and irrotational flow around three-dimensional wings and
+ aircraft configurations.The fundamental principle relies on discretizing
+ lifting surfaces into panels, each associated with a horseshoe vortex system
+ that models the circulation around the wing.The implementation begins with
+ geometric discretization, where the wing surface is divided into chordwise
+ and spanwise panels.
+ Each panel contains a horseshoe vortex consisting of a bound vortex segment
+ and two trailing vortex filaments extending downstream to infinity.
+ The Kutta condition is applied at the trailing edge to ensure smooth flow
+ separation.
+ A system of linear equations is constructed by calculating the influence
+ coefficients between each vortex element and control point, with the right-hand
+ side representing the freestream flow normal to each panel.Solving this
+ linear system yields the circulation distribution across all panels, from
+ which aerodynamic forces and moments can be derived.
+ Lift is computed using the Kutta-Joukowski theorem, while induced drag
+ results from the energy lost in the trailing vortex system.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Horshow Vortex .png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Discretizing lifting surfaces into panels, each associated with a horseshoe
+ vortex system that models the circulation around the wing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Stabiltiy Derivatives Calculation 
+\end_layout
+
+\begin_layout Standard
+The Athena Vortex Lattice (AVL) program computes stability derivatives by
+ numerically perturbing the aircraft or missile's state variables (angle
+ of attack, sideslip, control deflections) and measuring the resulting changes
+ in aerodynamic forces and moments.The analysis begins with computation of
+ the steady-state solution at reference flight conditions(Trim condition),
+ including specified angles of attack (
+\begin_inset Formula $\alpha$
+\end_inset
+
+) and sideslip (
+\begin_inset Formula $\beta$
+\end_inset
+
+).
+ This initial solution provides reference values for aerodynamic forces
+ (L, D, Y) and moments (L, M, N) which are obtained from the Vortex Lattice
+ Method.Thren AVL employs a finite-difference approach to compute derivatives.
+ Small perturbations are applied to each state variable while holding others
+ constant For each perturbation case, AVL resolves the modified flow field
+ and records changes in aerodynamic coefficients.
+ The stability derivatives are then computed through first-order finite
+ differences
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Finding the Trim Condition
+\end_layout
+
+\begin_layout Standard
+The trim condition of a cruise missile represents a state of equilibrium
+ where the aerodynamic forces and moments are balanced, allowing for steady,
+ level flight.
+ The Athena Vortex Lattice (AVL) method provides an efficient computational
+ approach to determine these trim conditions by solving the governing aerodynami
+c equations under specified flight constraints.
+ This analysis is crucial since it is the starting point from which the
+ stabilty derivatives are calculated (As mentioned above).AVL determines
+ the trim condition through an iterative process that adjusts control surface
+ deflections and angle of attack (
+\begin_inset Formula $\alpha$
+\end_inset
+
+) until equilibrium is achieved.Knowing the missile must have approximately
+ a trim velocity close to that of the AGM-86 missile, and we're trying to
+ trim our vehicle at the same velocity approximately.Analyze the wing and
+ tail, let all the control surfaces have zero deflection, use AVL to find
+ the angle of attack at which trim will occur.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename trim_condition_avl.png
+	width 65line%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Run case parameters to find trim condition.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Trim the case using command 
+\begin_inset Quotes eld
+\end_inset
+
+C1
+\begin_inset Quotes erd
+\end_inset
+
+ to find the cruise velocity, and compare it to the actual cruise velocity
+ which is calculated by: 
+\begin_inset Formula $V_{cruise}=\sqrt{\frac{Mg}{\frac{1}{2}\rho SC_{L_{cruise}}}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Change the incidence angles of the wing, horizontal stabilizer or both,
+ and iterate until the cruise velocity is just right enough (small error).
+\end_layout
+
+\begin_layout Subsection
+Files Used in AVL
+\end_layout
+
+\begin_layout Standard
+Athena Vortex Lattice (AVL) employs several input and output files to define
+ the geometry, run simulations, and store results.
+\end_layout
+
+\begin_layout Subsubsection
+Geometry Definition File (.avl)
+\end_layout
+
+\begin_layout Standard
+The Geometry Definition File (with the .avl extension) serves as the primary
+ input file for the Athena Vortex Lattice (AVL) program, containing all
+ necessary geometric and aerodynamic parameters required to define the aircraft
+ or missile configuration.
+ This file is structured in a plain-text format, where each component of
+ the vehicle—such as wings, fuselage, and control surfaces—is systematically
+ described using specific keywords and parameters.The file begins with a
+ title section, which provides a descriptive name for the configuration.
+ This is followed by global parameters that apply to the entire analysis,
+ such as the Mach number and symmetry conditions.The initial part of the
+ file specifies global settings that influence the entire computation:
+\end_layout
+
+\begin_layout Enumerate
+Title: A user-defined string that identifies the configuration .
+\end_layout
+
+\begin_layout Enumerate
+Mach number: The freestream Mach number .
+\end_layout
+
+\begin_layout Standard
+Each lifting surface (e.g., wings, tails, fins) is defined within a SURFACE
+ block.
+ This block includes parameters that describe the surface's overall characterist
+ics:
+\end_layout
+
+\begin_layout Enumerate
+Surface name: A label for the surface (e.g., Wing, Vertical Tail).
+\end_layout
+
+\begin_layout Enumerate
+Number of chordwise panels (NCHORD): Determines the resolution of vortices
+ along the chord.
+\end_layout
+
+\begin_layout Enumerate
+Number of spanwise panels (CSPAN): Controls the spanwise discretization
+ of the surface.
+\end_layout
+
+\begin_layout Enumerate
+Incidence angle (ANGLE): Specifies the initial angle of attack of the surface
+ relative to the freestream.
+\end_layout
+
+\begin_layout Standard
+Within each SURFACE block, one or more SECTION blocks define the cross-sectional
+ geometry at specific spanwise locations.
+ Each SECTION includes:
+\end_layout
+
+\begin_layout Enumerate
+Leading-edge coordinates (XLE, YLE, ZLE): The position of the section's
+ leading edge in the global coordinate system.
+\end_layout
+
+\begin_layout Enumerate
+Chord length (CHORD): The section's chord length.
+\end_layout
+
+\begin_layout Standard
+Control surfaces (e.g., elevators, ailerons, rudders) are defined within the
+ SURFACE block using the CONTROL keyword.
+ Each control surface is parameterized by:
+\end_layout
+
+\begin_layout Enumerate
+Control name: A label (e.g., Elevator).
+\end_layout
+
+\begin_layout Enumerate
+Hinge parameters: Define the control surface's deflection characteristics,
+ including the hinge location and deflection limits.
+\end_layout
+
+\begin_layout Standard
+Body Definitions For configurations with fuselages or missile bodies, the
+ BODY keyword is used to define slender, non-lifting components.
+ Similar to SURFACE, the BODY block includes:
+\end_layout
+
+\begin_layout Standard
+Body name: A label (e.g., Fuselage).
+\end_layout
+
+\begin_layout Standard
+Number of longitudinal panels (N): Controls the resolution along the body's
+ length.
+\end_layout
+
+\begin_layout Standard
+Cross-sectional shape: Defined via a series of SECTION blocks that specify
+ the body's radius or width at each station.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Goemetry Definition file 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Mass and Inertia File (.mass)
+\end_layout
+
+\begin_layout Standard
+The Mass and Inertia File (with the .mass extension) is a critical component
+ of the Athena Vortex Lattice (AVL) analysis framework, providing the necessary
+ mass properties of the vehicle to ensure accurate computation of stability
+ derivatives, trim conditions, and dynamic behavior.The .mass file defines
+ the mass distribution of the vehicle, including the center of gravity (CG)
+ location and the moments and products of inertia.
+ These parameters are essential for calculating the vehicle's response to
+ aerodynamic forces and moments, particularly in stability and control analyses.
+ Without accurate mass and inertia data, the predictions of trim conditions,
+ dynamic stability modes, and control effectiveness would be unreliable.
+ The file ensures that the inertial coupling between translational and rotationa
+l motions is properly accounted for in the simulations.It is a plain-text
+ file structured to provide clear and concise definitions of the vehicle's
+ mass properties.
+ It begins with global units declarations, followed by the mass and inertia
+ data for the entire vehicle or individual components.The file starts with
+ declarations of the units used for length, mass, and time.
+ These units must be consistent with those used in the geometry definition
+ file (.avl) to ensure coherent calculations.Then the primary section of the
+ .mass file defines the total mass of the vehicle and the coordinates of
+ its center of gravity (CG) relative to a reference point, typically the
+ nose or another fixed location on the geometry.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mass and Inertia File
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Run Configuration File (.run)
+\end_layout
+
+\begin_layout Standard
+The Run Configuration File (with the .run extension) serves as the control
+ script for executing analyses in Athena Vortex Lattice (AVL).
+ This file defines the specific flight conditions, analysis types, and computati
+onal parameters that AVL will use during its calculations.he .run file acts
+ as a batch-processing script that automates AVL's computational workflow.
+ It allows users to define multiple analysis cases in sequence, specify
+ trim conditions, request stability derivatives, and control output formatting.Th
+e .run file typically contains three types of directives: case definitions,
+ operational commands, and output controls.
+ Each serves a distinct purpose in configuring the analysis.Case Definitions
+ establish the flight conditions for analysis.
+ These include:
+\end_layout
+
+\begin_layout Enumerate
+Angle of attack (ALPHA): Specifies the initial Angle of Attack angle in
+ degrees.
+\end_layout
+
+\begin_layout Enumerate
+Sideslip angle (BETA): Defines the yaw angle for lateral-directional analysis.
+\end_layout
+
+\begin_layout Enumerate
+Mach number (MACH): Sets the freestream Mach number for compressibility
+ effects.
+\end_layout
+
+\begin_layout Standard
+Operational Commands determine what calculations AVL performs:
+\end_layout
+
+\begin_layout Enumerate
+OPER: Initiates a trim analysis.
+\end_layout
+
+\begin_layout Enumerate
+STABILITY: Computes stability derivatives for the current flight condition.
+\end_layout
+
+\begin_layout Enumerate
+MODES: Calculates dynamic mode characteristics like damping ratios and frequenci
+es.
+\end_layout
+
+\begin_layout Standard
+Output Controls manage how results are presented:
+\end_layout
+
+\begin_layout Enumerate
+WRITE: Saves force, moment, or stability data to specified files.
+\end_layout
+
+\begin_layout Enumerate
+PLOT: Generates visual representations of pressure distributions or flow
+ fields.
+\end_layout
+
+\begin_layout Enumerate
+QUIT: Terminates the AVL session after completing analyses.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Run Configuration File
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Force and Moment Output File (.ft)
+\end_layout
+
+\begin_layout Standard
+The Force and Moment Output File (with the .ft extension) serves as one of
+ the primary result files generated by Athena Vortex Lattice (AVL), containing
+ the computed aerodynamic forces, moments, and stability derivatives for
+ the analyzed configuration.
+ This file provides a comprehensive numerical summary of the vehicle's aerodynam
+ic characteristics under the specified flight conditions, forming the basis
+ for performance evaluation and stability analysis.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Force and Moment Output file (.ft)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Eigenmode Output File (.eig)
+\end_layout
+
+\begin_layout Standard
+The Eigenmode Output File (with the .eig extension) contains the dynamic
+ stability analysis results computed by Athena Vortex Lattice (AVL), providing
+ crucial information about the vehicle's natural oscillatory modes and their
+ stability characteristics.
+ This file presents the eigenvalues and eigenvectors that describe the aircraft
+ or missile's dynamic response to perturbations, offering fundamental insights
+ into its flight dynamics behavior.The file structure begins with a header
+ section that identifies the flight condition and configuration being analyzed,
+ followed by a systematic presentation of the computed eigenmodes.
+ Each mode's characteristics are displayed with mathematical precision,
+ including the complex eigenvalues that determine the system's dynamic stability.
+ The real part of each eigenvalue indicates the damping characteristics,
+ where negative values represent stable, decaying oscillations while positive
+ values denote unstable, diverging behavior.
+ The imaginary part corresponds to the natural frequency of oscillation
+ in radians per second, describing the periodic nature of each mode.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+EigenMode Output file
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="40page%">
+<column alignment="center" valignment="top" width="40page%">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+File
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Purpose
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Geometry Definition File (.avl)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+contains all necessary geometric and aerodynamic parameters required to
+ define the aircraft or missile configuration
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mass and Inertia File (.mass)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+provides the necessary mass properties of the vehicle to ensure accurate
+ computation of stability derivatives, trim conditions, and dynamic behavior.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Run Configuration File (.run)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+serves as the control script for executing analyses in Athena Vortex Lattice
+ (AVL).
+ This file defines the specific flight conditions, analysis types, and computati
+onal parameters
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Force and Moment Output File (.ft)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+serves as one of the primary result files generated by Athena Vortex Lattice
+ (AVL), containing the computed aerodynamic forces, moments, and stability
+ derivatives for the analyzed configuration
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Eigenmode Output File (.eig)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+contains the dynamic stability analysis results computed by Athena Vortex
+ Lattice (AVL), providing crucial information about the vehicle's natural
+ oscillatory modes and their stability characteristics.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+AVL Input and Output Files
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Matlab Contribution
+\end_layout
+
+\begin_layout Standard
+Althogh The Athena Vortex Lattice (AVL) software is a powerful tool for
+ aerodynamic analysis, but its text-based interface and manual file handling
+ make it difficult to use efficiently.
+ To overcome this challenge, we developed a MATLAB program that automates
+ AVL, eliminating the need for direct user interaction with AVL’s complex
+ input system.This MATLAB interface simplifies the entire workflow—geometry
+ setup, case execution, and result extraction—while preserving AVL’s core
+ aerodynamic calculations.
+ Users can define missile designs in MATLAB, and the program automatically
+ generates the necessary AVL input files, runs simulations, and retrieves
+ results without requiring manual input.By bridging AVL’s capabilities with
+ MATLAB’s user-friendly environment, this tool makes aerodynamic analysis
+ more accessible, reducing setup time and minimizing errors.
+ It is particularly beneficial for engineers and researchers who need efficient,
+ repeatable simulations for missile or aircraft design.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="40page%">
+<column alignment="center" valignment="top" width="40page%">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+File
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Purpose
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+avl_case.m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+is the main file where the main sizing data are chosen
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+print_object.m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+is used to write each component data into the AVL geometry file
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+inertia.m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+is mainly used to calculate masses and moments of inertia of lifting surfaces
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+airfoil_eq.m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+is used to find the coefficients of the polynomial of thickness of the airfoil
+ used in the lifting surface (used in 
+\begin_inset Quotes eld
+\end_inset
+
+inertia.m
+\begin_inset Quotes erd
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+required_thrust.m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+is a function with trivial (maybe empirical) way to calculate the required
+ thrust of the flying vehicle.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aircraft_data.m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+is to read, parse and save the airplane data.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Matlab files used to deal with AVL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Autopilot
+\end_layout
+
+\begin_layout Chapter
+Stability & Control Derivatives
+\end_layout
+
+\begin_layout Section
+Dimensionalization
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $X_{U}=\frac{1}{2m}\rho U_{o}^{2}S_{ref}\frac{\partial C_{X}}{\partial u}=\frac{1}{2m}\rho U_{o}S_{ref}C_{X_{U}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+X_{W}=\frac{1}{2m}\rho U_{o}^{2}S_{ref}\frac{\partial C_{X}}{\partial w}=\frac{1}{2m}\rho U_{o}S_{ref}C_{X_{w}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+X_{\delta_{e}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{X}}{\partial\delta_{e}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}C_{X_{\delta_{e}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $Z_{U}=\frac{1}{2m}\rho U_{o}^{2}S_{ref}\frac{\partial C_{Z}}{\partial u}=\frac{1}{2m}\rho U_{o}S_{ref}C_{Z_{U}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{W}=\frac{1}{2m}\rho U_{o}^{2}S_{ref}\frac{\partial C_{Z}}{\partial w}=\frac{1}{2m}\rho U_{o}S_{ref}C_{Z_{w}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{Q}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Z}}{\partial q}=\frac{1}{4m}\rho V_{To}S_{ref}\bar{C}C_{Z_{q}}\qquad\left[m.rad^{-1}s^{-1}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{\delta_{e}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Z}}{\partial\delta_{e}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}C_{Z_{\delta_{e}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $M_{U}=\frac{1}{2I_{yy}}\rho U_{o}^{2}S_{ref}\bar{C}\frac{\partial C_{M}}{\partial u}=\frac{1}{2I_{yy}}\rho U_{o}S_{ref}\bar{C}C_{M_{u}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M_{W}=\frac{1}{2I_{yy}}\rho U_{o}^{2}S_{ref}\bar{C}\frac{\partial C_{M}}{\partial w}=\frac{1}{2I_{yy}}\rho U_{o}S_{ref}\bar{C}C_{M_{w}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M_{Q}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}\bar{C}\frac{\partial C_{M}}{\partial q}=\frac{1}{4I_{yy}}\rho V_{To}S_{ref}\bar{C}^{2}C_{M_{q}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M_{\delta_{e}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}\bar{C}\frac{\partial C_{M}}{\partial\delta_{e}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}\bar{C}C_{M_{\delta_{e}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $Y_{V}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Y}}{\partial v}=\frac{1}{2m}\rho V_{To}S_{ref}C_{Y_{v}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y_{P}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Y}}{\partial p}=\frac{1}{4m}\rho V_{To}S_{ref}bC_{Y_{p}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y_{R}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Y}}{\partial r}=\frac{1}{4m}\rho V_{To}S_{ref}bC_{Y_{r}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y_{\delta_{a}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Y}}{\partial\delta_{a}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}C_{Y_{\delta_{a}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+Y_{\delta_{r}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Y}}{\partial\delta_{r}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}C_{Y_{\delta_{r}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $L_{V}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{L}}{\partial V}=\frac{1}{2I_{xx}}\rho V_{To}S_{ref}bC_{L_{p}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L_{P}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{L}}{\partial p}=\frac{1}{4I_{xx}}\rho V_{To}S_{ref}b^{2}C_{L_{p}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L_{r}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{L}}{\partial r}=\frac{1}{4I_{xx}}\rho V_{To}S_{ref}b^{2}C_{L_{r}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L_{\delta_{a}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{L}}{\partial\delta_{a}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}bC_{L_{\delta_{a}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L_{\delta_{r}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{L}}{\partial\delta_{r}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}bC_{L_{\delta_{r}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $N_{V}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{N}}{\partial V}=\frac{1}{2I_{xx}}\rho V_{To}S_{ref}bC_{N_{p}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{P}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{N}}{\partial p}=\frac{1}{4I_{xx}}\rho V_{To}S_{ref}b^{2}C_{N_{p}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{r}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{N}}{\partial r}=\frac{1}{4I_{xx}}\rho V_{To}S_{ref}b^{2}C_{N_{r}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{\delta_{a}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{N}}{\partial\delta_{a}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}bC_{N_{\delta_{a}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{\delta_{r}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{N}}{\partial\delta_{r}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}bC_{N_{\delta_{r}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L_{V}^{'}=G\left(L_{V}+\frac{I_{xz}}{I_{xx}}N_{V}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L_{P}^{'}=G\left(L_{P}+\frac{I_{xz}}{I_{xx}}N_{P}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L_{R}^{'}=G\left(L_{R}+\frac{I_{xz}}{I_{xx}}N_{R}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L_{\delta_{a}}^{'}=G\left(L_{\delta_{a}}+\frac{I_{xz}}{I_{xx}}N_{\delta_{a}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L_{\delta_{r}}^{'}=G\left(L_{\delta_{r}}+\frac{I_{xz}}{I_{xx}}N_{\delta_{r}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{V}^{'}=G\left(N_{V}+\frac{I_{xz}}{I_{zz}}L_{V}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{P}^{'}=G\left(N_{P}+\frac{I_{xz}}{I_{zz}}L_{P}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{R}^{'}=G\left(N_{R}+\frac{I_{xz}}{I_{zz}}L_{R}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{\delta_{a}}^{'}=G\left(N_{\delta_{a}}+\frac{I_{xz}}{I_{zz}}L_{\delta_{a}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{\delta_{r}}^{'}=G\left(N_{\delta_{r}}+\frac{I_{xz}}{I_{zz}}L_{\delta_{r}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $G=\frac{I_{xx}I_{zz}}{I_{xx}I_{zz}-I_{xz}^{2}}=\frac{1}{1-\frac{I_{xz}^{2}}{I_{xx}I_{zz}}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+Missile Structural Design
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Structural design is a critical aspect of cruise missile development, requiring
+ comprehensive knowledge of load distributions, vibrational dynamics, and
+ advanced design methodologies.
+ The process begins with a preliminary design phase, based on mass and inertia
+ calculations derived from aerodynamic studies.
+ Following initial testing, the next stage involves material selection to
+ achieve optimal structural stiffness and strength, necessitating a thorough
+ understanding of material science.
+ Finally, a detailed design is developed, where each component is carefully
+ analyzed to ensure accurate load distribution and structural integrity.in
+ this introduction we will recall the main srtuctural concepts that we learned.
+\end_layout
+
+\begin_layout Standard
+Missile structural design consists of three phases, preliminary design,
+ selection of materials, and detailed design.
+\end_layout
+
+\begin_layout Subsection
+Structural Loads 
+\end_layout
+
+\begin_layout Standard
+There are basically three different kinds of loads (or stresses) which can
+ be imposed on structural members: 
+\end_layout
+
+\begin_layout Enumerate
+compression loadings 
+\end_layout
+
+\begin_layout Enumerate
+tension loadings 
+\end_layout
+
+\begin_layout Enumerate
+shear loadings
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Basic Loads.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Basic Loads
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Combinations of the three basic loadings (stresses) are combined in these
+ loadings
+\end_layout
+
+\begin_layout Enumerate
+torsion (twisting)
+\end_layout
+
+\begin_layout Enumerate
+bending
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Bending and Torsion.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tosion and Bending
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Loads that are being applied to a member can be thought of as ‘axial’ or
+ ‘transverse’.
+ An axial load is applied in the same direction as the length of the member,
+ whereas a transverse load is applied in a perpendicular direction to the
+ member.
+ In a simple beam bridge, the ‘pillars’ are subjected to axial loads which
+ will ‘compress’ the pillar and the ‘beam’ part (e.g.
+ a railway track) will be subjected to transverse loads, which will cause
+ the member to bend
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Axial and Tranverse.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Axial and Transverse Loads
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Tension and compression stresses
+\end_layout
+
+\begin_layout Standard
+A pure compression load causes compression stresses in the member from the
+ squeezing tendency.
+ A pure tension load causes tensile stress in the member from the stretching
+ tendencies.
+ Tension and compression stresses are also referred to as ‘axial’ stresses.Member
+s designed to absorb compression loads are generally referred to as struts.Member
+s intended to support tensile loads are generally referred to as ties.
+\end_layout
+
+\begin_layout Subsection
+Shear Stresses
+\end_layout
+
+\begin_layout Standard
+Shear stresses come from loading which tends to slide one face of the material
+ over an adjacent face.
+ Take our bent beam again.
+ The material, between the upper and lower surfaces, is under shear stress.
+ Shearing stresses can separate material by sliding a part of it in one
+ direction and the rest in the opposite direction.
+ A bolt or a rivet which keeps two materials together is under shear stress
+ if the two materials are forced in different directions.
+ If the shear becomes sufficiently high the bolt (or rivet) will be cut.
+ 
+\end_layout
+
+\begin_layout Subsection
+Bending Stress
+\end_layout
+
+\begin_layout Standard
+Bending forces occurs if, for instance, the beam is fixed at one end and
+ a force is applied.
+ A closer look shows that one side of the beam will be under tensile stress
+ and the other side will be under compression stress.
+ Bending stresses are also referred to as ‘transverse’ stresses.Members designed
+ to absorb loading at right angles to their length (bending loads) are generally
+ referred to as beams.Bending is essential to the missile wing structures.
+ The wing tips of the cruise missile, for example, might move up and down
+ through more than one metre relative to the fuselage.
+ Wing lift applies a bending force to the wing structure.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Wing bend from lift.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Wing Bending From lift
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Torsion Stress
+\end_layout
+
+\begin_layout Standard
+Torsional stress applies to members being twisted.
+ A closer look at the stress lines shows that torsion can be dissolved into
+ tension, compression and shear stresses.
+ A drive shaft (or torque tube) is subjected to torsional stresses.
+ A flexible wing structure can be loaded in torsion from lift forces that
+ appear in the chordwise direction (from leading edge to trailing edge).
+ Besides, a swept wing design can also be forced into torsion from wing
+ bending forces (which will be shown later).
+ Bending and torsion are two important load absorbing qualities for a wing
+ structure.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Torsion.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Wing Torsion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Fuselage Structure Design
+\end_layout
+
+\begin_layout Subsubsection
+Truss Design
+\end_layout
+
+\begin_layout Standard
+Since any member is stronger in pure compression or tension than in bending,
+ members carry end loads better than side loads.
+ In order to do this, designers arrange the members in the form of a truss
+ or rigid framework.
+ In order for a truss to be rigid, it must be composed entirely of triangles.
+ When the load on a truss acts in one direction, every alternate member
+ carries tension while the other members carry compression.
+ When the load is reversed, the members which were carrying compression
+ now are subjected to tension and those which were carrying tension are
+ under compression.The construction method of a truss uses horizontal lengths
+ of tubing, called longerons, which are welded in place to form a well-braced
+ framework.
+ Vertical and diagonal struts (or braces) are welded to the longerons and
+ give the structure a rectangular or triangular shape when viewed from the
+ end.
+ These features make it rigid, strong, and light.The truss design has today
+ only very limited application in aviation.
+ The disadvantage is obvious to anybody who has ever entered an aircraft;
+ the truss simply occupies too much space which makes it impractical for
+ use in aircraft designed for air transportation.
+ The advantage, however, is its high rigidity and strength obtained at a
+ reasonable low weight.
+ Another advantage is the improved protection of the crew, important in
+ case a crash occurs (crashworthiness).
+ Smaller aerobatic aircraft, like the Extra300 or Sukhoi Su26, use the truss
+ design for these reasons.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Truss_design.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Truss Fuselage Design
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Monocoque designs
+\end_layout
+
+\begin_layout Standard
+Monocoque is a French word meaning ‘single shell’.
+ It describes a type of construction used on an aircraft fuselage (or wing)
+ in which skin panels are shaped over a curved form and then bonded or riveted.al
+l metal monocoque structures use frames (or rings) to support the shape
+ of the shell.
+ Bulkheads are heavier frame members, eventually cast or machined, that
+ allows for attachment of engines, wings, stabilisers, etc.
+ Longitudinal fairing strips joined to the frames is used to support the
+ attachment of the skin panels.
+ Most twisting and bending stresses are carried by the external skin rather
+ than by an open framework, eliminating the need for internal bracing and
+ resulting in a more streamlined aeroplane than with a truss-type.A pure
+ monocoque shell is a simple unstiffened tube of thin skin and as such inefficie
+nt, since unsupported skin sheets are unstable in compression and shear.Another
+ disadvantage of the pure monocoque design is the lack of redundancy.
+ If a skin panel fails, no other structural part can act as backup.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Monocoque.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Monocoque Fuselage Design
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Semi-monocoque fuselage design
+\end_layout
+
+\begin_layout Standard
+A semi-monocoque shell is the most often used construction for modern, highperfo
+rmance aircraft.
+ The semi-monocoque structure is highly efficient.Semi-monocoque literally
+ means half a single shell.
+ A semimonocoque fuselage, internally contains braces of longitudinal elements
+ (stringers, longerons and keelsons), transverse elements (frames/rings
+ and bulkheads), externally,the skin.Longerons are heavy stringers often
+ recognised as closed profiles or machined profiles.A keelson (or keel beam)
+ is a heavier and extra strengthened part used to support the structure
+ where large cut-outs are made.The longerons and keelsons carry the major
+ portion of the fuselage bending loadings.
+ The skin carries the shear from the applied external torsion forces.Stringers
+ also carry axial loads induced by the bending loads.Frames primarily serve
+ to maintain the shape of the fuselage and to prevent instability of the
+ structure.Frame loads are generally small and therefore of a light construction.B
+ulkheads are provided at points where concentrated forces are transferred,
+ for instance at the wing attachment points and stabiliser attachments.
+ The bulkhead structures are quite substantial and serve to distribute the
+ loadings into the fuselage skin.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename SemiMono.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Semi-Monocoque Fuselage Design
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Wing Design
+\end_layout
+
+\begin_layout Standard
+The purpose of the wing is to provide the needed lift.
+ The wing section also serves as fuel storage on most aircraft.Basic structural
+ parts in wings are spars (beams),stringers stiffeners),ribs and wing skin.Wing
+ spars, which are beams, are classified into main spars and auxiliary (support)
+ spars.
+ Spars are the main principal load members of the wing and all structural
+ loads are transferred to this part.
+ The wing structure is built around the spars.
+ The main spar(s) are attached to the fuselage (by various means) to transfer
+ the wing lift and propulsive forces from wing mounted engines.Auxiliary
+ (support/false) spars are typically used as attachment beams for flight
+ control surfaces.Wing ribs provide the aerodynamic shape of the wing.
+ The ribs are attached to the wing spars and assure the required chordwise
+ stiffness of the wing.The wing skin is joined to the ribs, either directly
+ or indirectly via rows of stringers.Modern aircraft wings are typically
+ designed as stressed skin semi-monocoque designs, though many wings of
+ light aircraft may be closer to a monocoque design.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Wing Design.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Wing Structural Design
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Sources of vibration:
+\end_layout
+
+\begin_layout Enumerate
+Thrust Roughness
+\end_layout
+
+\begin_layout Enumerate
+Control Movement
+\end_layout
+
+\begin_layout Enumerate
+Unsteady Aerodynamics
+\end_layout
+
+\begin_layout Enumerate
+Jet Noise
+\end_layout
+
+\begin_layout Standard
+These sources might produce harmonic or random noise.
+\end_layout
+
+\begin_layout Subsubsection*
+Sources of Shock Loads:
+\end_layout
+
+\begin_layout Enumerate
+Engine Ignition
+\end_layout
+
+\begin_layout Enumerate
+Launcher Release
+\end_layout
+
+\begin_layout Enumerate
+Staging Separation
+\end_layout
+
+\begin_layout Subsubsection*
+There are 5 main structural divisions:
+\end_layout
+
+\begin_layout Enumerate
+Tanks
+\end_layout
+
+\begin_layout Enumerate
+Intertanks
+\end_layout
+
+\begin_layout Enumerate
+Interstages
+\end_layout
+
+\begin_layout Enumerate
+Thrust Structures
+\end_layout
+
+\begin_layout Enumerate
+Nose Fairings
+\end_layout
+
+\begin_layout Subsubsection*
+The main design techniques are:
+\end_layout
+
+\begin_layout Enumerate
+Monocoque
+\end_layout
+
+\begin_layout Enumerate
+Semi-Monocoque (This includes ring stiffened shells, stringer , skin with
+ frames, integral stringer, skin with frames, waffles and corrugations).
+\end_layout
+
+\begin_layout Enumerate
+Cored Faces (This includes honeycombs and truss cores).
+\end_layout
+
+\begin_layout Enumerate
+Trusses (which are combinations of discrete members which can resist only
+ axial loads).
+\end_layout
+
+\begin_layout Chapter
+Some Important Design Considerations
+\end_layout
+
+\begin_layout Section
+Fuel Tanks
+\end_layout
+
+\begin_layout Standard
+Most important materials are: (1) Steel, (2) Titanium and (3) Glass Fiber.
+ An additional candidates are fibers such as Boron.
+\end_layout
+
+\begin_layout Subsection
+Preliminary Design Steps
+\end_layout
+
+\begin_layout Enumerate
+Calculate membrane tank wall thickness and weights.
+\end_layout
+
+\begin_layout Enumerate
+Compute Buckling Allowables of tanks for pressurized and unpressurized cases.
+\end_layout
+
+\begin_layout Enumerate
+Compare pressurized buckling plus pressure relief allowables to flight loads,
+ if they are less, then additional compression structure is required.
+\end_layout
+
+\begin_layout Enumerate
+Compare the unpressurized buckling allowables to ground winds, if they're
+ less, additional compression structure is required.
+\end_layout
+
+\begin_layout Subsubsection
+For Solid Propellant Motors (SRM)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t_{yield}=\frac{P*R}{F_{ty}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t_{ult}=\frac{P*R*(FS)}{F_{ty}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+For Liquid Propellant Motors
+\end_layout
+
+\begin_layout Standard
+Use 
+\series bold
+equivalent axial load 
+\series default
+to calculate the thickness.
+\end_layout
+
+\begin_layout Section
+Intertanks and Interstages
+\end_layout
+
+\begin_layout Subsection
+Monocoque
+\end_layout
+
+\begin_layout Standard
+Monocoque structures usually fail in general instability.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F_{b}=C_{b}E\frac{t}{R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The coefficient 
+\begin_inset Formula $C_{b}$
+\end_inset
+
+ is dependent on 
+\begin_inset Formula $\frac{R}{t}$
+\end_inset
+
+, look at fig.
+ C8.12 or table E1.4.6 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bruhn_flight_structures"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+You need to choose the thickness that satisfies both lines of allowables
+ and loads, then multiply by density to find relative weight.
+\end_layout
+
+\begin_layout Subsection
+Honeycomb
+\end_layout
+
+\begin_layout Standard
+The thickness of the core is designed to prevent general instability.
+\end_layout
+
+\begin_layout Standard
+See chapter C12 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bruhn_flight_structures"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Waffle Structures
+\end_layout
+
+\begin_layout Standard
+They fail in general instability at relatively low stress levels.
+\end_layout
+
+\begin_layout Subsection
+Thrust Structures
+\end_layout
+
+\begin_layout Standard
+There are 2 options:
+\end_layout
+
+\begin_layout Standard
+The first is the thrust cone extending from the engine normal to the aft
+ tank bulkhead.
+ But if multiple high thrust engines are used, then beams and trusses are
+ required to carry the loads to the other shell.
+\end_layout
+
+\begin_layout Subsection
+Nose Fairings
+\end_layout
+
+\begin_layout Standard
+They need to be structures with high crushing buckling.
+\end_layout
+
+\begin_layout Chapter
+Navigation and Guidance
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+A critical factor in the cruise missile operational effectiveness is the
+ guidance system, which ensures navigation, target acquisition, and terminal-pha
+se strike precision.
+ Early cruise missile guidance systems relied heavily on Inertial Navigation
+ Systems (INS) and Terrain Contour Matching (TERCOM), while modern designs
+ integrate Global Positioning System (GPS) updates, Digital Scene Matching
+ Area Correlation (DSMAC),
+\end_layout
+
+\begin_layout Section
+TERRCOM Guidance 
+\end_layout
+
+\begin_layout Standard
+Terrain contour matching (TERCOM) can be defined as a technique for determinatio
+n of the position location of an airborne vehicle with respect to the terrain
+ over which the vehicle is flying.
+ More specifically, TERCOM is a form of correlation guidance based on a
+ comparison between the measured and the prestored features of the profile
+ of the ground (i.e., terrain) over which a missile or aircraft is flying.
+ The TERCOM technique, first patented in 1958, relies for its operating
+ principle on the simple fact that the altitude of the ground above sea
+ level varies as a function of location.The TERCOM system relies on a set
+ of digital maps stored in the memory of the missile’s onboard computer.
+ These maps consist of rectangular arrays of numbered squares representing
+ the variation of ground elevation above sea level as a function of location.
+ Consequently, as the missile approaches an area for which the computer
+ memory has a map, the onboard radar altimeter starts providing a stream
+ of groundelevation data.
+ Furthermore, the computer, by comparing these data with the information
+ it has in its memory, can accurately determine the actual trajectory of
+ the missile and instruct the autopilot to return the missile to its planned
+ trajectory.The process of determining air vehicle position by the use of
+ terrain contour matching can generally be described as consisting of three
+ basic steps: (1) data preparation, (2) data acquisition, and (3) data correlati
+on.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project _last/Report/TERRCOM_concept.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+TERRCOM Concept
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Data Preparation: Data preparation consists in selecting a fix point area
+ large enough to accommodate the crosstrack and downtrack navigation arrival
+ uncertainties, securing source material that contains contour information,
+ and then digitizing the terrain elevation data into a matrix of “cells”
+ oriented along the intended flight path.
+ The resulting reference matrix consists of an array of numbers that represent
+ discrete terrain heights (e.g., above mean sea level) corresponding to a
+ sampling interval (i.e., resolution) equal to the desired cell size.
+ This reference matrix or map is then stored in the vehicle’s onboard digital
+ computer memory prior to the flight.
+ The Defense Mapping Agency Aerospace Center (DMAAC), St.
+ Louis AFS, Missouri, maintains a file on the type and availability of source
+ data for all areas of the world.
+\end_layout
+
+\begin_layout Standard
+Data Acquisition: As the vehicle flies over the fix point area, data are
+ acquired by sampling the altitude of the vehicle above the terrain directly
+ below it at an interval equal to the reference map cell size.
+ This “sensed altitude” is measured with a radar altimeter.
+ At the same time, the vehicle’s altitude above mean sea level is measured
+ using the combination of a barometric altimeter and a vertical accelerometer
+ to provide the system reference altitude.
+ The acquired terrain elevation samples are then stored in a file in the
+ vehicle’s onboard digital computer memory.This terrain elevation file represents
+ a discrete elevation profile of the terrain along a line coincident with
+ the vehicle’s ground track.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project _last/Report/Terrconm data measurement.png
+	scale 75
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Terrain Measurment Method
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Data Correlation: The last step in the terrain contour matching process
+ is the correlation of the data in the terrain elevation file with each
+ column of the reference matrix.
+ The reference column that has the greatest correlation with the terrain
+ elevation file is the column down which the vehicle has flown.
+ With no navigation error, the match column would be the center column of
+ the map, since that is the ground track the navigation system is steering
+ along.
+ However, with downtrack and crosstrack errors, it is probable that some
+ column other than the center one will be flown down.
+ In this case, the system computes the downtrack and crosstrack distance
+ from the center of the map and uses these errors to correct the vehicle’s
+ navigation error.
+\end_layout
+
+\begin_layout Standard
+Using this guidance method in our project would be unapplicable since the
+ reference digital elevation map that is essential for this method was not
+ available for the public in many countries including Egypt.Therefore another
+ method was implemented in this project will be detailed in the next section.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+GPS/INS Guidance 
+\end_layout
+
+\begin_layout Standard
+Similar to Terrain Contour Matching (TERCOM), preflight data is programmed
+ into the onboard computer of the missile.
+ However, instead of relying on terrain elevation maps, this approach utilizes
+ a predefined flight path composed of multiple waypoints, each specifying
+ a geographic location that the missile must follow.
+ By continuously comparing real-time position data from an integrated GPS/INS
+ (Global Positioning System/Inertial Navigation System) with the programmed
+ waypoints, the missile autonomously corrects its trajectory to adhere to
+ the desired flight path.Given that GPS/INS methodologies have already been
+ extensively discussed in the navigation section, this section will instead
+ focus on two critical aspects:
+\end_layout
+
+\begin_layout Enumerate
+Flight Path Selection Criteria – The principles governing the choice of
+ waypoints to optimize survivability, fuel efficiency, and evasion of enemy
+ defenses.
+\end_layout
+
+\begin_layout Enumerate
+Guidance Law Implementation – The control algorithms used to ensure the
+ missile accurately follows the designated path, including proportional
+ navigation, trajectory optimization, or adaptive control strategies.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "citations"
+options "bibtotoc,vancouver"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
