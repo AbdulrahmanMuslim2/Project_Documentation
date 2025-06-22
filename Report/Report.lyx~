@@ -17,6 +17,7 @@
 \usepackage{url}
 \usepackage{appendix}
 \usepackage{pdflscape}
+\usepackage{lscape}
 
 %% uncomment this if you're using beamer presentations
 %\usepackage{calc}
@@ -725,37 +726,77 @@ end{centering}
 \end_layout
 
 \begin_layout Chapter*
-\begin_inset Newpage cleardoublepage
-\end_inset
-
 Acknowledgement
 \end_layout
 
-\begin_layout Itemize
-Dr.
- Ahmed Rashed
+\begin_layout Standard
+First and foremost,
+ we want to thank God for giving us the courage,
+ knowledge,
+ and determination to this project.
+ We would like to thank our mentors professor Gamal El-bayoumi for his guidance,
+ support,
+ and expertise throughout this project,We also want to express our heartfelt gratitude to our families for their endless support,
+ encouragement,
+ and understanding during this journey.We would like to express our heartfelt gratitude to Engineer Ahmed Yousy,
+ Mahmoud Gamal Elewa,Ahmed Samy and Dr.
+ Ahmed Rashed for their essential assistance.
 \end_layout
 
-\begin_layout Itemize
-T/A.
- Ahmed Yousry
+\begin_layout Standard
+and advice throughout our senior project.
 \end_layout
 
-\begin_layout Itemize
-T/A Mahmoud Gamal Elewah
+\begin_layout Standard
+\align center
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{
+\backslash
+fill}
 \end_layout
 
-\begin_layout Itemize
-Eng.
- Ahmed Samy
+\end_inset
+
+
+\series bold
+\emph on
+This page is intentionally left blank.
+\series default
+\emph default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{
+\backslash
+fill}
 \end_layout
 
-\begin_layout Part*
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
 Abstract
 \end_layout
 
 \begin_layout Standard
-We aim to set foot and be the first to introduce a method for conceptual design and design of Guidance and Control System for Cruise Missile.
+We aim to set foot and be the first in many years to introduce a method for conceptual design and design of Guidance and Control System for Cruise Missile in an graduation project.
  We use an algorithm for conceptual design which is applicable for any missile anyone can use.
  We will present a missile AVL program for estimating the basic stability derivatives and control coefficients under any flight conditions and configuration.
  Using these coefficients,
@@ -765,6 +806,75 @@ We aim to set foot and be the first to introduce a method for conceptual design 
  while there are many researches in tactical (ballistic missiles),
  so we had to assume many missing parameters from published schematics and run many validation tests to reach the most accurate dimensions for the missile.
  We hope to make this project as the first step for cruise missiles design future projects.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\series bold
+\emph on
+This page is intentionally left blank.
+\series default
+\emph default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -4336,7 +4446,7 @@ Guided missiles are able to seek out and accurately navigate their way to the co
  This power is usually gained from the intelligence of the guidance system with which the weapon is equipped.
  Therefore,
  the guidance is indispensable whenever a missile has to be brought to its pre-designed trajectory or target with high precision.
- The guidance system could be,
+ The guidance system of a missile could be,
  artificially,
  divided into three subsystems:
  navigation or measurement,
@@ -4377,12 +4487,464 @@ Navigation ,Guidance and control
 
 \end_layout
 
-\begin_layout Section
-Navigation of Cruise missiles
+\begin_layout Standard
+To achieve this precision,
+ modern cruise‐missile guidance combines multiple sensors and algorithms in three broad phases:
+\end_layout
+
+\begin_layout Subsubsection*
+Initial Alignment & Launch:
+\end_layout
+
+\begin_layout Standard
+Before launch,
+ the missile’s inertial navigation system (INS)—
+typically a strapdown inertial measurement unit (IMU) of gyroscopes and accelerometers—
+undergoes a “cold” or “warm” alignment to establish its position and orientation.
+ Once airborne,
+ the INS provides continuous estimates of velocity and attitude,
+ enabling the missile to begin flying toward its waypoint even if other sensors are unavailable.
+\end_layout
+
+\begin_layout Subsubsection*
+Mid-Course Navigation:
+\end_layout
+
+\begin_layout Standard
+Global Navigation Satellite Systems (GNSS):
+ GPS (or alternatives like Russia’s GLONASS or Europe’s Galileo) corrects drift in the INS and updates position estimates.
+\end_layout
+
+\begin_layout Standard
+Terrain Contour Matching (TERCOM):The missile’s radar altimeter measures the terrain profile beneath it and compares this “contour” to a stored map,
+ allowing position fixes even if satellite signals are jammed.
+\end_layout
+
+\begin_layout Standard
+Digital Scene Matching Area Correlation (DSMAC):
+ A downward-looking camera captures imagery of the landscape;
+ onboard processors correlate these images against stored reference photos to refine position and heading.
+\end_layout
+
+\begin_layout Standard
+By fusing INS,
+ GNSS,
+ TERCOM and/or DSMAC through a Kalman filter,
+ the missile maintains a robust mid-course track resistant to environmental or human interference.
+\end_layout
+
+\begin_layout Subsubsection*
+Terminal Guidance:
+\end_layout
+
+\begin_layout Standard
+In the final kilometers,
+ high-resolution seekers take over—
+radar,
+ imaging infrared (IIR),
+ or millimeter-wave radar—
+to home in on the specific target.
+ This lets the missile adjust its dive angle,
+ avoid obstacles,
+ and compensate for final aiming errors,
+ delivering warheads with very high accuracy.
+\end_layout
+
+\begin_layout Standard
+At the heart of all these phases is a guidance loop:
+ sensors feed data to a navigation filter,
+ which computes position,
+ velocity,
+ and attitude;
+ a path-planning algorithm issues desired flight directions;
+ and control surfaces (fins or canards) execute those commands via an autopilot.
+ Redundant sensors and anti-jamming techniques ensure that—
+even in contested environments—
+the missile remains on course.Together,
+ this multi-layered approach enables cruise missiles to “fly under the radar,” navigate complex terrain,
+ resist jamming,
+ and strike distant targets with precision.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Guidance of cruise missiles
+Navigation of Cruise Missiles 
+\end_layout
+
+\begin_layout Subsection
+Sensor Modeling
+\end_layout
+
+\begin_layout Subsubsection
+Inertial Measurement Unit
+\end_layout
+
+\begin_layout Standard
+The Inertial Measurement Unit (IMU) consist of three sensors:
+ Accelerometer,
+ Gyroscope and Magnetometer,
+ they output the boy's linear acceleration,
+ angular velocity and magnetic field respectively.
+ Together when sensor fusion algorithms is applied to their output they determine the position and attitude of the body.
+\end_layout
+
+\begin_layout Standard
+In our project we modeled the three sensors then used their output as input to our sensor fusion algorithm (Extended Kalman Filter).
+\end_layout
+
+\begin_layout Standard
+To Model the accelerometer sensor first the body acceleration must be obtained in the navigation coordinates then adding gravitational acceleration to it -which points down in navigation coordinates- to obtain the total acceleration.
+ The orientation of the sensor body in 3D space with respect to the navigation coordinates should be known in order to rotate the acceleration vector from the navigation axes to the sensor's body axes.
+ This signal represents the ideal acceleromter signal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pictures/Acc.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modeling of accelerometer sensor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After obtaining the ideal signal,
+ it is then fed to a Bulk Model that represents Constant Bias and Axis Misalignment that exist in real sensors calculated as follows
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+b=\left(\left[\begin{array}{ccc}
+1 & \text{\frac{a_{2}}{100}} & \frac{a_{3}}{100}\\
+\frac{a_{1}}{100} & 1 & \frac{a_{3}}{100}\\
+\frac{a_{1}}{100} & \frac{a_{2}}{100} & 1
+\end{array}\right](a^{T})\right)^{T}+ConstantBias
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then noise should be added to it to mimic the signal of real sensors.
+ There are three noise sources in real sensors,
+ white noise,
+ bias instability and random walk.
+ The three of them are supposed to be random but due to computers inability to generate truly random number,
+ a sudo-random number generator is used which takes a seed number that the user provides which is then converted to sudo-random number with some equations that the computer uses.
+ The fact that the computer doesn't generate truly random numbers doesn't effect the quality of the simulation that is based on the sensor model.
+\end_layout
+
+\begin_layout Standard
+White noise is modeled by multiplying white noise of mean zero and variance of 1 by the standard deviation desired.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\beta_{2}=(w)(\sqrt{\frac{SampleRate}{s}})(NoiseDensity))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The random walk drift is modeled by biasing elements of the white noise random stream and then filtering:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\beta_{3}=\beta_{2}(k-1)+w(k)(\frac{RandomWalk}{\sqrt{\frac{SampleRate}{s}}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After adding the three random noises then environmental noise is then added which represents the effect of ambient temperature on the sensor readings.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta_{e}=(Temperature-25)(TemperatureBias)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+after adding sensor signal and noise -both random and environmental- then scale factor error is added to both.
+\begin_inset Formula 
+\[
+scaleFactorError=1+\left(\frac{Temperature-25}{100}\right)(TemperatureScaleFactor)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The quantization is modeled by first saturating the continuous signal model:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+e\begin{cases}
+\begin{array}{c}
+MeasurementRange\\
+-MeasurementRange\\
+d
+\end{array} & \begin{array}{cc}
+if & d>MeasurementRange\\
+if & -d>MeasurementRange\\
+else
+\end{array}\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and then setting the resolution:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+accelReadings=(Resolution)(round(\frac{e}{Resolution}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pictures/Gyro.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modeling of gyroscope sensor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The modeling of gyroscope sensor is almost identical to the accelerometer sensor model just swapping the acceleration input with angular velocity with the addition of the acceleration bias drift.
+\end_layout
+
+\begin_layout Standard
+The acceleration bias drift is modeled by multiplying the acceleration input and acceleration bias:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta_{a}=acceleration*AccelerationBias
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pictures/Magnetometer.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modeling of Magnetometer sensor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The modeling of magnetometer sensor is identical to the accelerometer sensor modeling with Magnetic Field input instead of acceleration input.
+\end_layout
+
+\begin_layout Standard
+The sensor modeling algorithm mentioned above can be done in MATLAB using (imu) function which we used
+\end_layout
+
+\begin_layout Subsubsection
+GPS
+\end_layout
+
+\begin_layout Standard
+The GPS sensor doesn't suffer from much of the noise sources that the IMU sensors suffer from like Environmental Drift,
+ Constant Bias and Axis Misalignment.
+\end_layout
+
+\begin_layout Standard
+So when modeling the GPS sensor the location of the body in the geodetic coordinates (Latitude Longitude Altitude) is taken as input along with the body's velocity -in reality it is calculated from satellite signals- to which White Gaussian Noise and Random Walk Noise is added to represent the modeled sensor signal.
+ Latitude and Longitude coordinates are in degrees and Altitude is in meters.
+ Similar to the IMU the random noise is generated via sudo-random number generator with seed number as input.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pictures/GPS.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulink GPS Block
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The GPS Block in Simulink is used to model the sensor output.
+\end_layout
+
+\begin_layout Subsection
+Extended Kalman Filter
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Guidance of Cruise Missiles
 \end_layout
 
 \begin_layout Subsection
@@ -6436,7 +6998,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/RollFromHeading.png
+	filename Pictures/RollFromHeading.png
 	width 75page%
 
 \end_inset
@@ -6458,10 +7020,6 @@ Control Loop to calculate roll angle command
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Chapter
 Guidance and Navigation
 \end_layout
 
@@ -6549,7 +7107,7 @@ Programming Support
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -6584,7 +7142,7 @@ placement htbp
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -6601,7 +7159,7 @@ centering
 
  
 \begin_inset Graphics
-	filename ../Pictures/HIL/1.png
+	filename Pictures/HIL/1.png
 	width 70text%
 
 \end_inset
@@ -7060,7 +7618,7 @@ placement htbp
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -7077,7 +7635,7 @@ centering
 
  
 \begin_inset Graphics
-	filename ../Pictures/HIL/2.png
+	filename Pictures/HIL/2.png
 	width 80text%
 
 \end_inset
@@ -8924,12 +9482,26 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
 filename "Codes/pleiades.run"
 lstparams "caption={Run configuration file}"
 literal "false"
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -8988,9 +9560,40 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Matlab Design Code 
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand input
-filename "MatlabFunctions.lyx"
+LatexCommand lstinputlisting
+filename "Codes/designCode.m"
+lstparams "caption={Design Code}"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "Codes/trainRegressionModel.m"
+lstparams "caption={TrainRegressionModel}"
 literal "true"
 
 \end_inset
@@ -9028,8 +9631,11 @@ begin{landscape}
 
 
 \backslash
-thispagestyle{empty} % Optional:
- Remove header/footer for this page
+thispagestyle{rotated}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -16502,6 +17108,7 @@ LatexCommand bibtex
 btprint "btPrintAll"
 bibfiles "citations"
 options "bibtotoc,vancouver"
+encoding "default"
 
 \end_inset
 
