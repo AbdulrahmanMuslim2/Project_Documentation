@@ -3093,6 +3093,57 @@ literal "true"
 \end_layout
 
 \begin_layout Section
+Airfoil Selection
+\end_layout
+
+\begin_layout Standard
+For this mission, we are trying to design a missile as small as possible,
+ but in the same time, as fast as possible, with the best weight it can
+ carry.
+ In order to carry a heavy weight at a very high speed (near transonic),
+ the airfoil should be generating as low lift as possible, because an airfoil
+ with high lift will trim at a low speed, so we used a symmetric airfoil,
+ called RAE102, it is optimized for high speed compressible subsonic missions,
+ here is a quick analysis done in XFOIL software for the airfoil at MACH
+ 0:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Pictures/Design Images/RAE102.pdf
+	width 75line%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Airfoil RAE102 Analysis on XFOIL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Geometry Estimation
 \end_layout
 
@@ -3515,7 +3566,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Pictures/plot000.pdf
+	filename Pictures/Design Images/plot000.pdf
 	width 60page%
 
 \end_inset
@@ -3550,7 +3601,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Pictures/plot001.pdf
+	filename Pictures/Design Images/plot001.pdf
 	width 60page%
 
 \end_inset
@@ -3585,7 +3636,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Pictures/plot002.pdf
+	filename Pictures/Design Images/plot002.pdf
 	width 60page%
 
 \end_inset
@@ -5299,11 +5350,29 @@ Guidance Law Implementation – The control algorithms used to ensure the
 \end_layout
 
 \begin_layout Chapter
-Flight Simulator and Airframe model
+Simulation and Autopilot
 \end_layout
 
 \begin_layout Section
-Flight Simulator
+Introduction
+\end_layout
+
+\begin_layout Standard
+We shall use linear control theory to implement the control system of the
+ missile, since the missile in cruise behaves as close as any other UAV,
+ we use Successive Loop Closure, but first, we discuss the airframe model
+ we used to compute forces and moments on the airplane, then we state the
+ linearized dynamics of the vehicle in order to be able to use linear control,
+ at last, we consider the flight simulator that we built based on the book
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "stevens2015aircraft"
+literal "true"
+
+\end_inset
+
+, and we visualize the whole process using Flight Gear software.
 \end_layout
 
 \begin_layout Section
@@ -5334,7 +5403,7 @@ We used the stability derivatives resulting from AVL to implement the first
 \end_layout
 
 \begin_layout Section
-Dimensionalization
+Dimensionalization of Stability Derivatives
 \end_layout
 
 \begin_layout Standard
@@ -5353,7 +5422,7 @@ literal "true"
 
 \begin_layout Standard
 \align center
-\begin_inset Formula $X_{U}=\frac{1}{2m}\rho U_{o}^{2}S_{ref}\frac{\partial C_{X}}{\partial u}=\frac{1}{2m}\rho U_{o}S_{ref}C_{X_{U}}$
+\begin_inset Formula $X_{U}=\frac{1}{2m}\rho U_{o}^{2}S_{ref}\frac{\partial C_{X}}{\partial u}=\frac{1}{2m}\rho U_{o}S_{ref}C_{X_{U}}\qquad\left[\frac{1}{s}\right]$
 \end_inset
 
 
@@ -5362,7 +5431,7 @@ literal "true"
 \begin_layout Standard
 \begin_inset Formula 
 \[
-X_{W}=\frac{1}{2m}\rho U_{o}^{2}S_{ref}\frac{\partial C_{X}}{\partial w}=\frac{1}{2m}\rho U_{o}S_{ref}C_{X_{w}}
+X_{W}=\frac{1}{2m}\rho U_{o}^{2}S_{ref}\frac{\partial C_{X}}{\partial w}=\frac{1}{2m}\rho U_{o}S_{ref}C_{X_{w}}\qquad\left[\frac{1}{s}\right]
 \]
 
 \end_inset
@@ -5373,48 +5442,7 @@ X_{W}=\frac{1}{2m}\rho U_{o}^{2}S_{ref}\frac{\partial C_{X}}{\partial w}=\frac{1
 \begin_layout Standard
 \begin_inset Formula 
 \[
-X_{\delta_{e}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{X}}{\partial\delta_{e}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}C_{X_{\delta_{e}}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Formula $Z_{U}=\frac{1}{2m}\rho U_{o}^{2}S_{ref}\frac{\partial C_{Z}}{\partial u}=\frac{1}{2m}\rho U_{o}S_{ref}C_{Z_{U}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-Z_{W}=\frac{1}{2m}\rho U_{o}^{2}S_{ref}\frac{\partial C_{Z}}{\partial w}=\frac{1}{2m}\rho U_{o}S_{ref}C_{Z_{w}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-Z_{Q}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Z}}{\partial q}=\frac{1}{4m}\rho V_{To}S_{ref}\bar{C}C_{Z_{q}}\qquad\left[m.rad^{-1}s^{-1}\right]
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-Z_{\delta_{e}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Z}}{\partial\delta_{e}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}C_{Z_{\delta_{e}}}
+X_{\delta_{e}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{X}}{\partial\delta_{e}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}C_{X_{\delta_{e}}}\qquad\left[\frac{m}{s^{2}.rad}\right]
 \]
 
 \end_inset
@@ -5424,7 +5452,7 @@ Z_{\delta_{e}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Z}}{\partial\
 
 \begin_layout Standard
 \align center
-\begin_inset Formula $M_{U}=\frac{1}{2I_{yy}}\rho U_{o}^{2}S_{ref}\bar{C}\frac{\partial C_{M}}{\partial u}=\frac{1}{2I_{yy}}\rho U_{o}S_{ref}\bar{C}C_{M_{u}}$
+\begin_inset Formula $Z_{U}=\frac{1}{2m}\rho U_{o}^{2}S_{ref}\frac{\partial C_{Z}}{\partial u}=\frac{1}{2m}\rho U_{o}S_{ref}C_{Z_{U}}\qquad\left[\frac{1}{s}\right]$
 \end_inset
 
 
@@ -5433,7 +5461,7 @@ Z_{\delta_{e}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Z}}{\partial\
 \begin_layout Standard
 \begin_inset Formula 
 \[
-M_{W}=\frac{1}{2I_{yy}}\rho U_{o}^{2}S_{ref}\bar{C}\frac{\partial C_{M}}{\partial w}=\frac{1}{2I_{yy}}\rho U_{o}S_{ref}\bar{C}C_{M_{w}}
+Z_{W}=\frac{1}{2m}\rho U_{o}^{2}S_{ref}\frac{\partial C_{Z}}{\partial w}=\frac{1}{2m}\rho U_{o}S_{ref}C_{Z_{w}}\qquad\left[\frac{1}{s}\right]
 \]
 
 \end_inset
@@ -5444,7 +5472,7 @@ M_{W}=\frac{1}{2I_{yy}}\rho U_{o}^{2}S_{ref}\bar{C}\frac{\partial C_{M}}{\partia
 \begin_layout Standard
 \begin_inset Formula 
 \[
-M_{Q}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}\bar{C}\frac{\partial C_{M}}{\partial q}=\frac{1}{4I_{yy}}\rho V_{To}S_{ref}\bar{C}^{2}C_{M_{q}}
+Z_{Q}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Z}}{\partial q}=\frac{1}{4m}\rho V_{To}S_{ref}\bar{C}C_{Z_{q}}\qquad\left[\frac{m}{s.rad}\right]
 \]
 
 \end_inset
@@ -5455,48 +5483,7 @@ M_{Q}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}\bar{C}\frac{\partial C_{M}}{\parti
 \begin_layout Standard
 \begin_inset Formula 
 \[
-M_{\delta_{e}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}\bar{C}\frac{\partial C_{M}}{\partial\delta_{e}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}\bar{C}C_{M_{\delta_{e}}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Formula $Y_{V}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Y}}{\partial v}=\frac{1}{2m}\rho V_{To}S_{ref}C_{Y_{v}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-Y_{P}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Y}}{\partial p}=\frac{1}{4m}\rho V_{To}S_{ref}bC_{Y_{p}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-Y_{R}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Y}}{\partial r}=\frac{1}{4m}\rho V_{To}S_{ref}bC_{Y_{r}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-Y_{\delta_{a}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Y}}{\partial\delta_{a}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}C_{Y_{\delta_{a}}}
+Z_{\delta_{e}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Z}}{\partial\delta_{e}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}C_{Z_{\delta_{e}}}\qquad\left[\frac{m}{s^{2}.rad}\right]
 \]
 
 \end_inset
@@ -5506,9 +5493,38 @@ Y_{\delta_{a}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Y}}{\partial\
 
 \begin_layout Standard
 \align center
+\begin_inset Formula $M_{U}=\frac{1}{2I_{yy}}\rho U_{o}^{2}S_{ref}\bar{C}\frac{\partial C_{M}}{\partial u}=\frac{1}{2I_{yy}}\rho U_{o}S_{ref}\bar{C}C_{M_{u}}\qquad\left[\frac{1}{s.m}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
-Y_{\delta_{r}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Y}}{\partial\delta_{r}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}C_{Y_{\delta_{r}}}
+M_{W}=\frac{1}{2I_{yy}}\rho U_{o}^{2}S_{ref}\bar{C}\frac{\partial C_{M}}{\partial w}=\frac{1}{2I_{yy}}\rho U_{o}S_{ref}\bar{C}C_{M_{w}}\qquad\left[\frac{1}{s.m}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M_{Q}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}\bar{C}\frac{\partial C_{M}}{\partial q}=\frac{1}{4I_{yy}}\rho V_{To}S_{ref}\bar{C}^{2}C_{M_{q}}\qquad\left[\frac{1}{s}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M_{\delta_{e}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}\bar{C}\frac{\partial C_{M}}{\partial\delta_{e}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}\bar{C}C_{M_{\delta_{e}}}\qquad\left[\frac{1}{s^{2}}\right]
 \]
 
 \end_inset
@@ -5518,7 +5534,7 @@ Y_{\delta_{r}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Y}}{\partial\
 
 \begin_layout Standard
 \align center
-\begin_inset Formula $L_{V}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{L}}{\partial V}=\frac{1}{2I_{xx}}\rho V_{To}S_{ref}bC_{L_{p}}$
+\begin_inset Formula $Y_{V}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Y}}{\partial v}=\frac{1}{2m}\rho V_{To}S_{ref}C_{Y_{v}}\qquad\left[\frac{1}{s}\right]$
 \end_inset
 
 
@@ -5527,7 +5543,7 @@ Y_{\delta_{r}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Y}}{\partial\
 \begin_layout Standard
 \begin_inset Formula 
 \[
-L_{P}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{L}}{\partial p}=\frac{1}{4I_{xx}}\rho V_{To}S_{ref}b^{2}C_{L_{p}}
+Y_{P}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Y}}{\partial p}=\frac{1}{4m}\rho V_{To}S_{ref}bC_{Y_{p}}\qquad\left[\frac{m}{s.rad}\right]
 \]
 
 \end_inset
@@ -5538,7 +5554,7 @@ L_{P}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{L}}{\partial p}=
 \begin_layout Standard
 \begin_inset Formula 
 \[
-L_{r}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{L}}{\partial r}=\frac{1}{4I_{xx}}\rho V_{To}S_{ref}b^{2}C_{L_{r}}
+Y_{R}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Y}}{\partial r}=\frac{1}{4m}\rho V_{To}S_{ref}bC_{Y_{r}}\qquad\left[\frac{m}{s.rad}\right]
 \]
 
 \end_inset
@@ -5549,18 +5565,7 @@ L_{r}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{L}}{\partial r}=
 \begin_layout Standard
 \begin_inset Formula 
 \[
-L_{\delta_{a}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{L}}{\partial\delta_{a}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}bC_{L_{\delta_{a}}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-L_{\delta_{r}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{L}}{\partial\delta_{r}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}bC_{L_{\delta_{r}}}
+Y_{\delta_{a}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Y}}{\partial\delta_{a}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}C_{Y_{\delta_{a}}}\qquad\left[\frac{m}{s^{2}}\right]
 \]
 
 \end_inset
@@ -5570,7 +5575,19 @@ L_{\delta_{r}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{L}}{\pa
 
 \begin_layout Standard
 \align center
-\begin_inset Formula $N_{V}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{N}}{\partial V}=\frac{1}{2I_{xx}}\rho V_{To}S_{ref}bC_{N_{p}}$
+\begin_inset Formula 
+\[
+Y_{\delta_{r}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}\frac{\partial C_{Y}}{\partial\delta_{r}}=\frac{1}{2m}\rho V_{To}^{2}S_{ref}C_{Y_{\delta_{r}}}\qquad\left[\frac{m}{s^{2}}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $L_{V}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{L}}{\partial V}=\frac{1}{2I_{xx}}\rho V_{To}S_{ref}bC_{L_{p}}\qquad\left[\frac{1}{s.m}\right]$
 \end_inset
 
 
@@ -5579,7 +5596,7 @@ L_{\delta_{r}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{L}}{\pa
 \begin_layout Standard
 \begin_inset Formula 
 \[
-N_{P}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{N}}{\partial p}=\frac{1}{4I_{xx}}\rho V_{To}S_{ref}b^{2}C_{N_{p}}
+L_{P}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{L}}{\partial p}=\frac{1}{4I_{xx}}\rho V_{To}S_{ref}b^{2}C_{L_{p}}\qquad\left[\frac{1}{s}\right]
 \]
 
 \end_inset
@@ -5590,7 +5607,7 @@ N_{P}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{N}}{\partial p}=
 \begin_layout Standard
 \begin_inset Formula 
 \[
-N_{r}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{N}}{\partial r}=\frac{1}{4I_{xx}}\rho V_{To}S_{ref}b^{2}C_{N_{r}}
+L_{r}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{L}}{\partial r}=\frac{1}{4I_{xx}}\rho V_{To}S_{ref}b^{2}C_{L_{r}}\qquad\left[\frac{1}{s}\right]
 \]
 
 \end_inset
@@ -5601,7 +5618,7 @@ N_{r}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{N}}{\partial r}=
 \begin_layout Standard
 \begin_inset Formula 
 \[
-N_{\delta_{a}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{N}}{\partial\delta_{a}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}bC_{N_{\delta_{a}}}
+L_{\delta_{a}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{L}}{\partial\delta_{a}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}bC_{L_{\delta_{a}}}\qquad\left[\frac{1}{s^{2}}\right]
 \]
 
 \end_inset
@@ -5612,7 +5629,59 @@ N_{\delta_{a}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{N}}{\pa
 \begin_layout Standard
 \begin_inset Formula 
 \[
-N_{\delta_{r}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{N}}{\partial\delta_{r}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}bC_{N_{\delta_{r}}}
+L_{\delta_{r}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{L}}{\partial\delta_{r}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}bC_{L_{\delta_{r}}}\qquad\left[\frac{1}{s^{2}}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $N_{V}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{N}}{\partial V}=\frac{1}{2I_{xx}}\rho V_{To}S_{ref}bC_{N_{p}}\qquad\left[\frac{1}{s.m}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{P}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{N}}{\partial p}=\frac{1}{4I_{xx}}\rho V_{To}S_{ref}b^{2}C_{N_{p}}\qquad\left[\frac{1}{s}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{r}=\frac{1}{2I_{xx}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{N}}{\partial r}=\frac{1}{4I_{xx}}\rho V_{To}S_{ref}b^{2}C_{N_{r}}\qquad\left[\frac{1}{s}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{\delta_{a}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{N}}{\partial\delta_{a}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}bC_{N_{\delta_{a}}}\qquad\left[\frac{1}{s^{2}}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{\delta_{r}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}b\frac{\partial C_{N}}{\partial\delta_{r}}=\frac{1}{2I_{yy}}\rho V_{To}^{2}S_{ref}bC_{N_{\delta_{r}}}\qquad\left[\frac{1}{s^{2}}\right]
 \]
 
 \end_inset
@@ -5736,6 +5805,146 @@ where
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+To estimate the thrust stability derivatives, we used this method as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+X_{\delta_{TH}}=\frac{\partial X}{\partial D_{T}}\cdot\frac{\partial D_{T}}{\partial h}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $D_{T}\equiv\text{Thrust magnitude}$
+\end_inset
+
+, 
+\begin_inset Formula $H\equiv\text{Altitude}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For jet engines, a simplified model for 
+\begin_inset Formula $D_{T}$
+\end_inset
+
+ is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D_{T}=D_{T_{0}}*\left(\frac{\rho}{\rho_{0}}\right)^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $n$
+\end_inset
+
+ is a parameter related to engine quality, ranging from 0.7->1.0, however
+ since we are flying near the sea level, 
+\begin_inset Formula $D_{T}\approx D_{T_{0}}$
+\end_inset
+
+, which is to be estimated later in the propulsion system chapter.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial D_{T}}{\partial h}=D_{T_{0}}\cdot n\left(\frac{\rho}{\rho_{0}}\right)^{n-1}\cdot\left(\frac{-1}{H_{s}}\right)\left(\frac{\rho}{\rho_{0}}\right)\approx\frac{-nD_{T}}{H_{s}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $H_{s}$
+\end_inset
+
+is the scale height i.e.
+ a measure of how atmospheric properties (like pressure and density) change
+ with altitude, it represents the vertical distance over which density or
+ pressure decreases by a factor of 
+\begin_inset Formula $e≈2.718$
+\end_inset
+
+.
+ The scale height is derived from hydrostatic equilibrium and the ideal
+ gas law.
+ Its formula is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{s}=\frac{RT_{0}}{g}\approx8428\;m
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for the term 
+\begin_inset Formula $\frac{\partial X}{\partial D_{T}}$
+\end_inset
+
+, assume thrust is aligned with the body x-axis of the vehicle, 
+\begin_inset Formula $\frac{\partial X}{\partial D_{T}}\approx-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+for the derivatives 
+\begin_inset Formula $Z_{\delta_{TH}}$
+\end_inset
+
+ and 
+\begin_inset Formula $M_{\delta_{TH}}$
+\end_inset
+
+, they can be estimated directly from the geometry, where 
+\begin_inset Formula $Z_{\delta_{TH}}=\frac{\sin\left(i_{TH}\right)}{1\;(N)}$
+\end_inset
+
+ and 
+\begin_inset Formula $M_{\delta_{TH}}=\frac{1\;(N)\,*\,d_{TH}}{1\;(N)}$
+\end_inset
+
+, where 
+\begin_inset Formula $i_{TH}$
+\end_inset
+
+ is the angle alignment of thrust line with x-axis, and 
+\begin_inset Formula $d_{TH}$
+\end_inset
+
+ is the vertical distance between thrust line and x-axis, take care for
+ the sign convention of the xyz body coordinate system.
 \end_layout
 
 \begin_layout Section
@@ -6647,7 +6856,7 @@ Output equations that are likely to be needed with the 6-DoF equations are
  Then, we can calculate latitude, longitude and altitude.
 \end_layout
 
-\begin_layout Chapter
+\begin_layout Section
 Autopilot and Control systems
 \end_layout
 
@@ -6936,7 +7145,7 @@ Yaw Damper Loop Architecture
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Elevator from Pitch
 \end_layout
 
@@ -6975,7 +7184,7 @@ Control Loop to calculate elevator command
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Pitch from Altitude
 \end_layout
 
@@ -7014,7 +7223,7 @@ Control Loop to calculate pitch command
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Throttle from Airspeed
 \end_layout
 
@@ -7053,7 +7262,7 @@ Control Loop to calculate throttle command
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Yaw Damper
 \end_layout
 
@@ -7092,7 +7301,7 @@ Control Loop to calculate rudder command
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Roll Control Autopilot
 \end_layout
 
@@ -7131,7 +7340,7 @@ Control Loop to calculate aileron command
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Roll from Heading Autopilot
 \end_layout
 

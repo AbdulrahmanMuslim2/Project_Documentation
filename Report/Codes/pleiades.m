@@ -132,15 +132,6 @@ vTail.section{3}.control = [-1.0, 0.8, 0., 0., 0., 1.0]; % gain, Xhinge, XYZhvec
 [vTail.MGC, vTail.MAC] = MEAN_CHORD(vTail, 3);
 
 %% =========================== MASS DATA ===============================
-% Names and scalings for units to be used for trim and eigenmode calculations.
-% The Lunit and Munit values scale the mass , xyz , and inertia table data below.
-% Lunit value will also scale all lengths and areas in the AVL input file.
-% Lunit = 1; % Conversion from unit to m
-% Munit = 1; % Conversion from unit to kg
-% Tunit = 1; % Conversion from unit to second
-% 
-% % Must be in the unit names given above ( i.e. m , kg , s ) .
-
 mass = 300; % [kg]
 IX = 7.302; % [kg.m^2]
 IY = 146.882; % [kg.m^2]
@@ -153,14 +144,6 @@ rho = 1.225; % [Kg.m^-3]
 Xref = 0.36;
 Yref = 0.0;
 Zref = 0.01;
-
-% wing.mass_data = inertia2(wing, 2800);
-% hTail.mass_data = inertia2(hTail, 2800);
-% vTail.mass_data = inertia2(vTail, 2800, 3);
-% fuselage.m = mass - 2*wing.mass_data(1) - 2*hTail.mass_data(1) - vTail.mass_data(1);
-% % fuselage.mass_data = [fuselage.m, 0.25, 0, 0.0, fuselage.m/2*fuselage.D^2/4, fuselage.m*(fuselage.D^2/16+fuselage.L^2/12), fuselage.m*(fuselage.D^2/16+fuselage.L^2/12), 0, 0, 0];
-% fuselage.mass_data = [fuselage.m, 0.24, 0, 0.0, 0, 0, 0, 0, 0, 0];
-% % engine.mass_data = [30, 0.3, 0, 0.15, 30/2*0.15^2, 30/12*(3*0.15^2+0.6^2), 30/12*(3*0.15^2+0.6^2), 0, 0, 0];
 
 %% =========================== Print All Files ===========================
 %% Geometry File
@@ -176,44 +159,6 @@ print_object(geom_file, wing);
 print_object(geom_file, hTail);
 print_object(geom_file, vTail);
 fclose(geom_file);
-
-% %% Mass File
-% mass_file = fopen(strcat(case_name, ".mass"), "w");
-% fprintf(mass_file, "Lunit = %f m\n", Lunit);
-% fprintf(mass_file, "Munit = %f Kg\n", Munit);
-% fprintf(mass_file, "Tunit = %f s\n\n", Tunit);
-% fprintf(mass_file, "g = %f\n", g);
-% fprintf(mass_file, "rho = %f\n\n", rho);
-% fprintf(mass_file, "# mass         x           y          z       [ Ixx        Iyy        Izz         Ixy         Ixz         Iyz ]\n");
-% fprintf(mass_file, "* 1.0         1.0         1.0        1.0        1.0        1.0        1.0         1.0         1.0         1.0\n"); %% ---------- Don't forget to look up these two lines ----------
-% fprintf(mass_file, "+ 0.0         0.0         0.0        0.0        0.0        0.0        0.0         0.0         0.0         0.0\n");
-% fprintf(mass_file, "%f   %f   %f   %f   %f   %f   %f   %f   %f   %f | Right Wing\n", wing.mass_data);
-% fprintf(mass_file, "%f   %f  -%f   %f   %f   %f   %f   %f   %f   %f | Left Wing\n", [1,1,1,1,1,100,1,-1,1,-1].*wing.mass_data);
-% fprintf(mass_file, "%f   %f   %f   %f   %f   %f   %f   %f   %f   %f | Right hTail\n", hTail.mass_data);
-% fprintf(mass_file, "%f   %f  -%f   %f   %f   %f   %f   %f   %f   %f | Left hTail\n", [1,1,1,1,1,10,1,-1,1,-1].*hTail.mass_data);
-% fprintf(mass_file, "%f   %f   %f   %f   %f   %f   %f   %f   %f   %f | vTail\n", vTail.mass_data);
-% fprintf(mass_file, "%f   %f   %f   %f   %f   %f   %f   %f   %f   %f | Fuselage\n", fuselage.mass_data);
-% % fprintf(mass_file, "%f   %f   %f   %f   %f   %f   %f   %f   %f   %f | Engine\n", engine.mass_data);
-% fclose(mass_file);
-% 
-% %% Run File
-% run_file = fopen(strcat(case_name, ".run"), "w");
-% % Print CASE 1
-% fprintf(run_file, "Run case  1:  %s\n\n", "Steady Level Flight Trim");
-% fprintf(run_file, "alpha   ->   Cm pitchmom = %f\n", 0);
-% fprintf(run_file, "beta   ->   beta = %f\n", CASE{1}.beta);
-% fprintf(run_file, "pb/2V   ->   pb/2V= %f\n", CASE{1}.pb_2v);
-% fprintf(run_file, "qc/2V   ->   qc/2V = %f\n", CASE{1}.qc_2v);
-% fprintf(run_file, "rb/2V   ->   rb/2V = %f\n", CASE{1}.rb_2v);
-% fprintf(run_file, "aileron   ->   Cl roll mom = %f\n", 0);
-% fprintf(run_file, "elevator   ->   elevator = %f\n", 0);
-% fprintf(run_file, "rudder   ->   Cn yaw  mom = %f\n", 0);
-% fprintf(run_file, "\n");
-% fprintf(run_file, "Mach = %f\n", CASE{1}.Mach);
-% fprintf(run_file, "density = %f\n", CASE{1}.density);
-% fprintf(run_file, "grav.acc. = %f\n", CASE{1}.grav_acc);
-% fprintf(run_file, "\n");
-% fclose(run_file);
 
 %% ================================ Run AVL ================================
 system("rm -f *.ps");
@@ -257,16 +202,6 @@ a0 = 2*pi; % airfoil lift coefficient
 alpha_0 = -0.0; % Alpha zero lift
 CL_alpha = a0*cos(deg2rad(wing.sweep)) / (sqrt(1 + (a0*cos(deg2rad(wing.sweep))/pi/AR)^2) + a0*cos(deg2rad(wing.sweep))/pi/AR);
 CL_max = CL_alpha * (13.7*pi/180 - alpha_0); % this is a very naive assumption
-% gama = 1.4; % Cp/Cv
-% Critical Mach Number
-% ff1 = @(Mcr) 2/gama./Mcr.^2.*(((1+(gama-1)/2*Mcr.^2)/(1+(gama-1)/2)).^(gama/(gama-1))-1);
-% ff2 = @(Mcr) CL_Mach0./sqrt(1-Mcr.^2);
-% Mcr = fzero(@(Mcr) ff1(Mcr)-ff2(Mcr), 0.6)
-% figure;
-% plot(0.6:0.05:1,ff1(0.6:0.05:1));
-% hold on; grid on;
-% plot(0.6:0.05:1,ff2(0.6:0.05:1));
-% legend('f(M_{cr})','prandtl glauert correction')
 
 %% Required Thrust
 fprintf("\n\nThrust Checks:\n")
@@ -387,11 +322,6 @@ B_lat = [YDA , YDR;...
          0 , 0]; % check this, might need fixing
 C_lat=eye(5);
 D_lat=zeros(5,2);
-
-% Elevator from Pitch Autopilot
-servo            = tf(10,[1 10]);
-engine_timelag   = tf(0.1,[1 0.1]);
-OL_theta_thetaCMD = -servo*theta_de;
 
 % Long Period (Phugoid)
 omega_lp = sqrt(-g*cos(THETA0)*ZU/(ZQ+U0) + g*sin(THETA0)*XU/(ZQ+U0));
