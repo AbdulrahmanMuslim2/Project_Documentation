@@ -274,7 +274,7 @@ begin{titlepage}
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/journalThumbnail_en_US.jpg
+	filename Pictures/journalThumbnail_en_US.jpg
 	special height=3.5cm
 
 \end_inset
@@ -285,7 +285,7 @@ begin{titlepage}
 
 
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Logo.png
+	filename Pictures/Logo.png
 	special height=4cm
 
 \end_inset
@@ -1353,7 +1353,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/wing.png
+	filename Pictures/wing.png
 	width 80page%
 
 \end_inset
@@ -1529,7 +1529,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/canard.png
+	filename Pictures/canard.png
 	width 80page%
 
 \end_inset
@@ -1704,7 +1704,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/tail.png
+	filename Pictures/tail.png
 	width 80page%
 
 \end_inset
@@ -2134,7 +2134,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/wedge.png
+	filename Pictures/wedge.png
 	width 80page%
 
 \end_inset
@@ -2187,7 +2187,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/ogival.png
+	filename Pictures/ogival.png
 	width 60page%
 	height 30page%
 
@@ -2432,7 +2432,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-19-52.png
+	filename Pictures/Screenshot from 2025-06-18 00-19-52.png
 	width 75page%
 
 \end_inset
@@ -2479,7 +2479,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-20-44.png
+	filename Pictures/Screenshot from 2025-06-18 00-20-44.png
 	width 70page%
 
 \end_inset
@@ -2516,7 +2516,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-21-33.png
+	filename Pictures/Screenshot from 2025-06-18 00-21-33.png
 	width 70page%
 
 \end_inset
@@ -2553,7 +2553,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-07-34.png
+	filename Pictures/Screenshot from 2025-06-18 00-07-34.png
 	width 70page%
 
 \end_inset
@@ -2625,7 +2625,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Horshow Vortex .png
+	filename Pictures/Horshow Vortex .png
 
 \end_inset
 
@@ -2710,7 +2710,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/trim_condition_avl.png
+	filename Pictures/trim_condition_avl.png
 	width 65line%
 
 \end_inset
@@ -2763,7 +2763,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/plot000.pdf
+	filename Pictures/plot000.pdf
 	width 60page%
 
 \end_inset
@@ -2800,7 +2800,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/plot001.pdf
+	filename Pictures/plot001.pdf
 	width 60page%
 
 \end_inset
@@ -2837,7 +2837,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/plot002.pdf
+	filename Pictures/plot002.pdf
 	width 60page%
 
 \end_inset
@@ -3577,7 +3577,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Basic Loads.png
+	filename Pictures/Basic Loads.png
 	width 70page%
 
 \end_inset
@@ -3625,7 +3625,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Bending and Torsion.png
+	filename Pictures/Bending and Torsion.png
 	width 70page%
 
 \end_inset
@@ -3671,7 +3671,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Axial and Tranverse.png
+	filename Pictures/Axial and Tranverse.png
 	width 65page%
 
 \end_inset
@@ -3749,7 +3749,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Wing bend from lift.png
+	filename Pictures/Wing bend from lift.png
 	width 60page%
 
 \end_inset
@@ -3797,7 +3797,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Torsion.png
+	filename Pictures/Torsion.png
 	width 70page%
 
 \end_inset
@@ -3870,7 +3870,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Truss_design.png
+	filename Pictures/Truss_design.png
 	width 70page%
 
 \end_inset
@@ -3928,7 +3928,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Monocoque.png
+	filename Pictures/Monocoque.png
 	width 60page%
 
 \end_inset
@@ -3982,7 +3982,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/SemiMono.png
+	filename Pictures/SemiMono.png
 	width 70page%
 
 \end_inset
@@ -4033,7 +4033,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Wing Design.png
+	filename Pictures/Wing Design.png
 	width 65page%
 
 \end_inset
@@ -4355,7 +4355,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Guidance_NAV)Co.png
+	filename Pictures/Guidance_NAV)Co.png
 	scale 65
 
 \end_inset
@@ -4421,7 +4421,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/TERRCOM_concept.png
+	filename Pictures/TERRCOM_concept.png
 	scale 75
 
 \end_inset
@@ -4482,7 +4482,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Terrconm data measurement.png
+	filename Pictures/Terrconm data measurement.png
 	scale 75
 
 \end_inset
@@ -6119,7 +6119,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Longitudinal Autopilot Diagram.png
+	filename Pictures/Longitudinal Autopilot Diagram.png
 	width 70page%
 
 \end_inset
@@ -6186,7 +6186,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/lateralAutopilot.png
+	filename Pictures/lateralAutopilot.png
 	width 65page%
 
 \end_inset
@@ -6227,7 +6227,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/ElevFromPitch.png
+	filename Pictures/ElevFromPitch.png
 	width 75page%
 
 \end_inset
@@ -6268,7 +6268,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/PitchFromAltitude.png
+	filename Pictures/PitchFromAltitude.png
 	width 75page%
 
 \end_inset
@@ -6309,7 +6309,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/ThrottleFromAirspeed.png
+	filename Pictures/ThrottleFromAirspeed.png
 	width 75page%
 
 \end_inset
@@ -6350,7 +6350,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/YawDamper.png
+	filename Pictures/YawDamper.png
 	width 75page%
 
 \end_inset
@@ -6391,7 +6391,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/AileronFromRoll.png
+	filename Pictures/AileronFromRoll.png
 	width 75page%
 
 \end_inset
@@ -6431,7 +6431,7 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6458,7 +6458,2433 @@ Control Loop to calculate roll angle command
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Chapter
 Guidance and Navigation
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Chapter
+HIL (Hardware in The Loop)
+\end_layout
+
+\begin_layout Section
+Basics
+\end_layout
+
+\begin_layout Subsection
+Microcontroller Overview
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:microcontroller"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A 
+\series bold
+microcontroller
+\series default
+ is an integrated electronic device that serves as the core control unit for unmanned aerial vehicles (UAVs).
+ Key features include:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Flight Management
+\series default
+:
+ Monitors and controls flight operations.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Payload Control
+\series default
+:
+ Activates/deactivates payloads (e.g.,
+ cameras).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Integrated Peripherals
+\series default
+:
+ Combines CPU,
+ memory (RAM,
+ ROM,
+ flash),
+ and converters (A/D,
+ sometimes D/A) into a single chip,
+ reducing weight and cost.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Programming Support
+\series default
+:
+ Supports in-circuit programming and debugging for ease of development.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+parencite{sadraey2023unmanned}
+\end_layout
+
+\end_inset
+
+ highlights these features as critical for UAV autonomy.
+\end_layout
+
+\begin_layout Subsection
+Microcontroller vs.
+ Microprocessor
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:micro_compare"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement htbp
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename ../Pictures/HIL/1.png
+	width 70text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Internal structures of (a) a microcontroller (integrated design) and (b) a microprocessor (requires external components) 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+parencite{sadraey2023unmanned}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:micro_structure"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Microcontrollers
+\series default
+ (Figure
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:micro_structure"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+a) combine a microprocessor,
+ memory (ROM,
+ RAM),
+ and I/O peripherals into a single chip,
+ making them ideal for lightweight UAVs.
+ In contrast,
+ 
+\series bold
+microprocessors
+\series default
+ (Figure
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:micro_structure"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+b) lack built-in memory or I/O,
+ relying on external connections via a data bus for expanded functionality.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement htbp
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Key Differences Between Microcontrollers and Microprocessors
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:micro_diff"
+
+\end_inset
+
+ 
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Feature
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Microcontroller
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Microprocessor
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Integration
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+All-in-one
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CPU only
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Memory
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Built-in
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+External required
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I/O Peripherals
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Integrated
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+External via data bus
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+UAV Use Case
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Simple drones
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+High-performance UAVs
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+System Interconnect and Peripherals
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:interfaces"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Microcontrollers employ multiple communication protocols for system interconnectivity 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+parencite{sadraey2023unmanned}
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Serial Ports (UART)
+\series default
+:
+ Simple wired communication (e.g.,
+ GPS).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+I2C/TWI
+\series default
+:
+ Low-speed,
+ 2-wire interface for sensors.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+SPI
+\series default
+:
+ High-speed (4+ wires) for displays/memory.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+CAN
+\series default
+:
+ Noise-resistant protocol for industrial UAVs.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Built-in Peripherals
+\end_layout
+
+\begin_layout Standard
+Essential hardware features include:
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Timers/Counters
+\series default
+:
+ Time measurement or event tracking.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+PWM Generators
+\series default
+:
+ Control motors/servos via pulse modulation.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Watchdog Clock
+\series default
+:
+ Prevents system crashes.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Optional Components
+\end_layout
+
+\begin_layout Standard
+Additional modules may integrate:
+ 
+\end_layout
+
+\begin_layout Itemize
+Power supply circuits,
+ USB,
+ LCDs,
+ buttons,
+ and potentiometers.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Design Note
+\series default
+:
+ Microcontroller size and cost scale with computing needs (speed,
+ memory,
+ I/O pins).
+\end_layout
+
+\begin_layout Subsection
+Microcontroller Classification
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:classification"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement htbp
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename ../Pictures/HIL/2.png
+	width 80text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Microcontroller types categorized by bits,
+ memory,
+ instruction set,
+ and architecture 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+parencite{sadraey2023unmanned}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:micro_types"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Microcontrollers are classified (Figure
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:micro_types"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+) based on:
+\end_layout
+
+\begin_layout Subsection*
+1.
+ Key Attributes
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Bits
+\series default
+:
+ 4-bit (low-power) to 32-bit (high-performance).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Memory
+\series default
+:
+ Embedded (on-chip) or external (expandable).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Instruction Set
+\series default
+:
+ RISC (common in UAVs) vs.
+ CISC.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Architecture
+\series default
+:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Harvard
+\series default
+:
+ Separate code/data buses (faster).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Von Neumann
+\series default
+:
+ Shared bus (lower cost,
+ slower).
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+2.
+ Design Trade-offs
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Harvard
+\series default
+:
+ Higher performance but requires dual buses/memory.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Von Neumann
+\series default
+:
+ Simpler but prone to bus contention delays.
+ 
+\end_layout
+
+\begin_layout Subsection
+Microcontroller Datasheets and SFRs
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:datasheets"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Microcontroller datasheets are significantly longer than those of discrete components due to:
+\end_layout
+
+\begin_layout Subsection*
+1.
+ Integrated Peripherals
+\end_layout
+
+\begin_layout Itemize
+On-chip hardware (e.g.,
+ timers,
+ PWM,
+ UART,
+ ADC) requires detailed electrical and programming specs.
+ 
+\end_layout
+
+\begin_layout Itemize
+Example:
+ The STM32F4 datasheet spans 
+\series bold
+1,200+ pages
+\series default
+ to cover all peripherals.
+ 
+\end_layout
+
+\begin_layout Subsection*
+2.
+ Special Function Registers (SFRs)
+\end_layout
+
+\begin_layout Itemize
+Predefined memory addresses controlling hardware (e.g.,
+ 
+\family typewriter
+0x40000000
+\family default
+ = GPIO Port A).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Memory Map
+\series default
+:
+ Links addresses to physical functions (see Table
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:sfr_example"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement htbp
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Example SFRs in a Hypothetical Microcontroller
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:sfr_example"
+
+\end_inset
+
+ 
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Address
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Function
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Bit Usage
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0x20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Timer Control
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bit 0:
+ Enable,
+ Bit 1:
+ Interrupt
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0x25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ADC Result
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10-bit sensor data
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+3.
+ Implications for UAV Design
+\end_layout
+
+\begin_layout Itemize
+Engineers must navigate lengthy docs to configure SFRs correctly.
+ 
+\end_layout
+
+\begin_layout Itemize
+Tools like 
+\series bold
+CubeMX
+\series default
+ (for STM32) auto-generate SFR initialization code.
+ 
+\end_layout
+
+\begin_layout Subsection
+Microcontroller Packaging
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:packaging"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement htbp
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Pictures/HIL/3.png
+	width 70text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Microcontroller package types:
+ (1) Through-hole,
+ (2) Surface mount (QFP),
+ (3) Chip-scale (CSP) 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+parencite{sadraey2023unmanned}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:packaging"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Microcontrollers are packaged in three primary forms (Figure
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:packaging"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Subsection*
+1.
+ Through-Hole Mount
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Design
+\series default
+:
+ Pins inserted into PCB holes (e.g.,
+ DIP-40).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Advantages
+\series default
+:
+ Robust mechanical connection,
+ prototyping-friendly.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Limitations
+\series default
+:
+ Bulky;
+ limited to 
+\begin_inset Formula $\leq$
+\end_inset
+
+40 pins.
+ 
+\end_layout
+
+\begin_layout Subsection*
+2.
+ Surface Mount (SMT)
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Variants
+\series default
+:
+ QFP (flat leads),
+ BGA (solder balls).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Advantages
+\series default
+:
+ High pin density (e.g.,
+ 100+ pins),
+ compact.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Challenges
+\series default
+:
+ Requires reflow soldering;
+ not breadboard-compatible.
+ 
+\end_layout
+
+\begin_layout Subsection*
+3.
+ Chip-Scale Package (CSP)
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Design
+\series default
+:
+ Near-die-size (e.g.,
+ wafer-level CSP).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Use Case
+\series default
+:
+ Space-constrained UAV applications.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Trade-off
+\series default
+:
+ Highest cost;
+ complex thermal management.
+ 
+\end_layout
+
+\begin_layout Subsection*
+I/O and GPIO Implications
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+GPIO Pins
+\series default
+:
+ Software-configurable for sensor inputs or actuator control.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Package Selection
+\series default
+:
+ High-I/O designs favor BGAs;
+ low-cost projects use DIP.
+ 
+\end_layout
+
+\begin_layout Subsection
+GPIO and Packaging Considerations
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:gpio_packaging"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+GPIO Functional Modes
+\end_layout
+
+\begin_layout Standard
+GPIO pins provide flexible interfacing as:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Inputs
+\series default
+:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Digital reading (e.g.,
+ limit switches) 
+\end_layout
+
+\begin_layout Itemize
+Analog sampling (with ADC-enabled pins) 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Outputs
+\series default
+:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Direct drive for LEDs (with current-limiting resistors) 
+\end_layout
+
+\begin_layout Itemize
+Control signals for H-bridges/motor drivers 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Package-Dependent I/O Characteristics
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement htbp
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+GPIO Availability by Package Type
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:gpio_pkg"
+
+\end_inset
+
+ 
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Package
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Max Pins
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+GPIO %
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Limitations
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DIP-40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Low-density,
+ through-hole
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+QFP-144
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+144
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+70%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Requires SMT assembly
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BGA-256
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+256
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+80%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Complex PCB routing
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Microcontroller Architecture
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:architecture"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement htbp
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Pictures/HIL/4.png
+	width 75text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Functional blocks of a typical microcontroller 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+parencite{sadraey2023unmanned}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mc_arch"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Core Components
+\end_layout
+
+\begin_layout Standard
+As shown in Figure
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mc_arch"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+,
+ the essential modules include:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Processor Core
+\series default
+:
+ ARM/RISC-V/AVR architectures 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Memory
+\series default
+:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+SRAM:
+ 
+\begin_inset Formula $8-256$
+\end_inset
+
+KB for runtime data 
+\end_layout
+
+\begin_layout Itemize
+Flash:
+ 
+\begin_inset Formula $32-2048$
+\end_inset
+
+KB for firmware 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Timers
+\series default
+:
+ 16-bit PWM generation (e.g.,
+ 
+\family typewriter
+TIM1
+\family default
+ in STM32) 
+\end_layout
+
+\begin_layout Subsection*
+Peripheral Interfaces
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement htbp
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+UAV-Relevant Microcontroller Interfaces
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:uav_interfaces"
+
+\end_inset
+
+ 
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Module
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Protocol
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Application
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Digital I/O
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GPIO
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Switch/LED control
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Serial
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+UART
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GPS telemetry
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Analog
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-bit ADC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Airspeed sensing
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Sensor Integration Examples
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+IMU
+\series default
+:
+ MPU6050 (I2C) for attitude estimation 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Barometer
+\series default
+:
+ MS5611 (SPI) for altitude hold 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RC Receiver
+\series default
+:
+ PPM signal capture via timer input 
+\end_layout
+
+\begin_layout Subsubsection
+Timer/Counter Modules
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:timers"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Core Architecture
+\end_layout
+
+\begin_layout Standard
+As shown in Figure
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mc_arch"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+,
+ timers consist of:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Counter Register
+\series default
+:
+ Stores current value (16/32-bit) 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Prescaler
+\series default
+:
+ Divides clock frequency (configurable) 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Auto-Reload Register
+\series default
+:
+ Defines periodicity 
+\end_layout
+
+\begin_layout Subsection*
+UAV-Specific Implementations
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement htbp
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Timer Configurations for UAV Applications
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:uav_timers"
+
+\end_inset
+
+ 
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Task
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Configuration
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Example
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PWM Generation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16-bit,
+ 50-400Hz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Motor control
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sensor Polling
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32-bit,
+ 1kHz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IMU sampling
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Watchdog
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Independent timer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+System recovery
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+PWM-to-Analog Conversion
+\end_layout
+
+\begin_layout Itemize
+Low-pass filter design:
+ 
+\begin_inset Formula 
+\begin{equation}
+f_{c}=\frac{1}{2\pi RC}\quad(f_{c}\ll f_{\text{PWM}})
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Typical values:
+ 
+\begin_inset Formula $R=1k\Omega$
+\end_inset
+
+,
+ 
+\begin_inset Formula $C=10\mu F$
+\end_inset
+
+ for 100Hz PWM 
+\end_layout
+
+\begin_layout Subsection*
+Debug Protocols Comparison
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Microcontroller Debug Interfaces
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:debug_protocols"
+
+\end_inset
+
+ 
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Protocol
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Pins
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Speed
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+UAV Use
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JTAG
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4-5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15MHz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+High-end autopilots
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SWD
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50MHz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STM32 flight controllers
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+debugWIRE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1MHz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lightweight AVR nodes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Standard
@@ -6488,7 +8914,7 @@ AVl files code
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/pleiades.avl"
+filename "Codes/pleiades.avl"
 lstparams "caption={ Geometry Definition File}"
 literal "false"
 
@@ -6500,7 +8926,7 @@ literal "false"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/pleiades.run"
+filename "Codes/pleiades.run"
 lstparams "caption={Run configuration file}"
 literal "false"
 
@@ -6512,7 +8938,7 @@ literal "false"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/pleiades.eig"
+filename "Codes/pleiades.eig"
 lstparams "caption={ Eigenmode Output File}"
 literal "false"
 
@@ -6528,7 +8954,7 @@ Code Matlab to automate AVL
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/pleiades.m"
+filename "Codes/pleiades.m"
 lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep},caption={matlab code automating AVL utilization}"
 literal "true"
 
@@ -6552,7 +8978,7 @@ literal "true"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/inertia2.m"
+filename "Codes/inertia2.m"
 lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep}"
 literal "true"
 
@@ -6573,7 +8999,7 @@ literal "true"
 \end_layout
 
 \begin_layout Chapter
-cruise missile data collected
+Collected Cruise Missile Data
 \end_layout
 
 \begin_layout Standard
