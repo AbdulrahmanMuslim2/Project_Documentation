@@ -274,7 +274,7 @@ begin{titlepage}
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/journalThumbnail_en_US.jpg
+	filename Pictures/journalThumbnail_en_US.jpg
 	special height=3.5cm
 
 \end_inset
@@ -285,7 +285,7 @@ begin{titlepage}
 
 
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Logo.png
+	filename Pictures/Logo.png
 	special height=4cm
 
 \end_inset
@@ -1353,7 +1353,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/wing.png
+	filename Pictures/wing.png
 	width 80page%
 
 \end_inset
@@ -1529,7 +1529,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/canard.png
+	filename Pictures/canard.png
 	width 80page%
 
 \end_inset
@@ -1704,7 +1704,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/tail.png
+	filename Pictures/tail.png
 	width 80page%
 
 \end_inset
@@ -2134,7 +2134,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/wedge.png
+	filename Pictures/wedge.png
 	width 80page%
 
 \end_inset
@@ -2187,7 +2187,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/ogival.png
+	filename Pictures/ogival.png
 	width 60page%
 	height 30page%
 
@@ -2432,7 +2432,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-19-52.png
+	filename Pictures/Screenshot from 2025-06-18 00-19-52.png
 	width 75page%
 
 \end_inset
@@ -2479,7 +2479,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-20-44.png
+	filename Pictures/Screenshot from 2025-06-18 00-20-44.png
 	width 70page%
 
 \end_inset
@@ -2516,7 +2516,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-21-33.png
+	filename Pictures/Screenshot from 2025-06-18 00-21-33.png
 	width 70page%
 
 \end_inset
@@ -2553,7 +2553,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-07-34.png
+	filename Pictures/Screenshot from 2025-06-18 00-07-34.png
 	width 70page%
 
 \end_inset
@@ -2625,7 +2625,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Horshow Vortex .png
+	filename Pictures/Horshow Vortex .png
 
 \end_inset
 
@@ -2710,7 +2710,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/trim_condition_avl.png
+	filename Pictures/trim_condition_avl.png
 	width 65line%
 
 \end_inset
@@ -2763,7 +2763,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/plot000.pdf
+	filename Pictures/plot000.pdf
 	width 60page%
 
 \end_inset
@@ -2800,7 +2800,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/plot001.pdf
+	filename Pictures/plot001.pdf
 	width 60page%
 
 \end_inset
@@ -2837,7 +2837,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/plot002.pdf
+	filename Pictures/plot002.pdf
 	width 60page%
 
 \end_inset
@@ -3577,7 +3577,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Basic Loads.png
+	filename Pictures/Basic Loads.png
 	width 70page%
 
 \end_inset
@@ -3625,7 +3625,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Bending and Torsion.png
+	filename Pictures/Bending and Torsion.png
 	width 70page%
 
 \end_inset
@@ -3671,7 +3671,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Axial and Tranverse.png
+	filename Pictures/Axial and Tranverse.png
 	width 65page%
 
 \end_inset
@@ -3749,7 +3749,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Wing bend from lift.png
+	filename Pictures/Wing bend from lift.png
 	width 60page%
 
 \end_inset
@@ -3797,7 +3797,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Torsion.png
+	filename Pictures/Torsion.png
 	width 70page%
 
 \end_inset
@@ -3870,7 +3870,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Truss_design.png
+	filename Pictures/Truss_design.png
 	width 70page%
 
 \end_inset
@@ -3928,7 +3928,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Monocoque.png
+	filename Pictures/Monocoque.png
 	width 60page%
 
 \end_inset
@@ -3982,7 +3982,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/SemiMono.png
+	filename Pictures/SemiMono.png
 	width 70page%
 
 \end_inset
@@ -4033,7 +4033,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Wing Design.png
+	filename Pictures/Wing Design.png
 	width 65page%
 
 \end_inset
@@ -4355,7 +4355,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Guidance_NAV)Co.png
+	filename Pictures/Guidance_NAV)Co.png
 	scale 65
 
 \end_inset
@@ -4421,7 +4421,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/TERRCOM_concept.png
+	filename Pictures/TERRCOM_concept.png
 	scale 75
 
 \end_inset
@@ -4482,7 +4482,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Terrconm data measurement.png
+	filename Pictures/Terrconm data measurement.png
 	scale 75
 
 \end_inset
@@ -6119,7 +6119,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Longitudinal Autopilot Diagram.png
+	filename Pictures/Longitudinal Autopilot Diagram.png
 	width 70page%
 
 \end_inset
@@ -6186,7 +6186,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/lateralAutopilot.png
+	filename Pictures/lateralAutopilot.png
 	width 65page%
 
 \end_inset
@@ -6227,7 +6227,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/ElevFromPitch.png
+	filename Pictures/ElevFromPitch.png
 	width 75page%
 
 \end_inset
@@ -6268,7 +6268,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/PitchFromAltitude.png
+	filename Pictures/PitchFromAltitude.png
 	width 75page%
 
 \end_inset
@@ -6309,7 +6309,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/ThrottleFromAirspeed.png
+	filename Pictures/ThrottleFromAirspeed.png
 	width 75page%
 
 \end_inset
@@ -6350,7 +6350,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/YawDamper.png
+	filename Pictures/YawDamper.png
 	width 75page%
 
 \end_inset
@@ -6391,7 +6391,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/AileronFromRoll.png
+	filename Pictures/AileronFromRoll.png
 	width 75page%
 
 \end_inset
@@ -6436,7 +6436,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/RollFromHeading.png
+	filename Pictures/RollFromHeading.png
 	width 75page%
 
 \end_inset
@@ -6488,7 +6488,7 @@ AVl files code
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/pleiades.avl"
+filename "Codes/pleiades.avl"
 lstparams "caption={ Geometry Definition File}"
 literal "false"
 
@@ -6500,7 +6500,7 @@ literal "false"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/pleiades.run"
+filename "Codes/pleiades.run"
 lstparams "caption={Run configuration file}"
 literal "false"
 
@@ -6512,7 +6512,7 @@ literal "false"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/pleiades.eig"
+filename "Codes/pleiades.eig"
 lstparams "caption={ Eigenmode Output File}"
 literal "false"
 
@@ -6528,7 +6528,7 @@ Code Matlab to automate AVL
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/pleiades.m"
+filename "Codes/pleiades.m"
 lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep},caption={matlab code automating AVL utilization}"
 literal "true"
 
@@ -6552,7 +6552,7 @@ literal "true"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/inertia2.m"
+filename "Codes/inertia2.m"
 lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep}"
 literal "true"
 

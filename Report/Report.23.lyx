@@ -1,4 +1,4 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
 \lyxformat 544
 \begin_document
 \begin_header
@@ -6,156 +6,156 @@
 \origin unavailable
 \textclass book
 \begin_preamble
-\usepackage{quran}
-\usepackage{polyglossia}
-\usepackage{listings}
-\usepackage{xcolor}
-\usepackage{sectsty}
-\usepackage{subfig}
-\usepackage{caption}
-\usepackage{wallpaper}
-\usepackage{url}
-\usepackage{appendix}
-\usepackage{pdflscape}
-
-%% uncomment this if you're using beamer presentations
-%\usepackage{calc}
-%\usepackage{datetime}
-%\usepackage{pdflscape}
-%\usepackage{chngcntr}
-%\usepackage{multimedia}
-%\usepackage{animate}
-\usepackage{bidi} 
-
-%\ThisCenterWallPaper{.5}{back.jpg}
-
-% uncomment this if you're using beamer poster
-%\PassOptionsToPackage{%
-%   orientation=portrait, % possible: portrait, landscape
-%    size=a0,% possible: a0b, a0, a1, a2, a3, a4, custom (with width=<val>,height=<val>)
-%    scale=1.4,% scaling of fonts
-%    debug% give verbose warnings and error messages
-%}{beamerposter}
-
-% uncomment this if you're using beamer for presentations
-%\usetheme{PaloAlto}
-%\usecolortheme{sidebartab}
-%\usecolortheme{rose}
-%\setbeamertemplate{blocks}[rounded]
-
-%\allowdisplaybreaks
-
-%\let\makebeamertitle\relax
-%% best available temps: Goettingen CambridgeUS Copenhagen Singapore Warsaw Dresden Frankfurt
-
-%Format of the code listing caption
-\DeclareCaptionFont{white}{\color{white}}
-\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\linewidth}{#1#2#3}}}
-\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
-
-
-%\setmainlanguage{english}
-%\setotherlanguage{arabic}
-%\chapterfont{\color{teal}}
-%\partfont{\color{teal}}
-%\sectionfont{\color{teal}}
-%\subsectionfont{\color{teal}}
-%\subsubsectionfont{\color{teal}}
-%\setmainfont{LM Roman 10}
-%% use this only in two-column documents, also,
-%% you might want to change the margin for a two-column doc
-%\setlength{\columnseprule}{0.0pt}
-%\setlength{\columnsep}{1cm} %you don't need this if you edited the separation margin in the settings of margin
-%
-%
-%
-\renewcommand{\arraystretch}{2}
-%\setlength{\extrarowheight}{1.5em}
-%
-%
-%% This code below is from user karlkoeller on stackoverflow
-%% https://tex.stackexchange.com/a/366170
-%\makeatletter
-%\renewenvironment{abstract}{%
-%    \if@twocolumn
-%      \section*{\abstractname}%
-%    \else %% <- here I've removed \small
-%      \begin{center}%
-%        {\bfseries \Large\abstractname\vspace{\z@}}%  %% <- here I've added \Large
-%      \end{center}%
-%      \quotation
-%    \fi}
-%    {\if@twocolumn\else\endquotation\fi}
-%\makeatother
-%
-%
-%
-% these lines below are from user David Woitkowski
-%% It is to edit title font
-%\makeatletter\meaning\@maketitle\makeatother 
-\makeatletter
-\def\@maketitle{
-	\newpage
-	\null
-	\vskip 1.5em
-	\begin {center}
-	\let \footnote \thanks
-	\let \LTRfootnote \LTRthanks
-	\let \RTLfootnote \RTLthanks
-	{\Huge  \bfseries \color{black} \@title \par }
-	\vskip 2em
-	{	\large
-		\lineskip .5em
-%		\begin {tabular}[t]{c}
-		{\bfseries \color{black} \@author }
-%		\end {tabular}
-		\par
-	}
-	\vskip 1.5em
-	{\large \@date }
-	\end {center}
-	\par
-	\vskip 2em
-}
-
-
-%\makeatother
-%
-%
-%
-%
-%
-
-\lstdefinelanguage{myMatlab}{
-  language     = Matlab,
-  morekeywords = {inf,Inf,nan,NaN,true,false,warning,error,groot,clearvars,switch,case,otherwise,continue,classdef,handle,Abstract,AllowedSubclasses,Hidden,Sealed,properties,methods,Access,SetAccess,GetAccess,protected,private},
-  morestring=**[d]{"}
-}
-
-\newcommand*{\blankpage}{%
-  \begin{otherlanguage}{english}
-	\thispagestyle{empty}
-    \vspace*{\fill}
-%    \hfill
-    \begin{center}
-      \emph{This page is intentionally left blank!}
-    \end{center}
-    \vspace{\fill}
-%    \thispagestyle{empty}
-  \end{otherlanguage}
-  \clearpage
-}
-
-
-\makeatletter
-\renewcommand*\cleardoublepage{\clearpage%
-    \if@twoside
-        \ifodd\c@page\else
-        \blankpage
-        \fi
-    \fi
-}
-\makeatother
+\usepackage{quran}
+\usepackage{polyglossia}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{subfig}
+\usepackage{caption}
+\usepackage{wallpaper}
+\usepackage{url}
+\usepackage{appendix}
+\usepackage{pdflscape}
+
+%% uncomment this if you're using beamer presentations
+%\usepackage{calc}
+%\usepackage{datetime}
+%\usepackage{pdflscape}
+%\usepackage{chngcntr}
+%\usepackage{multimedia}
+%\usepackage{animate}
+\usepackage{bidi} 
+
+%\ThisCenterWallPaper{.5}{back.jpg}
+
+% uncomment this if you're using beamer poster
+%\PassOptionsToPackage{%
+%   orientation=portrait, % possible: portrait, landscape
+%    size=a0,% possible: a0b, a0, a1, a2, a3, a4, custom (with width=<val>,height=<val>)
+%    scale=1.4,% scaling of fonts
+%    debug% give verbose warnings and error messages
+%}{beamerposter}
+
+% uncomment this if you're using beamer for presentations
+%\usetheme{PaloAlto}
+%\usecolortheme{sidebartab}
+%\usecolortheme{rose}
+%\setbeamertemplate{blocks}[rounded]
+
+%\allowdisplaybreaks
+
+%\let\makebeamertitle\relax
+%% best available temps: Goettingen CambridgeUS Copenhagen Singapore Warsaw Dresden Frankfurt
+
+%Format of the code listing caption
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\linewidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+
+
+%\setmainlanguage{english}
+%\setotherlanguage{arabic}
+%\chapterfont{\color{teal}}
+%\partfont{\color{teal}}
+%\sectionfont{\color{teal}}
+%\subsectionfont{\color{teal}}
+%\subsubsectionfont{\color{teal}}
+%\setmainfont{LM Roman 10}
+%% use this only in two-column documents, also,
+%% you might want to change the margin for a two-column doc
+%\setlength{\columnseprule}{0.0pt}
+%\setlength{\columnsep}{1cm} %you don't need this if you edited the separation margin in the settings of margin
+%
+%
+%
+\renewcommand{\arraystretch}{2}
+%\setlength{\extrarowheight}{1.5em}
+%
+%
+%% This code below is from user karlkoeller on stackoverflow
+%% https://tex.stackexchange.com/a/366170
+%\makeatletter
+%\renewenvironment{abstract}{%
+%    \if@twocolumn
+%      \section*{\abstractname}%
+%    \else %% <- here I've removed \small
+%      \begin{center}%
+%        {\bfseries \Large\abstractname\vspace{\z@}}%  %% <- here I've added \Large
+%      \end{center}%
+%      \quotation
+%    \fi}
+%    {\if@twocolumn\else\endquotation\fi}
+%\makeatother
+%
+%
+%
+% these lines below are from user David Woitkowski
+%% It is to edit title font
+%\makeatletter\meaning\@maketitle\makeatother 
+\makeatletter
+\def\@maketitle{
+	\newpage
+	\null
+	\vskip 1.5em
+	\begin {center}
+	\let \footnote \thanks
+	\let \LTRfootnote \LTRthanks
+	\let \RTLfootnote \RTLthanks
+	{\Huge  \bfseries \color{black} \@title \par }
+	\vskip 2em
+	{	\large
+		\lineskip .5em
+%		\begin {tabular}[t]{c}
+		{\bfseries \color{black} \@author }
+%		\end {tabular}
+		\par
+	}
+	\vskip 1.5em
+	{\large \@date }
+	\end {center}
+	\par
+	\vskip 2em
+}
+
+
+%\makeatother
+%
+%
+%
+%
+%
+
+\lstdefinelanguage{myMatlab}{
+  language     = Matlab,
+  morekeywords = {inf,Inf,nan,NaN,true,false,warning,error,groot,clearvars,switch,case,otherwise,continue,classdef,handle,Abstract,AllowedSubclasses,Hidden,Sealed,properties,methods,Access,SetAccess,GetAccess,protected,private},
+  morestring=**[d]{"}
+}
+
+\newcommand*{\blankpage}{%
+  \begin{otherlanguage}{english}
+	\thispagestyle{empty}
+    \vspace*{\fill}
+%    \hfill
+    \begin{center}
+      \emph{This page is intentionally left blank!}
+    \end{center}
+    \vspace{\fill}
+%    \thispagestyle{empty}
+  \end{otherlanguage}
+  \clearpage
+}
+
+
+\makeatletter
+\renewcommand*\cleardoublepage{\clearpage%
+    \if@twoside
+        \ifodd\c@page\else
+        \blankpage
+        \fi
+    \fi
+}
+\makeatother
 % Added by lyx2lyx
 %% Variable width box for table cells
 \newenvironment{cellvarwidth}[1][t]
@@ -271,7 +271,7 @@ begin{titlepage}
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/journalThumbnail_en_US.jpg
+	filename Pictures/journalThumbnail_en_US.jpg
 	height 3.5cm
 
 \end_inset
@@ -282,7 +282,7 @@ begin{titlepage}
 
 
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Logo.png
+	filename Pictures/Logo.png
 	height 4cm
 
 \end_inset
@@ -320,9 +320,7 @@ begin{centering}%
 
 \series bold
 \size larger
-Cruise Missile:
- Design,
- Control and Simulation
+Cruise Missile: Design, Control and Simulation
 \end_layout
 
 \begin_layout Standard
@@ -416,21 +414,18 @@ Aerospace Engineering
 \noindent
 
 \size large
-FACULTY OF ENGINEERING,
- CAIRO UNIVERSITY
+FACULTY OF ENGINEERING, CAIRO UNIVERSITY
 \begin_inset Newline newline
 \end_inset
 
-GIZA,
- EGYPT
+GIZA, EGYPT
 \end_layout
 
 \begin_layout Standard
 \noindent
 
 \size large
-June,
- 2025
+June, 2025
 \end_layout
 
 \begin_layout Standard
@@ -496,9 +491,7 @@ begin{centering}%
 
 \series bold
 \size larger
-Cruise Missile:
- Design,
- Control and Simulation
+Cruise Missile: Design, Control and Simulation
 \end_layout
 
 \begin_layout Standard
@@ -665,8 +658,7 @@ Aerospace Engineering Department
 \end_layout
 
 \begin_layout Plain Layout
-Faculty of Engineering,
- Cairo University
+Faculty of Engineering, Cairo University
 \end_layout
 
 \end_inset
@@ -686,21 +678,18 @@ Faculty of Engineering,
 \noindent
 
 \size large
-FACULTY OF ENGINEERING,
- CAIRO UNIVERSITY
+FACULTY OF ENGINEERING, CAIRO UNIVERSITY
 \begin_inset Newline newline
 \end_inset
 
-GIZA,
- EGYPT
+GIZA, EGYPT
 \end_layout
 
 \begin_layout Standard
 \noindent
 
 \size large
-June,
- 2025
+June, 2025
 \end_layout
 
 \begin_layout Standard
@@ -752,16 +741,24 @@ Abstract
 \end_layout
 
 \begin_layout Standard
-We aim to set foot and be the first to introduce a method for conceptual design and design of Guidance and Control System for Cruise Missile.
- We use an algorithm for conceptual design which is applicable for any missile anyone can use.
- We will present a missile AVL program for estimating the basic stability derivatives and control coefficients under any flight conditions and configuration.
- Using these coefficients,
- we can build a model for the designed missile and then test the autopilot and guidance systems to achieve the project’s objectives.
- This is considered an experimental project as there is no previous searches or projects in this field,
- and also the published data in this manner is highly restricted by the federal agencies,
- while there are many researches in tactical (ballistic missiles),
- so we had to assume many missing parameters from published schematics and run many validation tests to reach the most accurate dimensions for the missile.
- We hope to make this project as the first step for cruise missiles design future projects.
+We aim to set foot and be the first to introduce a method for conceptual
+ design and design of Guidance and Control System for Cruise Missile.
+ We use an algorithm for conceptual design which is applicable for any missile
+ anyone can use.
+ We will present a missile AVL program for estimating the basic stability
+ derivatives and control coefficients under any flight conditions and configurat
+ion.
+ Using these coefficients, we can build a model for the designed missile
+ and then test the autopilot and guidance systems to achieve the project’s
+ objectives.
+ This is considered an experimental project as there is no previous searches
+ or projects in this field, and also the published data in this manner is
+ highly restricted by the federal agencies, while there are many researches
+ in tactical (ballistic missiles), so we had to assume many missing parameters
+ from published schematics and run many validation tests to reach the most
+ accurate dimensions for the missile.
+ We hope to make this project as the first step for cruise missiles design
+ future projects.
 \end_layout
 
 \begin_layout Chapter
@@ -769,8 +766,7 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-This chapter discusses general missile definition,
- evolution background,
+This chapter discusses general missile definition, evolution background,
  configuration and design characteristics.
 \end_layout
 
@@ -779,18 +775,16 @@ Missile definition
 \end_layout
 
 \begin_layout Standard
-A missile can be defined as any object that can be thrown,
- projected,
- or propelled toward a target.
- Essentially,
- a missile is a projectile carrying a payload (usually a warhead) guided onto a target by manual or automatic means.
- It is primarily used as a weapon to damage the target or as a counter-measure to deflect incoming threats.
- It is the most important extension of a series of weapons designed to permit person,
- with destructive intent,
- to hit an enemy target while remaining at a relatively safe distance.
- It is the logical sequel to the stone,
- the spear,
- the gun and the rocket.
+A missile can be defined as any object that can be thrown, projected, or
+ propelled toward a target.
+ Essentially, a missile is a projectile carrying a payload (usually a warhead)
+ guided onto a target by manual or automatic means.
+ It is primarily used as a weapon to damage the target or as a counter-measure
+ to deflect incoming threats.
+ It is the most important extension of a series of weapons designed to permit
+ person, with destructive intent, to hit an enemy target while remaining
+ at a relatively safe distance.
+ It is the logical sequel to the stone, the spear, the gun and the rocket.
 \end_layout
 
 \begin_layout Section
@@ -798,27 +792,29 @@ Historical background
 \end_layout
 
 \begin_layout Standard
-Missile development began in earnest during World War II,
- with Germany’s V-1 and V-2 rockets marking the first large-scale use of guided missiles in warfare.
- The Cold War accelerated missile proliferation,
- as the U.S.
+Missile development began in earnest during World War II, with Germany’s
+ V-1 and V-2 rockets marking the first large-scale use of guided missiles
+ in warfare.
+ The Cold War accelerated missile proliferation, as the U.S.
  and Soviet Union developed increasingly advanced ballistic and cruise missiles,
  including those capable of carrying nuclear warheads.
- International tensions led to a global arms race,
- with missile technology spreading to other nations and fueling regional rivalries.
- Efforts to control proliferation included treaties like the 1968 Treaty on the Non-Proliferation of Nuclear Weapons (NPT),
- aiming to limit the spread of nuclear-capable missiles.
- Despite these measures,
- missile technology continued to diffuse,
- with states such as North Korea developing indigenous programs,
- often triggering international sanctions and diplomatic crises.
- The Gulf War and subsequent conflicts highlighted the challenge of countering missile threats,
- as coalition forces struggled to neutralize Iraqi Scud launches.
- The United Nations and other international bodies have played key roles in establishing frameworks to prevent missile proliferation,
- though enforcement remains difficult.
- Today,
- missile development is intertwined with global security,
- as emerging technologies and shifting alliances perpetuate the cycle of advancement and countermeasures.
+ International tensions led to a global arms race, with missile technology
+ spreading to other nations and fueling regional rivalries.
+ Efforts to control proliferation included treaties like the 1968 Treaty
+ on the Non-Proliferation of Nuclear Weapons (NPT), aiming to limit the
+ spread of nuclear-capable missiles.
+ Despite these measures, missile technology continued to diffuse, with states
+ such as North Korea developing indigenous programs, often triggering internatio
+nal sanctions and diplomatic crises.
+ The Gulf War and subsequent conflicts highlighted the challenge of countering
+ missile threats, as coalition forces struggled to neutralize Iraqi Scud
+ launches.
+ The United Nations and other international bodies have played key roles
+ in establishing frameworks to prevent missile proliferation, though enforcement
+ remains difficult.
+ Today, missile development is intertwined with global security, as emerging
+ technologies and shifting alliances perpetuate the cycle of advancement
+ and countermeasures.
 \end_layout
 
 \begin_layout Section
@@ -830,8 +826,8 @@ Classification according to propulsion system
 \end_layout
 
 \begin_layout Standard
-Missiles can also be classified according to their propulsion systems,
- which determine how the missile is accelerated and propelled through the air.
+Missiles can also be classified according to their propulsion systems, which
+ determine how the missile is accelerated and propelled through the air.
  Here are some common classifications of missiles by propulsion
 \end_layout
 
@@ -840,8 +836,10 @@ Rocket-powered missiles
 \end_layout
 
 \begin_layout Standard
-They use rocket engines to generate thrust and propel the missile through the air.
- They typically use a liquid or solid fuel that is burned in the rocket engine to create high-pressure exhaust gases that propel the missile forward.
+They use rocket engines to generate thrust and propel the missile through
+ the air.
+ They typically use a liquid or solid fuel that is burned in the rocket
+ engine to create high-pressure exhaust gases that propel the missile forward.
  Rocket-powered missiles are known for their high speed and acceleration,
  but can be limited by their fuel supply and range.
 \end_layout
@@ -851,12 +849,13 @@ Ramjet-powered missiles
 \end_layout
 
 \begin_layout Standard
-They use a type of jet engine known as a ramjet to generate thrust and propel the missile through the air.
- Ramjets work by compressing incoming air,
- mixing it with fuel,
- and then burning it to create high-velocity exhaust gases that propel the missile forward.
- Ramjet-powered missiles are known for their high speed and efficiency at high altitudes,
- but require a high initial speed to operate effectively.
+They use a type of jet engine known as a ramjet to generate thrust and propel
+ the missile through the air.
+ Ramjets work by compressing incoming air, mixing it with fuel, and then
+ burning it to create high-velocity exhaust gases that propel the missile
+ forward.
+ Ramjet-powered missiles are known for their high speed and efficiency at
+ high altitudes, but require a high initial speed to operate effectively.
 \end_layout
 
 \begin_layout Subsubsection
@@ -864,12 +863,13 @@ Turbojet-powered missiles
 \end_layout
 
 \begin_layout Standard
-They use a type of jet engine known as a turbojet to generate thrust and propel the missile through the air.
- Turbojets work by compressing incoming air,
- mixing it with fuel,
- and then burning it to create high-velocity exhaust gases that propel the missile forward.
- Turbojet-powered missiles are known for their high speed and efficiency at low altitudes,
- but can be limited by their fuel consumption and range.
+They use a type of jet engine known as a turbojet to generate thrust and
+ propel the missile through the air.
+ Turbojets work by compressing incoming air, mixing it with fuel, and then
+ burning it to create high-velocity exhaust gases that propel the missile
+ forward.
+ Turbojet-powered missiles are known for their high speed and efficiency
+ at low altitudes, but can be limited by their fuel consumption and range.
 \end_layout
 
 \begin_layout Subsubsection
@@ -877,20 +877,18 @@ Solid-fueled missiles
 \end_layout
 
 \begin_layout Standard
-They use a solid fuel that is burned to create high-pressure exhaust gases that propel the missile forward.
- Solid-fueled missiles are known for their simplicity and reliability,
- but can be limited by their range and performance capabilities.
+They use a solid fuel that is burned to create high-pressure exhaust gases
+ that propel the missile forward.
+ Solid-fueled missiles are known for their simplicity and reliability, but
+ can be limited by their range and performance capabilities.
 \end_layout
 
 \begin_layout Standard
-Overall,
- the choice of propulsion system for a missile depends on a variety of factors,
- such as the missile's required speed,
- range,
- maneuverability,
- and payload capacity,
- as well as the available technology and materials.
- Missile designers must balance these factors to create a missile with the desired performance characteristics and capabilities.
+Overall, the choice of propulsion system for a missile depends on a variety
+ of factors, such as the missile's required speed, range, maneuverability,
+ and payload capacity, as well as the available technology and materials.
+ Missile designers must balance these factors to create a missile with the
+ desired performance characteristics and capabilities.
 \end_layout
 
 \begin_layout Subsection
@@ -898,9 +896,9 @@ Classification according to guidance system.
 \end_layout
 
 \begin_layout Standard
-Missiles can also be classified into different categories based on how they are oriented toward the target,
- resulting in two major categories:
- unguided missiles and guided missiles.
+Missiles can also be classified into different categories based on how they
+ are oriented toward the target, resulting in two major categories: unguided
+ missiles and guided missiles.
 \end_layout
 
 \begin_layout Subsubsection
@@ -909,17 +907,15 @@ Unguided missiles.
 \end_layout
 
 \begin_layout Standard
-whether initially or continuously propelled,
- can only be oriented toward their targets before they are fired.
- After firing,
- they are completely out of control.
- Therefore,
- they are effective only for short distances and stationary targets.
- For moving targets or targets at longer distances,
- the hitting accuracy decreases due to various factors such as aiming errors,
- crosswinds,
- and the Earth's curvature and rotation.
- Unguided missiles are particularly ineffective against moving targets unless such targets are very close and moving slowly.
+whether initially or continuously propelled, can only be oriented toward
+ their targets before they are fired.
+ After firing, they are completely out of control.
+ Therefore, they are effective only for short distances and stationary targets.
+ For moving targets or targets at longer distances, the hitting accuracy
+ decreases due to various factors such as aiming errors, crosswinds, and
+ the Earth's curvature and rotation.
+ Unguided missiles are particularly ineffective against moving targets unless
+ such targets are very close and moving slowly.
 \end_layout
 
 \begin_layout Subsubsection
@@ -927,22 +923,23 @@ Guided missile
 \end_layout
 
 \begin_layout Standard
-Guided Missiles are self-propelled aerial projectiles and are guided in flight toward a target either by remote control or by internal mechanisms.
- Guided missiles vary widely in size and type,
- ranging from large strategic ballistic missiles with nuclear warheads to small,
- portable rockets carried by foot soldiers.
- Although most are military weapons with explosive warheads,
- others may carry scientific instruments for gathering information within or above the earth's atmosphere.
- It is the most important extension of a series of weapons designed to permit person,
- with destructive intent,
- to hit an enemy target while remaining at a relatively safe distance.
- It is the logical sequel to the stone,
- the spear,
- the gun and the rocket.
- It is usually fired in a direction approximately towards the target and subsequently receives steering commands from the guidance system to improve its accuracy.
- The fundamental requirements have remained unchanged,
- despite advances in technology or whether missile is directed in defense or in attack,
- mainly,
+Guided Missiles are self-propelled aerial projectiles and are guided in
+ flight toward a target either by remote control or by internal mechanisms.
+ Guided missiles vary widely in size and type, ranging from large strategic
+ ballistic missiles with nuclear warheads to small, portable rockets carried
+ by foot soldiers.
+ Although most are military weapons with explosive warheads, others may
+ carry scientific instruments for gathering information within or above
+ the earth's atmosphere.
+ It is the most important extension of a series of weapons designed to permit
+ person, with destructive intent, to hit an enemy target while remaining
+ at a relatively safe distance.
+ It is the logical sequel to the stone, the spear, the gun and the rocket.
+ It is usually fired in a direction approximately towards the target and
+ subsequently receives steering commands from the guidance system to improve
+ its accuracy.
+ The fundamental requirements have remained unchanged, despite advances
+ in technology or whether missile is directed in defense or in attack, mainly,
  to destroy the target and to remain in safety.
 \end_layout
 
@@ -1026,9 +1023,11 @@ Classification according to navigation
 \end_layout
 
 \begin_layout Standard
-Navigation is the science of determining the position of a ship,
- or a guided missile.
- Guided missile always have navigation systems to identify their location and the target's location at all times to ensure proper guidance toward the desired target.
+Navigation is the science of determining the position of a ship, or a guided
+ missile.
+ Guided missile always have navigation systems to identify their location
+ and the target's location at all times to ensure proper guidance toward
+ the desired target.
  Navigation systems are divided into four categories:
 \end_layout
 
@@ -1057,25 +1056,25 @@ Surface-to-Surface missiles (SSM)
 \end_layout
 
 \begin_layout Standard
-They are guided weapons launched from ground or naval platforms to strike targets on land or at sea.
- The first successful SSMs were the German V-1 and V-2 weapons used in World War II.
- The V-1,
- or buzz bomb,
- was an aerodynamic missile with a pulse jet engine and preset guidance,
- capable of flying about 240 km before diving with a 1-ton explosive warhead.
- The V-2 was a ballistic missile powered by alcohol and liquid oxygen,
- reaching speeds over 1.6 km per second and carrying a 730-kg warhead up to 320 km.
+They are guided weapons launched from ground or naval platforms to strike
+ targets on land or at sea.
+ The first successful SSMs were the German V-1 and V-2 weapons used in World
+ War II.
+ The V-1, or buzz bomb, was an aerodynamic missile with a pulse jet engine
+ and preset guidance, capable of flying about 240 km before diving with
+ a 1-ton explosive warhead.
+ The V-2 was a ballistic missile powered by alcohol and liquid oxygen, reaching
+ speeds over 1.6 km per second and carrying a 730-kg warhead up to 320 km.
  Both were inaccurate and primarily targeted cities.
- While the V-1 could be shot down,
- the V-2 had no effective defense.
+ While the V-1 could be shot down, the V-2 had no effective defense.
  Germany launched around 4,000 V-2s before the war ended.
- Although other guided missiles (such as wire-guided anti-aircraft and anti-tank missiles) were tested,
- none were mass-produced.
- After the war,
- Allied forces captured German technology and scientists,
- using the V-2 as the basis for postwar missile and space programs in the U.S.
- and Soviet Union,
- as Allied research in this field had been limited during the war.
+ Although other guided missiles (such as wire-guided anti-aircraft and anti-tank
+ missiles) were tested, none were mass-produced.
+ After the war, Allied forces captured German technology and scientists,
+ using the V-2 as the basis for postwar missile and space programs in the
+ U.S.
+ and Soviet Union, as Allied research in this field had been limited during
+ the war.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1083,17 +1082,17 @@ Surface-to-Air missiles (SAM)
 \end_layout
 
 \begin_layout Standard
-Initially designed to counter high-altitude bombers during the 1950s and '60s (e.g.,
- Nike-Ajax and Nike-Hercules),
- their focus shifted to tactical,
- shorter-range systems as ICBMs replaced bombers and antiballistic missile agreements were signed.
- Modern SAMs protect ground units and warships from low-flying aircraft and missiles,
- using radar for tracking and internal guidance for interception.
+Initially designed to counter high-altitude bombers during the 1950s and
+ '60s (e.g., Nike-Ajax and Nike-Hercules), their focus shifted to tactical,
+ shorter-range systems as ICBMs replaced bombers and antiballistic missile
+ agreements were signed.
+ Modern SAMs protect ground units and warships from low-flying aircraft
+ and missiles, using radar for tracking and internal guidance for interception.
  Some are adapted from air-to-air missiles or can target ground objectives.
- Since 1970,
- many nations have developed overlapping defense systems,
- including portable infrared-guided missiles.
- Integrated fire-control systems now help distinguish friendly from hostile aircraft and deploy the most suitable defenses.
+ Since 1970, many nations have developed overlapping defense systems, including
+ portable infrared-guided missiles.
+ Integrated fire-control systems now help distinguish friendly from hostile
+ aircraft and deploy the most suitable defenses.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1101,26 +1100,24 @@ Air-Launched missiles (AAM) & (ASM)
 \end_layout
 
 \begin_layout Standard
-These are typically short-range,
- lightweight rocket-powered weapons with sophisticated guidance systems.
- Germany pioneered early versions during WWII,
- including radio-controlled glide bombs that successfully targeted Allied ships.
+These are typically short-range, lightweight rocket-powered weapons with
+ sophisticated guidance systems.
+ Germany pioneered early versions during WWII, including radio-controlled
+ glide bombs that successfully targeted Allied ships.
  While early models required continuous guidance from the parent aircraft,
  modern variants can autonomously track targets after launch.
- Current air-to-ground missiles employ various guidance methods:
- the U.S.
- Walleye and Maverick use TV homing,
- the Shrike targets radar emissions,
+ Current air-to-ground missiles employ various guidance methods: the U.S.
+ Walleye and Maverick use TV homing, the Shrike targets radar emissions,
  while other "smart bombs" rely on laser or infrared designation.
- The Soviet Union developed large cruise-type missiles for anti-ship and nuclear strike roles.
- Air-to-air missiles,
- designed to engage enemy aircraft,
- are generally smaller and faster than air-to-ground types,
- using infrared or radar homing as their primary guidance.
+ The Soviet Union developed large cruise-type missiles for anti-ship and
+ nuclear strike roles.
+ Air-to-air missiles, designed to engage enemy aircraft, are generally smaller
+ and faster than air-to-ground types, using infrared or radar homing as
+ their primary guidance.
  These have largely replaced guns as fighter's main armament.
- However,
- their effectiveness still depends heavily on pilot skill for target identification and proper launch positioning,
- whether using visual or radar acquisition methods.
+ However, their effectiveness still depends heavily on pilot skill for target
+ identification and proper launch positioning, whether using visual or radar
+ acquisition methods.
 \end_layout
 
 \begin_layout Section
@@ -1132,23 +1129,18 @@ Definition
 \end_layout
 
 \begin_layout Standard
-A cruise missile can be defined as a dispensable,
- pilot-less,
- self-guided,
- continuously powered,
- air-breathing vehicle that flies just like an airplane,
- supported by aerodynamic surfaces,
- and designed to deliver a conventional or nuclear device.
- Specifically,
- the cruise missile is powered by a small,
- high-efficiency turbofan engine in the 600-pound thrust class.
- Unlike a ballistic missile,
- which is powered and hence usually guided for only a brief initial part of its flight,
- after which it follows a free-fall trajectory governed only by the local gravitational field,
- a cruise missile requires continuous guidance,
- since both the velocity and the direction of its flight can be unpredictably altered,
- for example,
- by local weather conditions.
+A cruise missile can be defined as a dispensable, pilot-less, self-guided,
+ continuously powered, air-breathing vehicle that flies just like an airplane,
+ supported by aerodynamic surfaces, and designed to deliver a conventional
+ or nuclear device.
+ Specifically, the cruise missile is powered by a small, high-efficiency
+ turbofan engine in the 600-pound thrust class.
+ Unlike a ballistic missile, which is powered and hence usually guided for
+ only a brief initial part of its flight, after which it follows a free-fall
+ trajectory governed only by the local gravitational field, a cruise missile
+ requires continuous guidance, since both the velocity and the direction
+ of its flight can be unpredictably altered, for example, by local weather
+ conditions.
 \end_layout
 
 \begin_layout Subsection
@@ -1156,13 +1148,12 @@ Historical background
 \end_layout
 
 \begin_layout Standard
-The proliferation of cruise missile technology has been influenced by several global events,
- including the arms race between superpowers,
- the need for rapid and precise strike capabilities,
- and the emergence of new security threats.
- The end of the Cold War and subsequent regional conflicts,
- such as the Gulf War,
- further demonstrated the operational value of cruise missiles,
+The proliferation of cruise missile technology has been influenced by several
+ global events, including the arms race between superpowers, the need for
+ rapid and precise strike capabilities, and the emergence of new security
+ threats.
+ The end of the Cold War and subsequent regional conflicts, such as the
+ Gulf War, further demonstrated the operational value of cruise missiles,
  leading to widespread adoption and ongoing technological innovation.
 \end_layout
 
@@ -1171,7 +1162,8 @@ Classification
 \end_layout
 
 \begin_layout Standard
-Cruise missile are strategic missile as they are always used in very long distance targets and they have four main categories:
+Cruise missile are strategic missile as they are always used in very long
+ distance targets and they have four main categories:
 \end_layout
 
 \begin_layout Subsubsection
@@ -1179,19 +1171,20 @@ Ground-Launched Cruise Missiles (GLCM)
 \end_layout
 
 \begin_layout Standard
-GLCMs have made important contributions to national security,
- serving as both tactical and strategic assets.
- During the Cold War,
- six GLCM sites were built across Europe,
- occupying large areas on foreign soil and serving as a deterrent against Soviet aggression.
+GLCMs have made important contributions to national security, serving as
+ both tactical and strategic assets.
+ During the Cold War, six GLCM sites were built across Europe, occupying
+ large areas on foreign soil and serving as a deterrent against Soviet aggressio
+n.
  The deployment of these missiles was part of NATO's dual-track strategy,
- which involved countering Soviet intermediate-range missiles while simultaneously pursuing negotiations to limit or eliminate these weapons.
+ which involved countering Soviet intermediate-range missiles while simultaneous
+ly pursuing negotiations to limit or eliminate these weapons.
  It has many advantages as:
 \end_layout
 
 \begin_layout Itemize
-Mobility and flexibility in deployment,
- allowing for rapid repositioning in response to changing tactical situations
+Mobility and flexibility in deployment, allowing for rapid repositioning
+ in response to changing tactical situations
 \end_layout
 
 \begin_layout Itemize
@@ -1211,14 +1204,14 @@ Vulnerability to detection and interception when stationary
 \end_layout
 
 \begin_layout Itemize
-Political challenges associated with deployment on foreign soil,
- as evidenced by the controversies surrounding NATO GLCM deployments
+Political challenges associated with deployment on foreign soil, as evidenced
+ by the controversies surrounding NATO GLCM deployments
 \end_layout
 
 \begin_layout Itemize
-Arms control restrictions,
- such as those imposed by the Intermediate-Range Nuclear Forces (INF) Treaty of 1987,
- which eliminated this class of missiles for a significant period
+Arms control restrictions, such as those imposed by the Intermediate-Range
+ Nuclear Forces (INF) Treaty of 1987, which eliminated this class of missiles
+ for a significant period
 \end_layout
 
 \begin_layout Subsubsection
@@ -1226,32 +1219,29 @@ Sea-Launched Cruise Missiles (SLCM)
 \end_layout
 
 \begin_layout Standard
-Sea-Launched Cruise Missiles are deployed from naval vessels,
- including both surface ships and submarines,
- providing unique strategic advantages in maritime environments.
- The development of low-yield,
- sea-based,
- non-strategic weapons,
- including submarine-launched cruise missiles (SLCM-N),
- has been part of efforts to counter perceived gaps in regional deterrence capabilities.
- These systems provide flexibility in response options and contribute to the defense and support of allies.
- The BGM-109 Tomahawk,
- a widely recognized SLCM,
- has been employed in various military operations,
- including the 2011 Operation Odyssey Dawn in Libya,
+Sea-Launched Cruise Missiles are deployed from naval vessels, including
+ both surface ships and submarines, providing unique strategic advantages
+ in maritime environments.
+ The development of low-yield, sea-based, non-strategic weapons, including
+ submarine-launched cruise missiles (SLCM-N), has been part of efforts to
+ counter perceived gaps in regional deterrence capabilities.
+ These systems provide flexibility in response options and contribute to
+ the defense and support of allies.
+ The BGM-109 Tomahawk, a widely recognized SLCM, has been employed in various
+ military operations, including the 2011 Operation Odyssey Dawn in Libya,
  where 112 Tomahawk cruise missiles were launched from U.S.
  Navy ships and a Royal Navy submarine to target Libya's air defense systems.
  It has many advantages:
 \end_layout
 
 \begin_layout Itemize
-Stealth and surprise attack capabilities,
- particularly when launched from submarines
+Stealth and surprise attack capabilities, particularly when launched from
+ submarines
 \end_layout
 
 \begin_layout Itemize
-Flexibility in deployment locations,
- allowing strikes from international waters without requiring host nation permission
+Flexibility in deployment locations, allowing strikes from international
+ waters without requiring host nation permission
 \end_layout
 
 \begin_layout Itemize
@@ -1263,12 +1253,12 @@ Its limitations are:
 \end_layout
 
 \begin_layout Itemize
-Challenges in arms control verification due to the difficulty in distinguishing between conventional and nuclear-capable variants
+Challenges in arms control verification due to the difficulty in distinguishing
+ between conventional and nuclear-capable variants
 \end_layout
 
 \begin_layout Itemize
-Limitations in launcher reloadability,
- particularly in combat conditions
+Limitations in launcher reloadability, particularly in combat conditions
 \end_layout
 
 \begin_layout Itemize
@@ -1281,32 +1271,34 @@ Air-Launched Cruise Missiles (ALCM)
 \end_layout
 
 \begin_layout Standard
-Air-Launched Cruise Missiles are carried and launched by aircraft,
- providing extended strike capabilities beyond the range of traditional air-delivered munitions.
- ALCMs are designed with sophisticated guidance systems that enable them to fly autonomously along low-level,
- circuitous routes via selected waypoints to reach their targets.
- The optimal initial descending guidance of ALCMs aims to minimize the time required to achieve cruise altitude after launch,
- thereby reducing detectability.
- During the midcourse guidance phase,
- mission data management is provided by guidance route algorithms that manage profile and waypoint data,
- control waypoint turns,
- and initiate terminal guidance.
+Air-Launched Cruise Missiles are carried and launched by aircraft, providing
+ extended strike capabilities beyond the range of traditional air-delivered
+ munitions.
+ ALCMs are designed with sophisticated guidance systems that enable them
+ to fly autonomously along low-level, circuitous routes via selected waypoints
+ to reach their targets.
+ The optimal initial descending guidance of ALCMs aims to minimize the time
+ required to achieve cruise altitude after launch, thereby reducing detectabilit
+y.
+ During the midcourse guidance phase, mission data management is provided
+ by guidance route algorithms that manage profile and waypoint data, control
+ waypoint turns, and initiate terminal guidance.
  Its advantages are:
 \end_layout
 
 \begin_layout Itemize
-Extended range capabilities,
- allowing strikes against distant targets without putting aircraft at risk
+Extended range capabilities, allowing strikes against distant targets without
+ putting aircraft at risk
 \end_layout
 
 \begin_layout Itemize
-Flexibility in launch positioning,
- as carrier aircraft can approach targets from multiple directions
+Flexibility in launch positioning, as carrier aircraft can approach targets
+ from multiple directions
 \end_layout
 
 \begin_layout Itemize
-Reduced risk to aircrews,
- who can launch missiles from beyond the range of enemy air defenses
+Reduced risk to aircrews, who can launch missiles from beyond the range
+ of enemy air defenses
 \end_layout
 
 \begin_layout Standard
@@ -1314,8 +1306,8 @@ It has limitations as well:
 \end_layout
 
 \begin_layout Itemize
-Dependence on carrier aircraft,
- which may be vulnerable to detection and interception
+Dependence on carrier aircraft, which may be vulnerable to detection and
+ interception
 \end_layout
 
 \begin_layout Itemize
@@ -1323,7 +1315,8 @@ Weight and size constraints imposed by aircraft carrying capacity
 \end_layout
 
 \begin_layout Itemize
-Complexity in ensuring reliable performance across various flight regimes and environmental conditions
+Complexity in ensuring reliable performance across various flight regimes
+ and environmental conditions
 \end_layout
 
 \begin_layout Section
@@ -1335,7 +1328,8 @@ Aerodynamic control
 \end_layout
 
 \begin_layout Paragraph
-Many types of external aerodynamic configurations used for the four classes of missiles previously described.
+Many types of external aerodynamic configurations used for the four classes
+ of missiles previously described.
  
 \end_layout
 
@@ -1348,7 +1342,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/wing.png
+	filename Pictures/wing.png
 	width 80page%
 
 \end_inset
@@ -1405,7 +1399,7 @@ Disadvantages
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -1417,6 +1411,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Fast control
 \begin_inset ERT
 status collapsed
@@ -1429,6 +1424,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1436,7 +1433,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -1448,6 +1445,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 High hinge moments
 \begin_inset ERT
 status collapsed
@@ -1460,6 +1458,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1469,7 +1469,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -1481,6 +1481,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Low trim AoA
 \begin_inset ERT
 status collapsed
@@ -1493,6 +1494,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1500,7 +1503,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -1512,6 +1515,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Severe servo power required
 \begin_inset ERT
 status collapsed
@@ -1524,6 +1528,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1533,7 +1539,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -1545,6 +1551,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Relatively good packaging feature
 \begin_inset ERT
 status collapsed
@@ -1557,6 +1564,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1564,7 +1573,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -1576,6 +1585,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Nonlinear aerodynamics
 \begin_inset ERT
 status collapsed
@@ -1588,6 +1598,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1597,7 +1609,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -1609,6 +1621,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Beneficial downwash from canard deflection for control
 \begin_inset ERT
 status collapsed
@@ -1621,6 +1634,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1628,7 +1643,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -1640,6 +1655,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Large induced rolling moments
 \begin_inset ERT
 status collapsed
@@ -1652,6 +1668,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1670,7 +1688,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -1682,6 +1700,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 High drag
 \begin_inset ERT
 status collapsed
@@ -1694,6 +1713,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1720,7 +1741,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/canard.png
+	filename Pictures/canard.png
 	width 80page%
 
 \end_inset
@@ -1776,7 +1797,7 @@ Disadvantages
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -1788,6 +1809,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Good packaging feature
 \begin_inset ERT
 status collapsed
@@ -1800,6 +1822,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1807,7 +1831,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -1819,6 +1843,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 No simple lateral control
 \begin_inset ERT
 status collapsed
@@ -1831,6 +1856,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1840,7 +1867,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -1852,6 +1879,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Low hinge moments
 \begin_inset ERT
 status collapsed
@@ -1864,6 +1892,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1871,7 +1901,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -1883,6 +1913,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Relatively high body bending
 \begin_inset ERT
 status collapsed
@@ -1895,6 +1926,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1904,7 +1937,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -1916,6 +1949,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Fairly linear aerodynamics
 \begin_inset ERT
 status collapsed
@@ -1928,6 +1962,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1935,7 +1971,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -1947,6 +1983,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 High control rates required
 \begin_inset ERT
 status collapsed
@@ -1959,6 +1996,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1968,7 +2007,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -1980,6 +2019,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Cg travel is not critical
 \begin_inset ERT
 status collapsed
@@ -1992,6 +2032,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1999,7 +2041,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -2011,6 +2053,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Relatively high trim AoA
 \begin_inset ERT
 status collapsed
@@ -2023,6 +2066,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2032,7 +2077,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -2044,6 +2089,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Low drag
 \begin_inset ERT
 status collapsed
@@ -2056,6 +2102,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2091,7 +2139,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/tail.png
+	filename Pictures/tail.png
 	width 80page%
 
 \end_inset
@@ -2147,7 +2195,7 @@ Disadvantages
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -2159,6 +2207,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Low tail load
 \begin_inset ERT
 status collapsed
@@ -2171,6 +2220,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2178,7 +2229,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -2190,6 +2241,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Slow response
 \begin_inset ERT
 status collapsed
@@ -2202,6 +2254,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2211,7 +2265,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -2223,6 +2277,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Low tail hinge moments
 \begin_inset ERT
 status collapsed
@@ -2235,6 +2290,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2242,7 +2299,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -2254,6 +2311,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Negative 
 \begin_inset Formula $C_{N_{δ}}$
 \end_inset
@@ -2270,6 +2328,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2279,7 +2339,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -2291,6 +2351,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Fairly linear aerodynamics
 \begin_inset ERT
 status collapsed
@@ -2303,6 +2364,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2310,7 +2373,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -2322,6 +2385,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Packaging problems
 \begin_inset ERT
 status collapsed
@@ -2334,6 +2398,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2343,7 +2409,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -2355,6 +2421,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Low body bending moments
 \begin_inset ERT
 status collapsed
@@ -2367,6 +2434,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2374,7 +2443,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -2386,6 +2455,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 High trim AoA
 \begin_inset ERT
 status collapsed
@@ -2398,6 +2468,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2437,7 +2509,8 @@ Tail-less control
 
 \begin_deeper
 \begin_layout Standard
-involves one set of surfaces (wings) with control flaps located at the trailing edge.
+involves one set of surfaces (wings) with control flaps located at the trailing
+ edge.
  
 \end_layout
 
@@ -2472,7 +2545,7 @@ Disadvantages
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -2484,6 +2557,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Reduction of the number of surfaces
 \begin_inset ERT
 status collapsed
@@ -2496,6 +2570,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2503,7 +2579,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -2515,6 +2591,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Requires very large control surface
 \begin_inset ERT
 status collapsed
@@ -2527,6 +2604,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2536,7 +2615,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -2548,6 +2627,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Reduction of the drag
 \begin_inset ERT
 status collapsed
@@ -2560,6 +2640,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2567,7 +2649,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -2579,6 +2661,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Very low control effectiveness
 \begin_inset ERT
 status collapsed
@@ -2591,6 +2674,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2600,7 +2685,7 @@ end{cellvarwidth}
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset ERT
 status collapsed
 
@@ -2612,6 +2697,7 @@ begin{cellvarwidth}
 \end_layout
 
 \end_inset
+
 Reduction of manufacturing costs
 \begin_inset ERT
 status collapsed
@@ -2624,6 +2710,8 @@ end{cellvarwidth}
 \end_layout
 
 \end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2675,8 +2763,7 @@ Thrust Vector Control
 \end_layout
 
 \begin_layout Standard
-This type of control may be subdivided into four classes:
- 
+This type of control may be subdivided into four classes: 
 \end_layout
 
 \begin_layout Itemize
@@ -2704,14 +2791,13 @@ Monowing
 \end_layout
 
 \begin_layout Standard
-is generally used on cruise-type missiles,
- i.e.,
- missiles designed to cruise for relatively long ranges like manned aircraft.
- This type of design is generally lighter and has less drag than the cruciform configuration.
- The wing area and span are,
- however,
- somewhat larger.
- Although the monowing missile must bank to orient its lift vector in the desired direction during maneuvering flights.
+is generally used on cruise-type missiles, i.e., missiles designed to cruise
+ for relatively long ranges like manned aircraft.
+ This type of design is generally lighter and has less drag than the cruciform
+ configuration.
+ The wing area and span are, however, somewhat larger.
+ Although the monowing missile must bank to orient its lift vector in the
+ desired direction during maneuvering flights.
  
 \end_layout
 
@@ -2722,7 +2808,8 @@ Triform
 \begin_layout Standard
 Employs three panels or wings generally of equal area spaced 120∘ apart,
  is seldom used since no noticeable advantage can be realized.
- May be preferred over cruciform when used in conjunction with monowing design to provide the desired degree of directional stability.
+ May be preferred over cruciform when used in conjunction with monowing
+ design to provide the desired degree of directional stability.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2730,11 +2817,11 @@ Cruciform
 \end_layout
 
 \begin_layout Standard
-Undoubtedly the most commonly used configuration in missile design is the cruciform.
+Undoubtedly the most commonly used configuration in missile design is the
+ cruciform.
  There are several major advantages in the use of this type of configuration.
- Fast response in producing lift in any direction,
- identical pitch and yaw characteristics,
- simpler control system as the result of item 2.
+ Fast response in producing lift in any direction, identical pitch and yaw
+ characteristics, simpler control system as the result of item 2.
 \end_layout
 
 \begin_layout Subsection
@@ -2742,11 +2829,9 @@ Aerodynamic Characteristics of Air-frame Component
 \end_layout
 
 \begin_layout Standard
-As a missile flies through the air,
- it experiences aerodynamic forces and moments.
- These forces,
- lift and drag,
- may be classified into two general types:
+As a missile flies through the air, it experiences aerodynamic forces and
+ moments.
+ These forces, lift and drag, may be classified into two general types:
  
 \end_layout
 
@@ -2783,13 +2868,11 @@ Boat tail
 \end_layout
 
 \begin_layout Standard
-Has many varieties of shapes,
- most common of which are conical,
- ogival,
+Has many varieties of shapes, most common of which are conical, ogival,
  "power-series," or hemispherical.
- selected on the basis of combined aerodynamic,
- guidance,
- and structural considerations.it is important to understand the aerodynamic forces of these forebodies at supersonic speeds.
+ selected on the basis of combined aerodynamic, guidance, and structural
+ considerations.it is important to understand the aerodynamic forces of these
+ forebodies at supersonic speeds.
  
 \end_layout
 
@@ -2805,7 +2888,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/wedge.png
+	filename Pictures/wedge.png
 	width 80page%
 
 \end_inset
@@ -2817,8 +2900,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Wedge edge,
- cone
+Wedge edge, cone
 \end_layout
 
 \end_inset
@@ -2832,15 +2914,18 @@ Wedge edge,
 \end_layout
 
 \begin_layout Standard
-The supersonic flow over a cone has characteristics which are similar in appearance but markedly different in nature from those corresponding to two-dimensional flow.
- The similarity in appearance is that an oblique shock is formed at the tip of the wedge and apex.
+The supersonic flow over a cone has characteristics which are similar in
+ appearance but markedly different in nature from those corresponding to
+ two-dimensional flow.
+ The similarity in appearance is that an oblique shock is formed at the
+ tip of the wedge and apex.
  of the cone.
- these flow characteristics are:
- the shock angle,
- streamlines or flow direction,
+ these flow characteristics are: the shock angle, streamlines or flow direction,
  and air properties between the shock wave and surface of the body.
- the pressure along any ray originating from the apex of the cone and hence along the cone surface is constant.
- This fundamental characteristic forms the basis for the well-known conical-flow theory.
+ the pressure along any ray originating from the apex of the cone and hence
+ along the cone surface is constant.
+ This fundamental characteristic forms the basis for the well-known conical-flow
+ theory.
  
 \end_layout
 
@@ -2856,7 +2941,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/ogival.png
+	filename Pictures/ogival.png
 	width 60page%
 	height 30page%
 
@@ -2883,23 +2968,25 @@ Ogival nose
 \end_layout
 
 \begin_layout Standard
-This type of nose configuration is used more frequently than the conical nose.
- An ogive is similar to a cone except that the planform shape is formed by an arc of a circle instead of a straight line The ogival shape has several advantages over the conical section.
+This type of nose configuration is used more frequently than the conical
+ nose.
+ An ogive is similar to a cone except that the planform shape is formed
+ by an arc of a circle instead of a straight line The ogival shape has several
+ advantages over the conical section.
  These advantages are :
 \end_layout
 
 \begin_layout Itemize
-slightly greater volume for a given base and length to diameter ratio (𝑙/𝑑 𝑟𝑎𝑡𝑖𝑜).
+slightly greater volume for a given base and length to diameter ratio (𝑙/𝑑
+ 𝑟𝑎𝑡𝑖𝑜).
 \end_layout
 
 \begin_layout Itemize
-A blunter nose,
- providing structural superiority 
+A blunter nose, providing structural superiority 
 \end_layout
 
 \begin_layout Itemize
-a blunter nose,
- providing structural superiority 
+a blunter nose, providing structural superiority 
 \end_layout
 
 \begin_layout Subsubsection*
@@ -2907,8 +2994,8 @@ a blunter nose,
 \end_layout
 
 \begin_layout Standard
-This type of nose is used on some of the missiles,
- particularly those which use IF (infrared) seekers.
+This type of nose is used on some of the missiles, particularly those which
+ use IF (infrared) seekers.
  This type of nose imposes a high drag on the missile.
  Wave drag may six to seven times that of an ogival.
  
@@ -2931,17 +3018,15 @@ NACA technical note 4201
 
 \begin_layout Standard
 In most.
- Missile configurations,
- the mid-section is cylindrical in shape.
- This shape is advantageous from the standpoints of drag,
- ease of manufacturing,
+ Missile configurations, the mid-section is cylindrical in shape.
+ This shape is advantageous from the standpoints of drag, ease of manufacturing,
  and load-carrying capability.
- The zero-lift drag (𝛼 = 0∘) of a cylindrical body is caused by viscous forces (skin friction) only.
- At low angles of attack,
- a very small amount of normal force is developed on the body,
- and this results from the "carry-over" from the nose section.
- At rather large angles,
- some amount of normal force is developed because the cross-flow drag acts normal to the body center line.
+ The zero-lift drag (𝛼 = 0∘) of a cylindrical body is caused by viscous
+ forces (skin friction) only.
+ At low angles of attack, a very small amount of normal force is developed
+ on the body, and this results from the "carry-over" from the nose section.
+ At rather large angles, some amount of normal force is developed because
+ the cross-flow drag acts normal to the body center line.
  
 \end_layout
 
@@ -2951,8 +3036,10 @@ In most.
 
 \begin_layout Standard
 Reduce the drag of the body because the rear portion of the body is decreased,
- calculation of the drag is difficult because of the dependence on geometry of the aft and fore portion of the body and real fluid effects.
- Caused center of pressure travel with angle of attack so that German V2 designed without boat tail.
+ calculation of the drag is difficult because of the dependence on geometry
+ of the aft and fore portion of the body and real fluid effects.
+ Caused center of pressure travel with angle of attack so that German V2
+ designed without boat tail.
 \end_layout
 
 \begin_layout Chapter
@@ -2964,9 +3051,14 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-As this project involved the first-time design of a cruise missile,Our primary objective was to establish a foundational framework for cruise missile design.The initial geometry was derived from the well-known AGM-86B-ALCM cruise missile.
- Approximate dimensions of this reference missile were adopted and subsequently modified to meet our mission-specific requirements.Following the geometric definition,
- mass properties and moments of inertia for all lifting surfaces were computed based on methodologies outlined in an academic paper 
+As this project involved the first-time design of a cruise missile,Our primary
+ objective was to establish a foundational framework for cruise missile
+ design.The initial geometry was derived from the well-known AGM-86B-ALCM
+ cruise missile.
+ Approximate dimensions of this reference missile were adopted and subsequently
+ modified to meet our mission-specific requirements.Following the geometric
+ definition, mass properties and moments of inertia for all lifting surfaces
+ were computed based on methodologies outlined in an academic paper 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "massandinertia"
@@ -2975,18 +3067,21 @@ literal "true"
 \end_inset
 
 .
- With the geometry and inertial characteristics established,
- the next step involved determining stability derivatives and trim velocity.
- These calculations were performed using the Athena Vortex Lattice (AVL) program,
- a computational tool suited for aerodynamic analysis.
+ With the geometry and inertial characteristics established, the next step
+ involved determining stability derivatives and trim velocity.
+ These calculations were performed using the Athena Vortex Lattice (AVL)
+ program, a computational tool suited for aerodynamic analysis.
  A three-dimensional CAD model was then developed using Autodesk Fusion,
- ensuring accurate representation of aerodynamic surfaces,
- control mechanisms,
+ ensuring accurate representation of aerodynamic surfaces, control mechanisms,
  and internal structural components.
- This step was critical for subsequent analyses,
- as it provided a precise digital prototype for simulation and validation.The integration of CAD modeling with aerodynamic simulations ensured a systematic approach to the design process,
- facilitating iterative improvements and optimization.
- This methodology not only provided a starting point for cruise missile development but also demonstrated the importance of combining digital design tools with theoretical and computational analyses in aerospace engineering applications.
+ This step was critical for subsequent analyses, as it provided a precise
+ digital prototype for simulation and validation.The integration of CAD modeling
+ with aerodynamic simulations ensured a systematic approach to the design
+ process, facilitating iterative improvements and optimization.
+ This methodology not only provided a starting point for cruise missile
+ development but also demonstrated the importance of combining digital design
+ tools with theoretical and computational analyses in aerospace engineering
+ applications.
  
 \end_layout
 
@@ -3006,13 +3101,12 @@ Data-based Design
 \end_layout
 
 \begin_layout Standard
-After searching for technical papers on cruise missile design and finding none,
- we adopted a statistical approach.
+After searching for technical papers on cruise missile design and finding
+ none, we adopted a statistical approach.
 \end_layout
 
 \begin_layout Standard
-Thus,
- data collection was conducted (see 
+Thus, data collection was conducted (see 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "designCode"
@@ -3022,8 +3116,7 @@ noprefix "false"
 
 \end_inset
 
-),
- resulting in this function (by Regression Model) 
+), resulting in this function (by Regression Model) 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "trainRegressionModel"
@@ -3060,31 +3153,26 @@ literal "true"
 
 \end_inset
 
-,
- it explains a very easy method to estimate the moments of inertia of aerodynamic surfaces,
- as well as simple fuselage shapes,
- the theory behind the calculations related to aerodynamic surfaces is based on the assumption that the surface is totally solid (not empty from inside) as well as the assumption that material is the same everywhere.
+, it explains a very easy method to estimate the moments of inertia of aerodynam
+ic surfaces, as well as simple fuselage shapes, the theory behind the calculatio
+ns related to aerodynamic surfaces is based on the assumption that the surface
+ is totally solid (not empty from inside) as well as the assumption that
+ material is the same everywhere.
 \end_layout
 
 \begin_layout Standard
-However,
- equations in the paper are a bit complicated,
- so they should be treated carefully,
- and you should verify your code with the check cases in the paper,
- we have coded the whole method in matlab,
- and verified the results,
- but a mistake in the paper was found;
- there is a conflict in equations (64) and (78).
+However, equations in the paper are a bit complicated, so they should be
+ treated carefully, and you should verify your code with the check cases
+ in the paper, we have coded the whole method in matlab, and verified the
+ results, but a mistake in the paper was found; there is a conflict in equations
+ (64) and (78).
 \end_layout
 
 \begin_layout Standard
-The conclusion:
- This method wasn't the very best,
- the results weren't very accurate,
- so we went for CAD modelling,
- for this mission we used Fusion 360 software,
- for its ease in editing any parameter in the design using the timeline feature,
- these are the results of the cad model.
+The conclusion: This method wasn't the very best, the results weren't very
+ accurate, so we went for CAD modelling, for this mission we used Fusion
+ 360 software, for its ease in editing any parameter in the design using
+ the timeline feature, these are the results of the cad model.
 \end_layout
 
 \begin_layout Standard
@@ -3097,7 +3185,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-19-52.png
+	filename Pictures/Screenshot from 2025-06-18 00-19-52.png
 	width 75page%
 
 \end_inset
@@ -3109,9 +3197,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-View:
- azimuth,
- elevation = [
+View: azimuth, elevation = [
 \begin_inset Formula $45^{\circ}$
 \end_inset
 
@@ -3142,7 +3228,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-20-44.png
+	filename Pictures/Screenshot from 2025-06-18 00-20-44.png
 	width 70page%
 
 \end_inset
@@ -3177,7 +3263,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-21-33.png
+	filename Pictures/Screenshot from 2025-06-18 00-21-33.png
 	width 70page%
 
 \end_inset
@@ -3212,7 +3298,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-07-34.png
+	filename Pictures/Screenshot from 2025-06-18 00-07-34.png
 	width 70page%
 
 \end_inset
@@ -3242,14 +3328,14 @@ Athena Vortex Lattice Software (AVL)
 \end_layout
 
 \begin_layout Standard
-The Athena Vortex Lattice (AVL) is a computational tool developed by Mark Drela at MIT for aerodynamic analysis of aircraft and missile configurations.
- Based on vortex lattice theory (VLT),
- AVL provides rapid estimations of stability derivatives,
- lift distribution,
- and control effectiveness for slender bodies in inviscid,
- incompressible flow.
- Its efficiency and open-source availability make it a preferred choice for preliminary design phases in aerospace engineering,
- including cruise missile development.
+The Athena Vortex Lattice (AVL) is a computational tool developed by Mark
+ Drela at MIT for aerodynamic analysis of aircraft and missile configurations.
+ Based on vortex lattice theory (VLT), AVL provides rapid estimations of
+ stability derivatives, lift distribution, and control effectiveness for
+ slender bodies in inviscid, incompressible flow.
+ Its efficiency and open-source availability make it a preferred choice
+ for preliminary design phases in aerospace engineering, including cruise
+ missile development.
 \end_layout
 
 \begin_layout Subsection
@@ -3257,20 +3343,27 @@ Vortex Lattice Theory (VLT)
 \end_layout
 
 \begin_layout Standard
-The Vortex Lattice Theory (VLT) is a numerical computational technique used in aerodynamics to predict the lift distribution and stability characteristics of lifting surfaces.
- As a potential flow method,
- it solves the Laplace equation for inviscid,
- incompressible,
- and irrotational flow around three-dimensional wings and aircraft configurations.The fundamental principle relies on discretizing lifting surfaces into panels,
- each associated with a horseshoe vortex system that models the circulation around the wing.The implementation begins with geometric discretization,
- where the wing surface is divided into chordwise and spanwise panels.
- Each panel contains a horseshoe vortex consisting of a bound vortex segment and two trailing vortex filaments extending downstream to infinity.
- The Kutta condition is applied at the trailing edge to ensure smooth flow separation.
- A system of linear equations is constructed by calculating the influence coefficients between each vortex element and control point,
- with the right-hand side representing the freestream flow normal to each panel.Solving this linear system yields the circulation distribution across all panels,
- from which aerodynamic forces and moments can be derived.
- Lift is computed using the Kutta-Joukowski theorem,
- while induced drag results from the energy lost in the trailing vortex system.
+The Vortex Lattice Theory (VLT) is a numerical computational technique used
+ in aerodynamics to predict the lift distribution and stability characteristics
+ of lifting surfaces.
+ As a potential flow method, it solves the Laplace equation for inviscid,
+ incompressible, and irrotational flow around three-dimensional wings and
+ aircraft configurations.The fundamental principle relies on discretizing
+ lifting surfaces into panels, each associated with a horseshoe vortex system
+ that models the circulation around the wing.The implementation begins with
+ geometric discretization, where the wing surface is divided into chordwise
+ and spanwise panels.
+ Each panel contains a horseshoe vortex consisting of a bound vortex segment
+ and two trailing vortex filaments extending downstream to infinity.
+ The Kutta condition is applied at the trailing edge to ensure smooth flow
+ separation.
+ A system of linear equations is constructed by calculating the influence
+ coefficients between each vortex element and control point, with the right-hand
+ side representing the freestream flow normal to each panel.Solving this
+ linear system yields the circulation distribution across all panels, from
+ which aerodynamic forces and moments can be derived.
+ Lift is computed using the Kutta-Joukowski theorem, while induced drag
+ results from the energy lost in the trailing vortex system.
 \end_layout
 
 \begin_layout Standard
@@ -3282,7 +3375,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Horshow Vortex .png
+	filename Pictures/Horshow Vortex .png
 
 \end_inset
 
@@ -3290,8 +3383,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Discretizing lifting surfaces into panels,
- each associated with a horseshoe vortex system that models the circulation around the wing
+Discretizing lifting surfaces into panels, each associated with a horseshoe
+ vortex system that models the circulation around the wing
 \end_layout
 
 \end_inset
@@ -3313,9 +3406,11 @@ Stability Derivatives Calculation
 \end_layout
 
 \begin_layout Standard
-The Athena Vortex Lattice (AVL) program computes stability derivatives by numerically perturbing the aircraft or missile's state variables (angle of attack,
- sideslip,
- control deflections) and measuring the resulting changes in aerodynamic forces and moments.The analysis begins with computation of the steady-state solution at reference flight conditions(Trim condition),
+The Athena Vortex Lattice (AVL) program computes stability derivatives by
+ numerically perturbing the aircraft or missile's state variables (angle
+ of attack, sideslip, control deflections) and measuring the resulting changes
+ in aerodynamic forces and moments.The analysis begins with computation of
+ the steady-state solution at reference flight conditions(Trim condition),
  including specified angles of attack (
 \begin_inset Formula $\alpha$
 \end_inset
@@ -3325,14 +3420,14 @@ The Athena Vortex Lattice (AVL) program computes stability derivatives by numeri
 \end_inset
 
 ).
- This initial solution provides reference values for aerodynamic forces (L,
- D,
- Y) and moments (L,
- M,
- N) which are obtained from the Vortex Lattice Method.Thren AVL employs a finite-difference approach to compute derivatives.
- Small perturbations are applied to each state variable while holding others constant For each perturbation case,
- AVL resolves the modified flow field and records changes in aerodynamic coefficients.
- The stability derivatives are then computed through first-order finite differences.
+ This initial solution provides reference values for aerodynamic forces
+ (L, D, Y) and moments (L, M, N) which are obtained from the Vortex Lattice
+ Method.Thren AVL employs a finite-difference approach to compute derivatives.
+ Small perturbations are applied to each state variable while holding others
+ constant For each perturbation case, AVL resolves the modified flow field
+ and records changes in aerodynamic coefficients.
+ The stability derivatives are then computed through first-order finite
+ differences.
 \end_layout
 
 \begin_layout Subsection
@@ -3340,18 +3435,21 @@ Finding the Trim Condition
 \end_layout
 
 \begin_layout Standard
-The trim condition of a cruise missile represents a state of equilibrium where the aerodynamic forces and moments are balanced,
- allowing for steady,
+The trim condition of a cruise missile represents a state of equilibrium
+ where the aerodynamic forces and moments are balanced, allowing for steady,
  level flight.
- The Athena Vortex Lattice (AVL) method provides an efficient computational approach to determine these trim conditions by solving the governing aerodynamic equations under specified flight constraints.
- This analysis is crucial since it is the starting point from which the stability derivatives are calculated (As mentioned above).
- AVL determines the trim condition through an iterative process that adjusts control surface deflections and angle of attack (
+ The Athena Vortex Lattice (AVL) method provides an efficient computational
+ approach to determine these trim conditions by solving the governing aerodynami
+c equations under specified flight constraints.
+ This analysis is crucial since it is the starting point from which the
+ stability derivatives are calculated (As mentioned above).
+ AVL determines the trim condition through an iterative process that adjusts
+ control surface deflections and angle of attack (
 \begin_inset Formula $\alpha$
 \end_inset
 
 ) until equilibrium is achieved.
- Analyze the wing and tail,
- let all the control surfaces have zero deflection,
+ Analyze the wing and tail, let all the control surfaces have zero deflection,
  use AVL to find the angle of attack at which trim will occur.
 \begin_inset Newline newline
 \end_inset
@@ -3365,7 +3463,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/trim_condition_avl.png
+	filename Pictures/trim_condition_avl.png
 	width 65line%
 
 \end_inset
@@ -3399,7 +3497,8 @@ C1
 \begin_inset Quotes erd
 \end_inset
 
- to find the trim angle of attack as well as the trim deflection of the elevator.
+ to find the trim angle of attack as well as the trim deflection of the
+ elevator.
 \end_layout
 
 \begin_layout Standard
@@ -3416,7 +3515,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/plot000.pdf
+	filename Pictures/plot000.pdf
 	width 60page%
 
 \end_inset
@@ -3451,7 +3550,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/plot001.pdf
+	filename Pictures/plot001.pdf
 	width 60page%
 
 \end_inset
@@ -3486,7 +3585,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/plot002.pdf
+	filename Pictures/plot002.pdf
 	width 60page%
 
 \end_inset
@@ -3516,9 +3615,8 @@ Files Used in AVL
 \end_layout
 
 \begin_layout Standard
-Athena Vortex Lattice (AVL) employs several input and output files to define the geometry,
- run simulations,
- and store results.
+Athena Vortex Lattice (AVL) employs several input and output files to define
+ the geometry, run simulations, and store results.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3526,119 +3624,101 @@ Geometry Definition File
 \end_layout
 
 \begin_layout Standard
-The Geometry Definition File (with the .avl extension) serves as the primary input file for the Athena Vortex Lattice (AVL) program,
- containing all necessary geometric and aerodynamic parameters required to define the aircraft or missile configuration.
- This file is structured in a plain-text format,
- where each component of the vehicle—
-such as wings,
- fuselage,
- and control surfaces—
-is systematically described using specific keywords and parameters.The file begins with a title section,
- which provides a descriptive name for the configuration.
+The Geometry Definition File (with the .avl extension) serves as the primary
+ input file for the Athena Vortex Lattice (AVL) program, containing all
+ necessary geometric and aerodynamic parameters required to define the aircraft
+ or missile configuration.
+ This file is structured in a plain-text format, where each component of
+ the vehicle—such as wings, fuselage, and control surfaces—is systematically
+ described using specific keywords and parameters.The file begins with a
+ title section, which provides a descriptive name for the configuration.
  This is followed by global parameters that apply to the entire analysis,
- such as the Mach number and symmetry conditions.The initial part of the file specifies global settings that influence the entire computation:
+ such as the Mach number and symmetry conditions.The initial part of the
+ file specifies global settings that influence the entire computation:
 \end_layout
 
 \begin_layout Enumerate
-Title:
- A user-defined string that identifies the configuration .
+Title: A user-defined string that identifies the configuration .
 \end_layout
 
 \begin_layout Enumerate
-Mach number:
- The freestream Mach number .
+Mach number: The freestream Mach number .
 \end_layout
 
 \begin_layout Standard
-Each lifting surface (e.g.,
- wings,
- tails,
- fins) is defined within a SURFACE block.
- This block includes parameters that describe the surface's overall characteristics:
+Each lifting surface (e.g., wings, tails, fins) is defined within a SURFACE
+ block.
+ This block includes parameters that describe the surface's overall characterist
+ics:
 \end_layout
 
 \begin_layout Enumerate
-Surface name:
- A label for the surface (e.g.,
- Wing,
- Vertical Tail).
+Surface name: A label for the surface (e.g., Wing, Vertical Tail).
 \end_layout
 
 \begin_layout Enumerate
-Number of chordwise panels (NCHORD):
- Determines the resolution of vortices along the chord.
+Number of chordwise panels (NCHORD): Determines the resolution of vortices
+ along the chord.
 \end_layout
 
 \begin_layout Enumerate
-Number of spanwise panels (CSPAN):
- Controls the spanwise discretization of the surface.
+Number of spanwise panels (CSPAN): Controls the spanwise discretization
+ of the surface.
 \end_layout
 
 \begin_layout Enumerate
-Incidence angle (ANGLE):
- Specifies the initial angle of attack of the surface relative to the freestream.
+Incidence angle (ANGLE): Specifies the initial angle of attack of the surface
+ relative to the freestream.
 \end_layout
 
 \begin_layout Standard
-Within each SURFACE block,
- one or more SECTION blocks define the cross-sectional geometry at specific spanwise locations.
+Within each SURFACE block, one or more SECTION blocks define the cross-sectional
+ geometry at specific spanwise locations.
  Each SECTION includes:
 \end_layout
 
 \begin_layout Enumerate
-Leading-edge coordinates (XLE,
- YLE,
- ZLE):
- The position of the section's leading edge in the global coordinate system.
+Leading-edge coordinates (XLE, YLE, ZLE): The position of the section's
+ leading edge in the global coordinate system.
 \end_layout
 
 \begin_layout Enumerate
-Chord length (CHORD):
- The section's chord length.
+Chord length (CHORD): The section's chord length.
 \end_layout
 
 \begin_layout Standard
-Control surfaces (e.g.,
- elevators,
- ailerons,
- rudders) are defined within the SURFACE block using the CONTROL keyword.
+Control surfaces (e.g., elevators, ailerons, rudders) are defined within the
+ SURFACE block using the CONTROL keyword.
  Each control surface is parameterized by:
 \end_layout
 
 \begin_layout Enumerate
-Control name:
- A label (e.g.,
- Elevator).
+Control name: A label (e.g., Elevator).
 \end_layout
 
 \begin_layout Enumerate
-Hinge parameters:
- Define the control surface's deflection characteristics,
+Hinge parameters: Define the control surface's deflection characteristics,
  including the hinge location and deflection limits.
 \end_layout
 
 \begin_layout Standard
-Body Definitions For configurations with fuselages or missile bodies,
- the BODY keyword is used to define slender,
- non-lifting components.
- Similar to SURFACE,
- the BODY block includes:
+Body Definitions For configurations with fuselages or missile bodies, the
+ BODY keyword is used to define slender, non-lifting components.
+ Similar to SURFACE, the BODY block includes:
 \end_layout
 
 \begin_layout Standard
-Body name:
- A label (e.g.,
- Fuselage).
+Body name: A label (e.g., Fuselage).
 \end_layout
 
 \begin_layout Standard
-Number of longitudinal panels (N):
- Controls the resolution along the body's length.
+Number of longitudinal panels (N): Controls the resolution along the body's
+ length.
 \end_layout
 
 \begin_layout Standard
-Cross-sectional shape:
- Defined via a series of SECTION blocks that specify the body's radius or width at each station.
+Cross-sectional shape: Defined via a series of SECTION blocks that specify
+ the body's radius or width at each station.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3646,24 +3726,28 @@ Mass and Inertia File
 \end_layout
 
 \begin_layout Standard
-The Mass and Inertia File (with the .mass extension) is a critical component of the Athena Vortex Lattice (AVL) analysis framework,
- providing the necessary mass properties of the vehicle to ensure accurate computation of stability derivatives,
- trim conditions,
- and dynamic behavior.The .mass file defines the mass distribution of the vehicle,
- including the center of gravity (CG) location and the moments and products of inertia.
- These parameters are essential for calculating the vehicle's response to aerodynamic forces and moments,
- particularly in stability and control analyses.
- Without accurate mass and inertia data,
- the predictions of trim conditions,
- dynamic stability modes,
- and control effectiveness would be unreliable.
- The file ensures that the inertial coupling between translational and rotational motions is properly accounted for in the simulations.It is a plain-text file structured to provide clear and concise definitions of the vehicle's mass properties.
- It begins with global units declarations,
- followed by the mass and inertia data for the entire vehicle or individual components.The file starts with declarations of the units used for length,
- mass,
- and time.
- These units must be consistent with those used in the geometry definition file (.avl) to ensure coherent calculations.Then the primary section of the .mass file defines the total mass of the vehicle and the coordinates of its center of gravity (CG) relative to a reference point,
- typically the nose or another fixed location on the geometry.
+The Mass and Inertia File (with the .mass extension) is a critical component
+ of the Athena Vortex Lattice (AVL) analysis framework, providing the necessary
+ mass properties of the vehicle to ensure accurate computation of stability
+ derivatives, trim conditions, and dynamic behavior.The .mass file defines
+ the mass distribution of the vehicle, including the center of gravity (CG)
+ location and the moments and products of inertia.
+ These parameters are essential for calculating the vehicle's response to
+ aerodynamic forces and moments, particularly in stability and control analyses.
+ Without accurate mass and inertia data, the predictions of trim conditions,
+ dynamic stability modes, and control effectiveness would be unreliable.
+ The file ensures that the inertial coupling between translational and rotationa
+l motions is properly accounted for in the simulations.It is a plain-text
+ file structured to provide clear and concise definitions of the vehicle's
+ mass properties.
+ It begins with global units declarations, followed by the mass and inertia
+ data for the entire vehicle or individual components.The file starts with
+ declarations of the units used for length, mass, and time.
+ These units must be consistent with those used in the geometry definition
+ file (.avl) to ensure coherent calculations.Then the primary section of the
+ .mass file defines the total mass of the vehicle and the coordinates of
+ its center of gravity (CG) relative to a reference point, typically the
+ nose or another fixed location on the geometry.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3671,34 +3755,32 @@ Run Configuration File
 \end_layout
 
 \begin_layout Standard
-The Run Configuration File (with the .run extension) serves as the control script for executing analyses in Athena Vortex Lattice (AVL).
- This file defines the specific flight conditions,
- analysis types,
- and computational parameters that AVL will use during its calculations.he .run file acts as a batch-processing script that automates AVL's computational workflow.
- It allows users to define multiple analysis cases in sequence,
- specify trim conditions,
- request stability derivatives,
- and control output formatting.The .run file typically contains three types of directives:
- case definitions,
- operational commands,
- and output controls.
- Each serves a distinct purpose in configuring the analysis.Case Definitions establish the flight conditions for analysis.
+The Run Configuration File (with the .run extension) serves as the control
+ script for executing analyses in Athena Vortex Lattice (AVL).
+ This file defines the specific flight conditions, analysis types, and computati
+onal parameters that AVL will use during its calculations.he .run file acts
+ as a batch-processing script that automates AVL's computational workflow.
+ It allows users to define multiple analysis cases in sequence, specify
+ trim conditions, request stability derivatives, and control output formatting.Th
+e .run file typically contains three types of directives: case definitions,
+ operational commands, and output controls.
+ Each serves a distinct purpose in configuring the analysis.Case Definitions
+ establish the flight conditions for analysis.
  These include:
 \end_layout
 
 \begin_layout Enumerate
-Angle of attack (ALPHA):
- Specifies the initial Angle of Attack angle in degrees.
+Angle of attack (ALPHA): Specifies the initial Angle of Attack angle in
+ degrees.
 \end_layout
 
 \begin_layout Enumerate
-Sideslip angle (BETA):
- Defines the yaw angle for lateral-directional analysis.
+Sideslip angle (BETA): Defines the yaw angle for lateral-directional analysis.
 \end_layout
 
 \begin_layout Enumerate
-Mach number (MACH):
- Sets the freestream Mach number for compressibility effects.
+Mach number (MACH): Sets the freestream Mach number for compressibility
+ effects.
 \end_layout
 
 \begin_layout Standard
@@ -3706,18 +3788,16 @@ Operational Commands determine what calculations AVL performs:
 \end_layout
 
 \begin_layout Enumerate
-OPER:
- Initiates an analysis.
+OPER: Initiates an analysis.
 \end_layout
 
 \begin_layout Enumerate
-STABILITY:
- Computes stability derivatives for the current flight condition.
+STABILITY: Computes stability derivatives for the current flight condition.
 \end_layout
 
 \begin_layout Enumerate
-MODES:
- Calculates dynamic mode characteristics like damping ratios and frequencies.
+MODES: Calculates dynamic mode characteristics like damping ratios and frequenci
+es.
 \end_layout
 
 \begin_layout Standard
@@ -3725,20 +3805,16 @@ Output Controls manage how results are presented:
 \end_layout
 
 \begin_layout Enumerate
-WRITE:
- Saves force,
- moment,
- or stability data to specified files.
+WRITE: Saves force, moment, or stability data to specified files.
 \end_layout
 
 \begin_layout Enumerate
-PLOT:
- Generates visual representations of pressure distributions or flow fields.
+PLOT: Generates visual representations of pressure distributions or flow
+ fields.
 \end_layout
 
 \begin_layout Enumerate
-QUIT:
- Terminates the AVL session after completing analyses.
+QUIT: Terminates the AVL session after completing analyses.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3746,12 +3822,13 @@ Force and Moment Output File
 \end_layout
 
 \begin_layout Standard
-The Force and Moment Output File (with the .ft extension) serves as one of the primary result files generated by Athena Vortex Lattice (AVL),
- containing the computed aerodynamic forces,
- moments,
- and stability derivatives for the analyzed configuration.
- This file provides a comprehensive numerical summary of the vehicle's aerodynamic characteristics under the specified flight conditions,
- forming the basis for performance evaluation and stability analysis.
+The Force and Moment Output File (with the .ft extension) serves as one of
+ the primary result files generated by Athena Vortex Lattice (AVL), containing
+ the computed aerodynamic forces, moments, and stability derivatives for
+ the analyzed configuration.
+ This file provides a comprehensive numerical summary of the vehicle's aerodynam
+ic characteristics under the specified flight conditions, forming the basis
+ for performance evaluation and stability analysis.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3759,19 +3836,22 @@ Eigenmode Output File
 \end_layout
 
 \begin_layout Standard
-The Eigenmode Output File (with the .eig extension) contains the dynamic stability analysis results computed by Athena Vortex Lattice (AVL),
- providing crucial information about the vehicle's natural oscillatory modes and their stability characteristics.
- This file presents the eigenvalues and eigenvectors that describe the aircraft or missile's dynamic response to perturbations,
- offering fundamental insights into its flight dynamics behavior.The file structure begins with a header section that identifies the flight condition and configuration being analyzed,
+The Eigenmode Output File (with the .eig extension) contains the dynamic
+ stability analysis results computed by Athena Vortex Lattice (AVL), providing
+ crucial information about the vehicle's natural oscillatory modes and their
+ stability characteristics.
+ This file presents the eigenvalues and eigenvectors that describe the aircraft
+ or missile's dynamic response to perturbations, offering fundamental insights
+ into its flight dynamics behavior.The file structure begins with a header
+ section that identifies the flight condition and configuration being analyzed,
  followed by a systematic presentation of the computed eigenmodes.
  Each mode's characteristics are displayed with mathematical precision,
  including the complex eigenvalues that determine the system's dynamic stability.
  The real part of each eigenvalue indicates the damping characteristics,
- where negative values represent stable,
- decaying oscillations while positive values denote unstable,
- diverging behavior.
- The imaginary part corresponds to the natural frequency of oscillation in radians per second,
- describing the periodic nature of each mode.
+ where negative values represent stable, decaying oscillations while positive
+ values denote unstable, diverging behavior.
+ The imaginary part corresponds to the natural frequency of oscillation
+ in radians per second, describing the periodic nature of each mode.
 \end_layout
 
 \begin_layout Standard
@@ -3825,7 +3905,8 @@ Geometry Definition File (.avl)
 \begin_inset Text
 
 \begin_layout Plain Layout
-contains all necessary geometric and aerodynamic parameters required to define the aircraft or missile configuration
+contains all necessary geometric and aerodynamic parameters required to
+ define the aircraft or missile configuration
 \end_layout
 
 \end_inset
@@ -3845,9 +3926,8 @@ Mass and Inertia File (.mass)
 \begin_inset Text
 
 \begin_layout Plain Layout
-provides the necessary mass properties of the vehicle to ensure accurate computation of stability derivatives,
- trim conditions,
- and dynamic behavior.
+provides the necessary mass properties of the vehicle to ensure accurate
+ computation of stability derivatives, trim conditions, and dynamic behavior.
 \end_layout
 
 \end_inset
@@ -3867,10 +3947,10 @@ Run Configuration File (.run)
 \begin_inset Text
 
 \begin_layout Plain Layout
-serves as the control script for executing analyses in Athena Vortex Lattice (AVL).
- This file defines the specific flight conditions,
- analysis types,
- and computational parameters
+serves as the control script for executing analyses in Athena Vortex Lattice
+ (AVL).
+ This file defines the specific flight conditions, analysis types, and computati
+onal parameters
 \end_layout
 
 \end_inset
@@ -3890,10 +3970,9 @@ Force and Moment Output File (.ft)
 \begin_inset Text
 
 \begin_layout Plain Layout
-serves as one of the primary result files generated by Athena Vortex Lattice (AVL),
- containing the computed aerodynamic forces,
- moments,
- and stability derivatives for the analyzed configuration
+serves as one of the primary result files generated by Athena Vortex Lattice
+ (AVL), containing the computed aerodynamic forces, moments, and stability
+ derivatives for the analyzed configuration
 \end_layout
 
 \end_inset
@@ -3913,8 +3992,9 @@ Eigenmode Output File (.eig)
 \begin_inset Text
 
 \begin_layout Plain Layout
-contains the dynamic stability analysis results computed by Athena Vortex Lattice (AVL),
- providing crucial information about the vehicle's natural oscillatory modes and their stability characteristics.
+contains the dynamic stability analysis results computed by Athena Vortex
+ Lattice (AVL), providing crucial information about the vehicle's natural
+ oscillatory modes and their stability characteristics.
 \end_layout
 
 \end_inset
@@ -3953,21 +4033,19 @@ Automating the design process
 \end_layout
 
 \begin_layout Standard
-Althogh The Athena Vortex Lattice (AVL) software is a powerful tool for aerodynamic analysis,
- but its text-based interface and manual file handling make it difficult to use efficiently.
- To overcome this challenge,
- we developed a MATLAB program that automates AVL,
- eliminating the need for direct user interaction with AVL’s complex input system.This MATLAB interface simplifies the entire workflow—
-geometry setup,
- case execution,
- and result extraction—
-while preserving AVL’s core aerodynamic calculations.
- Users can define missile designs in MATLAB,
- and the program automatically generates the necessary AVL input files,
- runs simulations,
- and retrieves results without requiring manual input.By bridging AVL’s capabilities with MATLAB’s user-friendly environment,
- this tool makes aerodynamic analysis more accessible,
- reducing setup time and minimizing errors.
+Althogh The Athena Vortex Lattice (AVL) software is a powerful tool for
+ aerodynamic analysis, but its text-based interface and manual file handling
+ make it difficult to use efficiently.
+ To overcome this challenge, we developed a MATLAB program that automates
+ AVL, eliminating the need for direct user interaction with AVL’s complex
+ input system.This MATLAB interface simplifies the entire workflow—geometry
+ setup, case execution, and result extraction—while preserving AVL’s core
+ aerodynamic calculations.
+ Users can define missile designs in MATLAB, and the program automatically
+ generates the necessary AVL input files, runs simulations, and retrieves
+ results without requiring manual input.By bridging AVL’s capabilities with
+ MATLAB’s user-friendly environment, this tool makes aerodynamic analysis
+ more accessible, reducing setup time and minimizing errors.
  It is particularly beneficial for engineers and researchers who need efficient,
  repeatable simulations for missile or aircraft design.
 \end_layout
@@ -4080,7 +4158,8 @@ airfoil_eq.m
 \begin_inset Text
 
 \begin_layout Plain Layout
-is used to find the coefficients of the polynomial of thickness of the airfoil used in the lifting surface (used in 
+is used to find the coefficients of the polynomial of thickness of the airfoil
+ used in the lifting surface (used in 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4108,7 +4187,8 @@ required_thrust.m
 \begin_inset Text
 
 \begin_layout Plain Layout
-is a function with trivial (maybe empirical) way to calculate the required thrust of the flying vehicle.
+is a function with trivial (maybe empirical) way to calculate the required
+ thrust of the flying vehicle.
 \end_layout
 
 \end_inset
@@ -4128,8 +4208,7 @@ aircraft_data.m
 \begin_inset Text
 
 \begin_layout Plain Layout
-is to read,
- parse and save the airplane data.
+is to read, parse and save the airplane data.
 \end_layout
 
 \end_inset
@@ -4169,25 +4248,22 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-Structural design is a critical aspect of cruise missile development,
- requiring comprehensive knowledge of load distributions,
- vibrational dynamics,
- and advanced design methodologies.
- The process begins with a preliminary design phase,
- based on mass and inertia calculations derived from aerodynamic studies.
- Following initial testing,
- the next stage involves material selection to achieve optimal structural stiffness and strength,
- necessitating a thorough understanding of material science.
- Finally,
- a detailed design is developed,
- where each component is carefully analyzed to ensure accurate load distribution and structural integrity.in this introduction we will recall the main srtuctural concepts that we learned.
+Structural design is a critical aspect of cruise missile development, requiring
+ comprehensive knowledge of load distributions, vibrational dynamics, and
+ advanced design methodologies.
+ The process begins with a preliminary design phase, based on mass and inertia
+ calculations derived from aerodynamic studies.
+ Following initial testing, the next stage involves material selection to
+ achieve optimal structural stiffness and strength, necessitating a thorough
+ understanding of material science.
+ Finally, a detailed design is developed, where each component is carefully
+ analyzed to ensure accurate load distribution and structural integrity.in
+ this introduction we will recall the main srtuctural concepts that we learned.
 \end_layout
 
 \begin_layout Standard
-Missile structural design consists of three phases,
- preliminary design,
- selection of materials,
- and detailed design.
+Missile structural design consists of three phases, preliminary design,
+ selection of materials, and detailed design.
 \end_layout
 
 \begin_layout Subsection
@@ -4195,8 +4271,8 @@ Structural Loads
 \end_layout
 
 \begin_layout Standard
-There are basically three different kinds of loads (or stresses) which can be imposed on structural members:
- 
+There are basically three different kinds of loads (or stresses) which can
+ be imposed on structural members: 
 \end_layout
 
 \begin_layout Enumerate
@@ -4220,7 +4296,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Basic Loads.png
+	filename Pictures/Basic Loads.png
 	width 70page%
 
 \end_inset
@@ -4246,7 +4322,8 @@ Basic Loads
 \end_layout
 
 \begin_layout Standard
-Combinations of the three basic loadings (stresses) are combined in these loadings
+Combinations of the three basic loadings (stresses) are combined in these
+ loadings
 \end_layout
 
 \begin_layout Enumerate
@@ -4266,7 +4343,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Bending and Torsion.png
+	filename Pictures/Bending and Torsion.png
 	width 70page%
 
 \end_inset
@@ -4292,13 +4369,15 @@ Torsion and Bending
 \end_layout
 
 \begin_layout Standard
-Loads that are being applied to a member can be thought of as ‘axial’ or ‘transverse’.
+Loads that are being applied to a member can be thought of as ‘axial’ or
+ ‘transverse’.
  An axial load is applied in the same direction as the length of the member,
- whereas a transverse load is applied in a perpendicular direction to the member.
- In a simple beam bridge,
- the ‘pillars’ are subjected to axial loads which will ‘compress’ the pillar and the ‘beam’ part (e.g.
- a railway track) will be subjected to transverse loads,
- which will cause the member to bend
+ whereas a transverse load is applied in a perpendicular direction to the
+ member.
+ In a simple beam bridge, the ‘pillars’ are subjected to axial loads which
+ will ‘compress’ the pillar and the ‘beam’ part (e.g.
+ a railway track) will be subjected to transverse loads, which will cause
+ the member to bend
 \end_layout
 
 \begin_layout Standard
@@ -4310,7 +4389,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Axial and Tranverse.png
+	filename Pictures/Axial and Tranverse.png
 	width 65page%
 
 \end_inset
@@ -4340,9 +4419,13 @@ Tension and compression stresses
 \end_layout
 
 \begin_layout Standard
-A pure compression load causes compression stresses in the member from the squeezing tendency.
- A pure tension load causes tensile stress in the member from the stretching tendencies.
- Tension and compression stresses are also referred to as ‘axial’ stresses.Members designed to absorb compression loads are generally referred to as struts.Members intended to support tensile loads are generally referred to as ties.
+A pure compression load causes compression stresses in the member from the
+ squeezing tendency.
+ A pure tension load causes tensile stress in the member from the stretching
+ tendencies.
+ Tension and compression stresses are also referred to as ‘axial’ stresses.Member
+s designed to absorb compression loads are generally referred to as struts.Member
+s intended to support tensile loads are generally referred to as ties.
 \end_layout
 
 \begin_layout Subsection
@@ -4350,13 +4433,14 @@ Shear Stresses
 \end_layout
 
 \begin_layout Standard
-Shear stresses come from loading which tends to slide one face of the material over an adjacent face.
+Shear stresses come from loading which tends to slide one face of the material
+ over an adjacent face.
  Take our bent beam again.
- The material,
- between the upper and lower surfaces,
- is under shear stress.
- Shearing stresses can separate material by sliding a part of it in one direction and the rest in the opposite direction.
- A bolt or a rivet which keeps two materials together is under shear stress if the two materials are forced in different directions.
+ The material, between the upper and lower surfaces, is under shear stress.
+ Shearing stresses can separate material by sliding a part of it in one
+ direction and the rest in the opposite direction.
+ A bolt or a rivet which keeps two materials together is under shear stress
+ if the two materials are forced in different directions.
  If the shear becomes sufficiently high the bolt (or rivet) will be cut.
  
 \end_layout
@@ -4366,14 +4450,15 @@ Bending Stress
 \end_layout
 
 \begin_layout Standard
-Bending forces occurs if,
- for instance,
- the beam is fixed at one end and a force is applied.
- A closer look shows that one side of the beam will be under tensile stress and the other side will be under compression stress.
- Bending stresses are also referred to as ‘transverse’ stresses.Members designed to absorb loading at right angles to their length (bending loads) are generally referred to as beams.Bending is essential to the missile wing structures.
- The wing tips of the cruise missile,
- for example,
- might move up and down through more than one metre relative to the fuselage.
+Bending forces occurs if, for instance, the beam is fixed at one end and
+ a force is applied.
+ A closer look shows that one side of the beam will be under tensile stress
+ and the other side will be under compression stress.
+ Bending stresses are also referred to as ‘transverse’ stresses.Members designed
+ to absorb loading at right angles to their length (bending loads) are generally
+ referred to as beams.Bending is essential to the missile wing structures.
+ The wing tips of the cruise missile, for example, might move up and down
+ through more than one metre relative to the fuselage.
  Wing lift applies a bending force to the wing structure.
 \end_layout
 
@@ -4386,7 +4471,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Wing bend from lift.png
+	filename Pictures/Wing bend from lift.png
 	width 60page%
 
 \end_inset
@@ -4414,13 +4499,15 @@ Torsion Stress
 
 \begin_layout Standard
 Torsional stress applies to members being twisted.
- A closer look at the stress lines shows that torsion can be dissolved into tension,
- compression and shear stresses.
+ A closer look at the stress lines shows that torsion can be dissolved into
+ tension, compression and shear stresses.
  A drive shaft (or torque tube) is subjected to torsional stresses.
- A flexible wing structure can be loaded in torsion from lift forces that appear in the chordwise direction (from leading edge to trailing edge).
- Besides,
- a swept wing design can also be forced into torsion from wing bending forces (which will be shown later).
- Bending and torsion are two important load absorbing qualities for a wing structure.
+ A flexible wing structure can be loaded in torsion from lift forces that
+ appear in the chordwise direction (from leading edge to trailing edge).
+ Besides, a swept wing design can also be forced into torsion from wing
+ bending forces (which will be shown later).
+ Bending and torsion are two important load absorbing qualities for a wing
+ structure.
 \end_layout
 
 \begin_layout Standard
@@ -4432,7 +4519,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Torsion.png
+	filename Pictures/Torsion.png
 	width 70page%
 
 \end_inset
@@ -4468,30 +4555,30 @@ Truss Design
 \begin_layout Standard
 Since any member is stronger in pure compression or tension than in bending,
  members carry end loads better than side loads.
- In order to do this,
- designers arrange the members in the form of a truss or rigid framework.
- In order for a truss to be rigid,
- it must be composed entirely of triangles.
- When the load on a truss acts in one direction,
- every alternate member carries tension while the other members carry compression.
- When the load is reversed,
- the members which were carrying compression now are subjected to tension and those which were carrying tension are under compression.The construction method of a truss uses horizontal lengths of tubing,
- called longerons,
- which are welded in place to form a well-braced framework.
- Vertical and diagonal struts (or braces) are welded to the longerons and give the structure a rectangular or triangular shape when viewed from the end.
- These features make it rigid,
- strong,
- and light.The truss design has today only very limited application in aviation.
+ In order to do this, designers arrange the members in the form of a truss
+ or rigid framework.
+ In order for a truss to be rigid, it must be composed entirely of triangles.
+ When the load on a truss acts in one direction, every alternate member
+ carries tension while the other members carry compression.
+ When the load is reversed, the members which were carrying compression
+ now are subjected to tension and those which were carrying tension are
+ under compression.The construction method of a truss uses horizontal lengths
+ of tubing, called longerons, which are welded in place to form a well-braced
+ framework.
+ Vertical and diagonal struts (or braces) are welded to the longerons and
+ give the structure a rectangular or triangular shape when viewed from the
+ end.
+ These features make it rigid, strong, and light.The truss design has today
+ only very limited application in aviation.
  The disadvantage is obvious to anybody who has ever entered an aircraft;
- the truss simply occupies too much space which makes it impractical for use in aircraft designed for air transportation.
- The advantage,
- however,
- is its high rigidity and strength obtained at a reasonable low weight.
- Another advantage is the improved protection of the crew,
- important in case a crash occurs (crashworthiness).
- Smaller aerobatic aircraft,
- like the Extra300 or Sukhoi Su26,
- use the truss design for these reasons.
+ the truss simply occupies too much space which makes it impractical for
+ use in aircraft designed for air transportation.
+ The advantage, however, is its high rigidity and strength obtained at a
+ reasonable low weight.
+ Another advantage is the improved protection of the crew, important in
+ case a crash occurs (crashworthiness).
+ Smaller aerobatic aircraft, like the Extra300 or Sukhoi Su26, use the truss
+ design for these reasons.
 \end_layout
 
 \begin_layout Standard
@@ -4503,7 +4590,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Truss_design.png
+	filename Pictures/Truss_design.png
 	width 70page%
 
 \end_inset
@@ -4534,19 +4621,21 @@ Monocoque designs
 
 \begin_layout Standard
 Monocoque is a French word meaning ‘single shell’.
- It describes a type of construction used on an aircraft fuselage (or wing) in which skin panels are shaped over a curved form and then bonded or riveted.all metal monocoque structures use frames (or rings) to support the shape of the shell.
- Bulkheads are heavier frame members,
- eventually cast or machined,
- that allows for attachment of engines,
- wings,
- stabilisers,
- etc.
- Longitudinal fairing strips joined to the frames is used to support the attachment of the skin panels.
- Most twisting and bending stresses are carried by the external skin rather than by an open framework,
- eliminating the need for internal bracing and resulting in a more streamlined aeroplane than with a truss-type.A pure monocoque shell is a simple unstiffened tube of thin skin and as such inefficient,
- since unsupported skin sheets are unstable in compression and shear.Another disadvantage of the pure monocoque design is the lack of redundancy.
- If a skin panel fails,
- no other structural part can act as backup.
+ It describes a type of construction used on an aircraft fuselage (or wing)
+ in which skin panels are shaped over a curved form and then bonded or riveted.al
+l metal monocoque structures use frames (or rings) to support the shape
+ of the shell.
+ Bulkheads are heavier frame members, eventually cast or machined, that
+ allows for attachment of engines, wings, stabilisers, etc.
+ Longitudinal fairing strips joined to the frames is used to support the
+ attachment of the skin panels.
+ Most twisting and bending stresses are carried by the external skin rather
+ than by an open framework, eliminating the need for internal bracing and
+ resulting in a more streamlined aeroplane than with a truss-type.A pure
+ monocoque shell is a simple unstiffened tube of thin skin and as such inefficie
+nt, since unsupported skin sheets are unstable in compression and shear.Another
+ disadvantage of the pure monocoque design is the lack of redundancy.
+ If a skin panel fails, no other structural part can act as backup.
  
 \end_layout
 
@@ -4559,7 +4648,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Monocoque.png
+	filename Pictures/Monocoque.png
 	width 60page%
 
 \end_inset
@@ -4589,17 +4678,25 @@ Semi-monocoque fuselage design
 \end_layout
 
 \begin_layout Standard
-A semi-monocoque shell is the most often used construction for modern,
- highperformance aircraft.
- The semi-monocoque structure is highly efficient.Semi-monocoque literally means half a single shell.
- A semimonocoque fuselage,
- internally contains braces of longitudinal elements (stringers,
- longerons and keelsons),
- transverse elements (frames/rings and bulkheads),
- externally,the skin.Longerons are heavy stringers often recognised as closed profiles or machined profiles.A keelson (or keel beam) is a heavier and extra strengthened part used to support the structure where large cut-outs are made.The longerons and keelsons carry the major portion of the fuselage bending loadings.
- The skin carries the shear from the applied external torsion forces.Stringers also carry axial loads induced by the bending loads.Frames primarily serve to maintain the shape of the fuselage and to prevent instability of the structure.Frame loads are generally small and therefore of a light construction.Bulkheads are provided at points where concentrated forces are transferred,
+A semi-monocoque shell is the most often used construction for modern, highperfo
+rmance aircraft.
+ The semi-monocoque structure is highly efficient.Semi-monocoque literally
+ means half a single shell.
+ A semimonocoque fuselage, internally contains braces of longitudinal elements
+ (stringers, longerons and keelsons), transverse elements (frames/rings
+ and bulkheads), externally,the skin.Longerons are heavy stringers often
+ recognised as closed profiles or machined profiles.A keelson (or keel beam)
+ is a heavier and extra strengthened part used to support the structure
+ where large cut-outs are made.The longerons and keelsons carry the major
+ portion of the fuselage bending loadings.
+ The skin carries the shear from the applied external torsion forces.Stringers
+ also carry axial loads induced by the bending loads.Frames primarily serve
+ to maintain the shape of the fuselage and to prevent instability of the
+ structure.Frame loads are generally small and therefore of a light construction.B
+ulkheads are provided at points where concentrated forces are transferred,
  for instance at the wing attachment points and stabiliser attachments.
- The bulkhead structures are quite substantial and serve to distribute the loadings into the fuselage skin.
+ The bulkhead structures are quite substantial and serve to distribute the
+ loadings into the fuselage skin.
 \end_layout
 
 \begin_layout Standard
@@ -4611,7 +4708,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/SemiMono.png
+	filename Pictures/SemiMono.png
 	width 70page%
 
 \end_inset
@@ -4639,15 +4736,22 @@ Wing Design
 
 \begin_layout Standard
 The purpose of the wing is to provide the needed lift.
- The wing section also serves as fuel storage on most aircraft.Basic structural parts in wings are spars (beams),stringers stiffeners),ribs and wing skin.Wing spars,
- which are beams,
- are classified into main spars and auxiliary (support) spars.
- Spars are the main principal load members of the wing and all structural loads are transferred to this part.
+ The wing section also serves as fuel storage on most aircraft.Basic structural
+ parts in wings are spars (beams),stringers stiffeners),ribs and wing skin.Wing
+ spars, which are beams, are classified into main spars and auxiliary (support)
+ spars.
+ Spars are the main principal load members of the wing and all structural
+ loads are transferred to this part.
  The wing structure is built around the spars.
- The main spar(s) are attached to the fuselage (by various means) to transfer the wing lift and propulsive forces from wing mounted engines.Auxiliary (support/false) spars are typically used as attachment beams for flight control surfaces.Wing ribs provide the aerodynamic shape of the wing.
- The ribs are attached to the wing spars and assure the required chordwise stiffness of the wing.The wing skin is joined to the ribs,
- either directly or indirectly via rows of stringers.Modern aircraft wings are typically designed as stressed skin semi-monocoque designs,
- though many wings of light aircraft may be closer to a monocoque design.
+ The main spar(s) are attached to the fuselage (by various means) to transfer
+ the wing lift and propulsive forces from wing mounted engines.Auxiliary
+ (support/false) spars are typically used as attachment beams for flight
+ control surfaces.Wing ribs provide the aerodynamic shape of the wing.
+ The ribs are attached to the wing spars and assure the required chordwise
+ stiffness of the wing.The wing skin is joined to the ribs, either directly
+ or indirectly via rows of stringers.Modern aircraft wings are typically
+ designed as stressed skin semi-monocoque designs, though many wings of
+ light aircraft may be closer to a monocoque design.
  
 \end_layout
 
@@ -4660,7 +4764,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Wing Design.png
+	filename Pictures/Wing Design.png
 	width 65page%
 
 \end_inset
@@ -4755,12 +4859,8 @@ Monocoque
 \end_layout
 
 \begin_layout Enumerate
-Semi-Monocoque (This includes ring stiffened shells,
- stringer ,
- skin with frames,
- integral stringer,
- skin with frames,
- waffles and corrugations).
+Semi-Monocoque (This includes ring stiffened shells, stringer , skin with
+ frames, integral stringer, skin with frames, waffles and corrugations).
 \end_layout
 
 \begin_layout Enumerate
@@ -4768,7 +4868,8 @@ Cored Faces (This includes honeycombs and truss cores).
 \end_layout
 
 \begin_layout Enumerate
-Trusses (which are combinations of discrete members which can resist only axial loads).
+Trusses (which are combinations of discrete members which can resist only
+ axial loads).
 \end_layout
 
 \begin_layout Section
@@ -4780,9 +4881,7 @@ Fuel Tanks
 \end_layout
 
 \begin_layout Standard
-Most important materials are:
- (1) Steel,
- (2) Titanium and (3) Glass Fiber.
+Most important materials are: (1) Steel, (2) Titanium and (3) Glass Fiber.
  An additional candidates are fibers such as Boron.
 \end_layout
 
@@ -4800,14 +4899,12 @@ Compute Buckling Allowables of tanks for pressurized and unpressurized cases.
 
 \begin_layout Enumerate
 Compare pressurized buckling plus pressure relief allowables to flight loads,
- if they are less,
- then additional compression structure is required.
+ if they are less, then additional compression structure is required.
 \end_layout
 
 \begin_layout Enumerate
-Compare the unpressurized buckling allowables to ground winds,
- if they're less,
- additional compression structure is required.
+Compare the unpressurized buckling allowables to ground winds, if they're
+ less, additional compression structure is required.
 \end_layout
 
 \begin_layout Subsubsection
@@ -4880,8 +4977,7 @@ The coefficient
 \begin_inset Formula $\frac{R}{t}$
 \end_inset
 
-,
- look at fig.
+, look at fig.
  C8.12 or table E1.4.6 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -4894,8 +4990,8 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-You need to choose the thickness that satisfies both lines of allowables and loads,
- then multiply by density to find relative weight.
+You need to choose the thickness that satisfies both lines of allowables
+ and loads, then multiply by density to find relative weight.
 \end_layout
 
 \begin_layout Subsection
@@ -4935,9 +5031,10 @@ There are 2 options:
 \end_layout
 
 \begin_layout Standard
-The first is the thrust cone extending from the engine normal to the aft tank bulkhead.
- But if multiple high thrust engines are used,
- then beams and trusses are required to carry the loads to the other shell.
+The first is the thrust cone extending from the engine normal to the aft
+ tank bulkhead.
+ But if multiple high thrust engines are used, then beams and trusses are
+ required to carry the loads to the other shell.
 \end_layout
 
 \begin_layout Subsection
@@ -4957,19 +5054,27 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-Guided missiles are able to seek out and accurately navigate their way to the correct target without assistance from a human operator.
- In fact,
- many of the methods used for missile guidance are the same as those used to navigate manned planes like the commercial airliners you fly aboard.The guided weapons used for attack (as offensive or defensive mean) had to be powerful enough to withstand the increasing targets capabilities and destroy the protective cover before the defenders could be engaged.
- This power is usually gained from the intelligence of the guidance system with which the weapon is equipped.
- Therefore,
- the guidance is indispensable whenever a missile has to be brought to its pre-designed trajectory or target with high precision.
- The guidance system could be,
- artificially,
- divided into three subsystems:
- navigation or measurement,
- guidance or computation and steering or control.The navigation observes the actual-trajectory parameters during vehicle flight.
- The guidance system computes the error between the actual and the desired and then shapes these errors to be ready or appropriate for control.
- The control subsystem executes (respond to) these guidance commands and generates the lateral forces required to turn the guided vehicle to a new attitude of flight.In this chapter we will discuss the navigation and the guidance of the cruise missiles ,while the missile control will be explained in the autopilot design chapter.
+Guided missiles are able to seek out and accurately navigate their way to
+ the correct target without assistance from a human operator.
+ In fact, many of the methods used for missile guidance are the same as
+ those used to navigate manned planes like the commercial airliners you
+ fly aboard.The guided weapons used for attack (as offensive or defensive
+ mean) had to be powerful enough to withstand the increasing targets capabilitie
+s and destroy the protective cover before the defenders could be engaged.
+ This power is usually gained from the intelligence of the guidance system
+ with which the weapon is equipped.
+ Therefore, the guidance is indispensable whenever a missile has to be brought
+ to its pre-designed trajectory or target with high precision.
+ The guidance system could be, artificially, divided into three subsystems:
+ navigation or measurement, guidance or computation and steering or control.The
+ navigation observes the actual-trajectory parameters during vehicle flight.
+ The guidance system computes the error between the actual and the desired
+ and then shapes these errors to be ready or appropriate for control.
+ The control subsystem executes (respond to) these guidance commands and
+ generates the lateral forces required to turn the guided vehicle to a new
+ attitude of flight.In this chapter we will discuss the navigation and the
+ guidance of the cruise missiles ,while the missile control will be explained
+ in the autopilot design chapter.
 \end_layout
 
 \begin_layout Standard
@@ -4980,7 +5085,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Guidance_NAV)Co.png
+	filename Pictures/Guidance_NAV)Co.png
 	scale 65
 
 \end_inset
@@ -5015,24 +5120,28 @@ TERRCOM Guidance
 \end_layout
 
 \begin_layout Standard
-Terrain contour matching (TERCOM) can be defined as a technique for determination of the position location of an airborne vehicle with respect to the terrain over which the vehicle is flying.
- More specifically,
- TERCOM is a form of correlation guidance based on a comparison between the measured and the prestored features of the profile of the ground (i.e.,
- terrain) over which a missile or aircraft is flying.
- The TERCOM technique,
- first patented in 1958,
- relies for its operating principle on the simple fact that the altitude of the ground above sea level varies as a function of location.The TERCOM system relies on a set of digital maps stored in the memory of the missile’s onboard computer.
- These maps consist of rectangular arrays of numbered squares representing the variation of ground elevation above sea level as a function of location.
- Consequently,
- as the missile approaches an area for which the computer memory has a map,
- the onboard radar altimeter starts providing a stream of groundelevation data.
- Furthermore,
- the computer,
- by comparing these data with the information it has in its memory,
- can accurately determine the actual trajectory of the missile and instruct the autopilot to return the missile to its planned trajectory.The process of determining air vehicle position by the use of terrain contour matching can generally be described as consisting of three basic steps:
- (1) data preparation,
- (2) data acquisition,
- and (3) data correlation.
+Terrain contour matching (TERCOM) can be defined as a technique for determinatio
+n of the position location of an airborne vehicle with respect to the terrain
+ over which the vehicle is flying.
+ More specifically, TERCOM is a form of correlation guidance based on a
+ comparison between the measured and the prestored features of the profile
+ of the ground (i.e., terrain) over which a missile or aircraft is flying.
+ The TERCOM technique, first patented in 1958, relies for its operating
+ principle on the simple fact that the altitude of the ground above sea
+ level varies as a function of location.The TERCOM system relies on a set
+ of digital maps stored in the memory of the missile’s onboard computer.
+ These maps consist of rectangular arrays of numbered squares representing
+ the variation of ground elevation above sea level as a function of location.
+ Consequently, as the missile approaches an area for which the computer
+ memory has a map, the onboard radar altimeter starts providing a stream
+ of groundelevation data.
+ Furthermore, the computer, by comparing these data with the information
+ it has in its memory, can accurately determine the actual trajectory of
+ the missile and instruct the autopilot to return the missile to its planned
+ trajectory.The process of determining air vehicle position by the use of
+ terrain contour matching can generally be described as consisting of three
+ basic steps: (1) data preparation, (2) data acquisition, and (3) data correlati
+on.
  
 \end_layout
 
@@ -5044,7 +5153,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/TERRCOM_concept.png
+	filename Pictures/TERRCOM_concept.png
 	scale 75
 
 \end_inset
@@ -5070,29 +5179,33 @@ TERRCOM Concept
 \end_layout
 
 \begin_layout Standard
-Data Preparation:
- Data preparation consists in selecting a fix point area large enough to accommodate the crosstrack and downtrack navigation arrival uncertainties,
- securing source material that contains contour information,
- and then digitizing the terrain elevation data into a matrix of “cells” oriented along the intended flight path.
- The resulting reference matrix consists of an array of numbers that represent discrete terrain heights (e.g.,
- above mean sea level) corresponding to a sampling interval (i.e.,
- resolution) equal to the desired cell size.
- This reference matrix or map is then stored in the vehicle’s onboard digital computer memory prior to the flight.
- The Defense Mapping Agency Aerospace Center (DMAAC),
- St.
- Louis AFS,
- Missouri,
- maintains a file on the type and availability of source data for all areas of the world.
+Data Preparation: Data preparation consists in selecting a fix point area
+ large enough to accommodate the crosstrack and downtrack navigation arrival
+ uncertainties, securing source material that contains contour information,
+ and then digitizing the terrain elevation data into a matrix of “cells”
+ oriented along the intended flight path.
+ The resulting reference matrix consists of an array of numbers that represent
+ discrete terrain heights (e.g., above mean sea level) corresponding to a
+ sampling interval (i.e., resolution) equal to the desired cell size.
+ This reference matrix or map is then stored in the vehicle’s onboard digital
+ computer memory prior to the flight.
+ The Defense Mapping Agency Aerospace Center (DMAAC), St.
+ Louis AFS, Missouri, maintains a file on the type and availability of source
+ data for all areas of the world.
 \end_layout
 
 \begin_layout Standard
-Data Acquisition:
- As the vehicle flies over the fix point area,
- data are acquired by sampling the altitude of the vehicle above the terrain directly below it at an interval equal to the reference map cell size.
+Data Acquisition: As the vehicle flies over the fix point area, data are
+ acquired by sampling the altitude of the vehicle above the terrain directly
+ below it at an interval equal to the reference map cell size.
  This “sensed altitude” is measured with a radar altimeter.
- At the same time,
- the vehicle’s altitude above mean sea level is measured using the combination of a barometric altimeter and a vertical accelerometer to provide the system reference altitude.
- The acquired terrain elevation samples are then stored in a file in the vehicle’s onboard digital computer memory.This terrain elevation file represents a discrete elevation profile of the terrain along a line coincident with the vehicle’s ground track.
+ At the same time, the vehicle’s altitude above mean sea level is measured
+ using the combination of a barometric altimeter and a vertical accelerometer
+ to provide the system reference altitude.
+ The acquired terrain elevation samples are then stored in a file in the
+ vehicle’s onboard digital computer memory.This terrain elevation file represents
+ a discrete elevation profile of the terrain along a line coincident with
+ the vehicle’s ground track.
 \end_layout
 
 \begin_layout Standard
@@ -5103,7 +5216,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Terrconm data measurement.png
+	filename Pictures/Terrconm data measurement.png
 	scale 75
 
 \end_inset
@@ -5126,21 +5239,26 @@ Terrain Measurment Method
 \end_layout
 
 \begin_layout Standard
-Data Correlation:
- The last step in the terrain contour matching process is the correlation of the data in the terrain elevation file with each column of the reference matrix.
- The reference column that has the greatest correlation with the terrain elevation file is the column down which the vehicle has flown.
- With no navigation error,
- the match column would be the center column of the map,
- since that is the ground track the navigation system is steering along.
- However,
- with downtrack and crosstrack errors,
- it is probable that some column other than the center one will be flown down.
- In this case,
- the system computes the downtrack and crosstrack distance from the center of the map and uses these errors to correct the vehicle’s navigation error.
+Data Correlation: The last step in the terrain contour matching process
+ is the correlation of the data in the terrain elevation file with each
+ column of the reference matrix.
+ The reference column that has the greatest correlation with the terrain
+ elevation file is the column down which the vehicle has flown.
+ With no navigation error, the match column would be the center column of
+ the map, since that is the ground track the navigation system is steering
+ along.
+ However, with downtrack and crosstrack errors, it is probable that some
+ column other than the center one will be flown down.
+ In this case, the system computes the downtrack and crosstrack distance
+ from the center of the map and uses these errors to correct the vehicle’s
+ navigation error.
 \end_layout
 
 \begin_layout Standard
-Using this guidance method in our project would be unapplicable since the reference digital elevation map that is essential for this method was not available for the public in many countries including Egypt.Therefore another method was implemented in this project will be detailed in the next section.
+Using this guidance method in our project would be unapplicable since the
+ reference digital elevation map that is essential for this method was not
+ available for the public in many countries including Egypt.Therefore another
+ method was implemented in this project will be detailed in the next section.
 \end_layout
 
 \begin_layout Standard
@@ -5155,28 +5273,29 @@ GPS/INS Guidance
 \end_layout
 
 \begin_layout Standard
-Similar to Terrain Contour Matching (TERCOM),
- preflight data is programmed into the onboard computer of the missile.
- However,
- instead of relying on terrain elevation maps,
- this approach utilizes a predefined flight path composed of multiple waypoints,
- each specifying a geographic location that the missile must follow.
- By continuously comparing real-time position data from an integrated GPS/INS (Global Positioning System/Inertial Navigation System) with the programmed waypoints,
- the missile autonomously corrects its trajectory to adhere to the desired flight path.Given that GPS/INS methodologies have already been extensively discussed in the navigation section,
- this section will instead focus on two critical aspects:
+Similar to Terrain Contour Matching (TERCOM), preflight data is programmed
+ into the onboard computer of the missile.
+ However, instead of relying on terrain elevation maps, this approach utilizes
+ a predefined flight path composed of multiple waypoints, each specifying
+ a geographic location that the missile must follow.
+ By continuously comparing real-time position data from an integrated GPS/INS
+ (Global Positioning System/Inertial Navigation System) with the programmed
+ waypoints, the missile autonomously corrects its trajectory to adhere to
+ the desired flight path.Given that GPS/INS methodologies have already been
+ extensively discussed in the navigation section, this section will instead
+ focus on two critical aspects:
 \end_layout
 
 \begin_layout Enumerate
-Flight Path Selection Criteria – The principles governing the choice of waypoints to optimize survivability,
- fuel efficiency,
- and evasion of enemy defenses.
+Flight Path Selection Criteria – The principles governing the choice of
+ waypoints to optimize survivability, fuel efficiency, and evasion of enemy
+ defenses.
 \end_layout
 
 \begin_layout Enumerate
-Guidance Law Implementation – The control algorithms used to ensure the missile accurately follows the designated path,
- including proportional navigation,
- trajectory optimization,
- or adaptive control strategies.
+Guidance Law Implementation – The control algorithms used to ensure the
+ missile accurately follows the designated path, including proportional
+ navigation, trajectory optimization, or adaptive control strategies.
 \end_layout
 
 \begin_layout Chapter
@@ -5192,7 +5311,8 @@ Airframe Model
 \end_layout
 
 \begin_layout Standard
-We used the stability derivatives resulting from AVL to implement the first order taylor series approximation of the airframe model of the missile:
+We used the stability derivatives resulting from AVL to implement the first
+ order taylor series approximation of the airframe model of the missile:
 \end_layout
 
 \begin_layout Standard
@@ -5218,9 +5338,9 @@ Dimensionalization
 \end_layout
 
 \begin_layout Standard
-The output stability derivatives of AVL software are actually the coefficients and not the real derivatives,
- so this needed to go through the dimensionalization process,
- this was done using 
+The output stability derivatives of AVL software are actually the coefficients
+ and not the real derivatives, so this needed to go through the dimensionalizati
+on process, this was done using 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "nacaCR2144,taha_advanced_mechanics_2023"
@@ -5623,34 +5743,36 @@ Oblate Rotating Earth 6-DoF Rigid Body Simulator
 \end_layout
 
 \begin_layout Subsection
-The Shape of the Earth,
- WGS-84
+The Shape of the Earth, WGS-84
 \end_layout
 
 \begin_layout Standard
-Simulation of high-speed flight over large areas of Earths surface,
- with accurate equations of motion and precise calculation of position,
- requires an accurate model of Earths shape,
- rotation,
- and gravity.
- Meridional cross sections of Earth are approximately elliptical and the polar radius of Earth is about 21 km less than the equatorial radius,
- so the solid figure generated by rotating an appropriately scaled ellipse about its minor axis will provide a model of Earths shape.
- Organizations from many countries participate in making accurate measurements of the parameters of these spheroidal (i.e.,
- ellipsoids of revolution) models.
- In the United States the current model is the Department of Defense World Geodetic System 1984,
- or WGS-84,
- and the agency responsible for supporting this model is the National Imagery and Mapping Agency(NIMA,1997).
- The Global Positioning System(GPS)reliesonWGS-84for the ephemerides of its satellites.
+Simulation of high-speed flight over large areas of Earths surface, with
+ accurate equations of motion and precise calculation of position, requires
+ an accurate model of Earths shape, rotation, and gravity.
+ Meridional cross sections of Earth are approximately elliptical and the
+ polar radius of Earth is about 21 km less than the equatorial radius, so
+ the solid figure generated by rotating an appropriately scaled ellipse
+ about its minor axis will provide a model of Earths shape.
+ Organizations from many countries participate in making accurate measurements
+ of the parameters of these spheroidal (i.e., ellipsoids of revolution) models.
+ In the United States the current model is the Department of Defense World
+ Geodetic System 1984, or WGS-84, and the agency responsible for supporting
+ this model is the National Imagery and Mapping Agency(NIMA,1997).
+ The Global Positioning System(GPS)reliesonWGS-84for the ephemerides of
+ its satellites.
 \end_layout
 
 \begin_layout Standard
-The equipotential surface of Earths gravity field that coincides with the undisturbed mean sea level extended continuously underneath the continents is called the 
+The equipotential surface of Earths gravity field that coincides with the
+ undisturbed mean sea level extended continuously underneath the continents
+ is called the 
 \series bold
 geoid
 \series default
 .
- Earths irregular mass distribution causes the geoid to be an undulating surface,
- and this is illustrated in 
+ Earths irregular mass distribution causes the geoid to be an undulating
+ surface, and this is illustrated in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:The-geoid-and"
@@ -5661,8 +5783,11 @@ noprefix "false"
 \end_inset
 
 .
- Note that the local vertical is defined by the direction in which a plumb-bob hangs and is accurately normal to the geoid.
- The angle that it makes with the spheroid normal is called the deflection of the vertical and is usually less than 10 arc-s (the largest deflections over the entire Earth are about1 arc-min).
+ Note that the local vertical is defined by the direction in which a plumb-bob
+ hangs and is accurately normal to the geoid.
+ The angle that it makes with the spheroid normal is called the deflection
+ of the vertical and is usually less than 10 arc-s (the largest deflections
+ over the entire Earth are about1 arc-min).
  
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -5673,10 +5798,10 @@ noprefix "false"
 
 \end_inset
 
- shows the Earth spheroid,
- with the oblateness greatly exaggerated.The coordinate system shown has its origin at Earths center of mass(indirectly determined from satellite orbits),
- z up the spin axis,
- and its x and y axes in the equatorial plane.
+ shows the Earth spheroid, with the oblateness greatly exaggerated.The coordinate
+ system shown has its origin at Earths center of mass(indirectly determined
+ from satellite orbits), z up the spin axis, and its x and y axes in the
+ equatorial plane.
 \end_layout
 
 \begin_layout Standard
@@ -5748,23 +5873,20 @@ Based on a
 \begin_inset Formula $1^{\circ}*1^{\circ}$
 \end_inset
 
- (latitude,
- longitude) worldwide grid,
- the root-mean-square(rms)deviation of the geoid from the spheroid is only about 30m!
- The WGS-84 defined and derived values are:
+ (latitude, longitude) worldwide grid, the root-mean-square(rms)deviation
+ of the geoid from the spheroid is only about 30m! The WGS-84 defined and
+ derived values are:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $f\equiv flatness=1∕298.257223563$
 \end_inset
 
-,
- 
+, 
 \begin_inset Formula $a\equiv\text{semi-major axis}=6378137.0\;m$
 \end_inset
 
-,
- 
+, 
 \begin_inset Formula $e\equiv\text{eccentricity}=.0818191908426$
 \end_inset
 
@@ -5782,8 +5904,8 @@ Based on a
 \begin_inset Formula $\omega_{E}=(\frac{2𝜋}{243600})*(1+1∕365.25)=7.2921150\times10^{-5}\;rad/s$
 \end_inset
 
-,
- neglecting the inclination of Earths axis due to earth's precession around its Z axis).
+, neglecting the inclination of Earths axis due to earth's precession around
+ its Z axis).
 \end_layout
 
 \begin_layout Subsection
@@ -5791,23 +5913,21 @@ Gravitation and Gravity
 \end_layout
 
 \begin_layout Standard
-The term gravitation denotes a mass attraction effect,
- as distinct from gravity,
- meaning the combination of mass attraction and centrifugal force experienced by a body constrained to move with Earths surface.
+The term gravitation denotes a mass attraction effect, as distinct from
+ gravity, meaning the combination of mass attraction and centrifugal force
+ experienced by a body constrained to move with Earths surface.
 \end_layout
 
 \begin_layout Standard
 The WGS-84 datum includes an amazingly detailed model of Earths gravitation.
- This model is in the form of a (scalar) potential function,
- V,
- such that components of specific mass attraction force along each of three axes can be found from the respective gradients of the potential function.
- The current potential function,
- for use with 
+ This model is in the form of a (scalar) potential function, V, such that
+ components of specific mass attraction force along each of three axes can
+ be found from the respective gradients of the potential function.
+ The current potential function, for use with 
 \series bold
 WGS-84
 \series default
-,
- is Earth Gravitational Model 1996 (
+, is Earth Gravitational Model 1996 (
 \series bold
 EGM96
 \series default
@@ -5816,12 +5936,13 @@ EGM96
 \begin_inset Formula $130,676$
 \end_inset
 
- coefficients and is intended for very precise satellite and missile calculations.
- The largest coefficient is two orders of magnitude bigger than the next coefficient and,
- if we retain only the largest coefficient,
- the result is still a very accurate model.
- Neglecting the other coefficients removes the dependence on terrestrial longitude,
- leaving the following potential function at point 
+ coefficients and is intended for very precise satellite and missile calculation
+s.
+ The largest coefficient is two orders of magnitude bigger than the next
+ coefficient and, if we retain only the largest coefficient, the result
+ is still a very accurate model.
+ Neglecting the other coefficients removes the dependence on terrestrial
+ longitude, leaving the following potential function at point 
 \begin_inset Formula $P$
 \end_inset
 
@@ -5861,7 +5982,8 @@ is the actual EGM96 coefficient.
 \end_layout
 
 \begin_layout Standard
-The gradients of the potential function are easily evaluated in geocentric coordinates.
+The gradients of the potential function are easily evaluated in geocentric
+ coordinates.
  When this is done and the results are transformed into the ECEF system,
  we obtain the following gravitation model for the gravitational acceleration,
  G:
@@ -5882,23 +6004,19 @@ G^{ecef}=-\frac{GM}{r^{2}}\begin{bmatrix}[1+\frac{3}{2}(\frac{a}{r})^{2}J_{2}(1-
 \end_layout
 
 \begin_layout Standard
-where the geocentric position vector is p,
- with ECEF components 
+where the geocentric position vector is p, with ECEF components 
 \begin_inset Formula $p_{x}$
 \end_inset
 
-,
- 
+, 
 \begin_inset Formula $p_{y}$
 \end_inset
 
-,
- 
+, 
 \begin_inset Formula $p_{z}$
 \end_inset
 
- and length r,
- and the geocentric latitude is given by 
+ and length r, and the geocentric latitude is given by 
 \begin_inset Formula $\sin\psi=p_{z}∕r$
 \end_inset
 
@@ -5915,13 +6033,17 @@ where the geocentric position vector is p,
 \begin_inset Formula $cm∕s^{2}$
 \end_inset
 
- rms,
- but local deviations can be quite large.
- Note that the x- and y-components are identical because there is no longitude dependence.
- The model can also be converted to geodetic coordinates using the relationships given earlier.The weight of an object on Earth is determined by the gravitational attraction (mG) minus the mass times the centripetal acceleration needed to produce the circular motion in inertial space at geocentric position vector p.
- Dividing the weight of the object by its mass gives the gravity vector g.
- Therefore,
- the vector equation for g is
+ rms, but local deviations can be quite large.
+ Note that the x- and y-components are identical because there is no longitude
+ dependence.
+ The model can also be converted to geodetic coordinates using the relationships
+ given earlier.The weight of an object on Earth is determined by the gravitationa
+l attraction (mG) minus the mass times the centripetal acceleration needed
+ to produce the circular motion in inertial space at geocentric position
+ vector p.
+ Dividing the weight of the object by its mass gives the gravity vector
+ g.
+ Therefore, the vector equation for g is
 \end_layout
 
 \begin_layout Standard
@@ -5940,9 +6062,7 @@ The down component of
 \begin_inset Formula $g$
 \end_inset
 
- given by the model,
- at Earths surface,
- varies sinusoidally from 
+ given by the model, at Earths surface, varies sinusoidally from 
 \begin_inset Formula $9.780\;m/s^{2}$
 \end_inset
 
@@ -5970,22 +6090,22 @@ Quaternions
 \begin_layout Standard
 
 \size large
-Quaternions introduced here because of their “all-attitude” capability and numerical advantages in simulation and control.
- They are now widely used in simulation,
- robotics,
- guidance and navigation calculations,
- attitude control,
- and graphics animation.
+Quaternions introduced here because of their “all-attitude” capability and
+ numerical advantages in simulation and control.
+ They are now widely used in simulation, robotics, guidance and navigation
+ calculations, attitude control, and graphics animation.
  We will review enough of their properties to use them for coordinate rotation.
 \end_layout
 
 \begin_layout Standard
 
 \size large
-Quaternions,
- a complex number algebra invented by Sir William Rowan Hamilton in 1843 in an attempt to generalize ordinary complex numbers to three dimensions.
- These quaternion state equations have additional numerical advantages over the all other common methods,
- they also avoid the gimball lock problem that appears in euler angles rotations for example.
+Quaternions, a complex number algebra invented by Sir William Rowan Hamilton
+ in 1843 in an attempt to generalize ordinary complex numbers to three dimension
+s.
+ These quaternion state equations have additional numerical advantages over
+ the all other common methods, they also avoid the gimball lock problem
+ that appears in euler angles rotations for example.
 \end_layout
 
 \begin_layout Subsubsection
@@ -6001,8 +6121,7 @@ if
 \begin_inset Formula $q$
 \end_inset
 
- are two quaternions,
- then:
+ are two quaternions, then:
 \end_layout
 
 \begin_layout Standard
@@ -6067,13 +6186,11 @@ If the direction angles of the axis are
 \begin_inset Formula $\alpha$
 \end_inset
 
-,
- 
+, 
 \begin_inset Formula $\beta$
 \end_inset
 
-,
- 
+, 
 \begin_inset Formula $\gamma$
 \end_inset
 
@@ -6081,8 +6198,7 @@ If the direction angles of the axis are
 \begin_inset Formula $\delta$
 \end_inset
 
-,
- the rotation quaternion is written as:
+, the rotation quaternion is written as:
 \end_layout
 
 \begin_layout Standard
@@ -6109,12 +6225,14 @@ Vector Rotation by Quaternions
 \begin_layout Standard
 
 \size large
-A quaternion can be used to rotate a Euclidean vector in the same manner as the rotation formula,
- and the quaternion rotation is much simpler in form.
- The vector part of the quaternion is used to define the rotation axis and the scalar part to define the angle of rotation.
- The rotation axis is specified by its direction cosines in the reference coordinate system,
- and it is convenient to impose a unity norm constraint on the quaternion,
- this is usually done in a simulator.
+A quaternion can be used to rotate a Euclidean vector in the same manner
+ as the rotation formula, and the quaternion rotation is much simpler in
+ form.
+ The vector part of the quaternion is used to define the rotation axis and
+ the scalar part to define the angle of rotation.
+ The rotation axis is specified by its direction cosines in the reference
+ coordinate system, and it is convenient to impose a unity norm constraint
+ on the quaternion, this is usually done in a simulator.
 \end_layout
 
 \begin_layout Standard
@@ -6155,9 +6273,7 @@ This shall be used to get DCM from quaternion
 \begin_inset Formula $q_{b/n}$
 \end_inset
 
-,
- in order to calculate the euler angles,
- using the equations:
+, in order to calculate the euler angles, using the equations:
 \end_layout
 
 \begin_layout Standard
@@ -6180,12 +6296,12 @@ Quaternion Initialization
 \end_layout
 
 \begin_layout Standard
-Now a few other quaternions need to be calculated in order to fully implement the simulator.
+Now a few other quaternions need to be calculated in order to fully implement
+ the simulator.
 \end_layout
 
 \begin_layout Standard
-Given initial conditions of attitude (euler angles),
- the quaternion 
+Given initial conditions of attitude (euler angles), the quaternion 
 \begin_inset Formula $q_{b/n}$
 \end_inset
 
@@ -6248,7 +6364,8 @@ The Oblate Rotating Earth 6-DoF Equations
 \end_layout
 
 \begin_layout Standard
-Our differential equations of motion are to be written and integrated in the ECEF coordinate system as follows
+Our differential equations of motion are to be written and integrated in
+ the ECEF coordinate system as follows
 \end_layout
 
 \begin_layout Standard
@@ -6271,8 +6388,7 @@ Where the subscripts/superscripts
 \begin_inset Formula $b$
 \end_inset
 
-,
- 
+, 
 \begin_inset Formula $e$
 \end_inset
 
@@ -6280,11 +6396,9 @@ Where the subscripts/superscripts
 \begin_inset Formula $i$
 \end_inset
 
- mean body,
- ECEF and Inertial frames respectively,
- with these choices of coordinate systems the state vector,
- for the set of 6-DoF equations,
- will be
+ mean body, ECEF and Inertial frames respectively, with these choices of
+ coordinate systems the state vector, for the set of 6-DoF equations, will
+ be
 \end_layout
 
 \begin_layout Standard
@@ -6296,7 +6410,10 @@ Where the subscripts/superscripts
 \end_layout
 
 \begin_layout Standard
-The following auxiliary equations must be executed first to compute Earths angular velocity in body-fixed coordinates for the quaternion equation and the aerodynamic forces in Earth-fixed coordinates for the velocity state equation:
+The following auxiliary equations must be executed first to compute Earths
+ angular velocity in body-fixed coordinates for the quaternion equation
+ and the aerodynamic forces in Earth-fixed coordinates for the velocity
+ state equation:
 \end_layout
 
 \begin_layout Standard
@@ -6439,10 +6556,9 @@ end{equation}
 \end_layout
 
 \begin_layout Standard
-Returning to the 6-DoF equations,
- the relative wind,
- defined in Equation (1.7-14),
- could be computed for use in finding the aerodynamic forces and moments as
+Returning to the 6-DoF equations, the relative wind, defined in Equation
+ (1.7-14), could be computed for use in finding the aerodynamic forces and
+ moments as
 \end_layout
 
 \begin_layout Standard
@@ -6521,15 +6637,14 @@ end{equation}
 \end_layout
 
 \begin_layout Standard
-However,
- wind isn't modeled in our flight simulator.
+However, wind isn't modeled in our flight simulator.
 \end_layout
 
 \begin_layout Standard
-Output equations that are likely to be needed with the 6-DoF equations are a calculation of vehicle attitude in a geographic coordinate system and calculation of geodetic position coordinates.
- Then,
- we can calculate latitude,
- longitude and altitude.
+Output equations that are likely to be needed with the 6-DoF equations are
+ a calculation of vehicle attitude in a geographic coordinate system and
+ calculation of geodetic position coordinates.
+ Then, we can calculate latitude, longitude and altitude.
 \end_layout
 
 \begin_layout Chapter
@@ -6537,11 +6652,12 @@ Autopilot and Control systems
 \end_layout
 
 \begin_layout Standard
-The autopilot design is based on linear control theory,
- which requires the linearization of the previous dynamics equations around an equilibrium (trim) condition,
- since the change in the states due to the oblate shape of the earth as well as earth's rotation are very slow,
- we can use the linearized model of the flat earth dynamics (along with the already-linear airframe model of course),
- these equations are stated by:
+The autopilot design is based on linear control theory, which requires the
+ linearization of the previous dynamics equations around an equilibrium
+ (trim) condition, since the change in the states due to the oblate shape
+ of the earth as well as earth's rotation are very slow, we can use the
+ linearized model of the flat earth dynamics (along with the already-linear
+ airframe model of course), these equations are stated by:
 \end_layout
 
 \begin_layout Standard
@@ -6637,8 +6753,7 @@ literal "true"
 
 \end_inset
 
-,
- which is found to be so confusing anyway
+, which is found to be so confusing anyway
 \color inherit
 :
 \end_layout
@@ -6704,12 +6819,12 @@ and equations:
 
 \begin_layout Standard
 Among the many configurations that can be used for the longitudinal autopilot,
- it is very often to control the elevator deflection through the pitch angle command (
+ it is very often to control the elevator deflection through the pitch angle
+ command (
 \series bold
 Elevator from Pitch
 \series default
- as an inner control loop),
- and an outer loop 
+ as an inner control loop), and an outer loop 
 \series bold
 Pitch from Altitude
 \series default
@@ -6732,7 +6847,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Longitudinal Autopilot Diagram.png
+	filename Pictures/Longitudinal Autopilot Diagram.png
 	width 70page%
 
 \end_inset
@@ -6758,33 +6873,32 @@ Autopilot Diagram
 \end_layout
 
 \begin_layout Standard
-The lateral autopilot is responsible for controlling the aircraft’s motion within the lateral-directional plane.
- Specifically,
- it regulates the rudder and ailerons to achieve a coordinated turn.
- When integrated with the longitudinal autopilot,
- the system enables the execution of a coordinated level turn.
- For the design of the controllers in a MIMO (Multi-Input Multi-Output) framework,
- we adopt a methodology based on our prior studies of LTI (Linear Time-Invariant) SISO (Single-Input Single-Output) systems.
- Utilizing classical control techniques such as linear PID controllers and compensators,
- we structure the control loops through a design strategy known as successive loop closure.
+The lateral autopilot is responsible for controlling the aircraft’s motion
+ within the lateral-directional plane.
+ Specifically, it regulates the rudder and ailerons to achieve a coordinated
+ turn.
+ When integrated with the longitudinal autopilot, the system enables the
+ execution of a coordinated level turn.
+ For the design of the controllers in a MIMO (Multi-Input Multi-Output)
+ framework, we adopt a methodology based on our prior studies of LTI (Linear
+ Time-Invariant) SISO (Single-Input Single-Output) systems.
+ Utilizing classical control techniques such as linear PID controllers and
+ compensators, we structure the control loops through a design strategy
+ known as successive loop closure.
 \end_layout
 
 \begin_layout Standard
-During turning,
- airplanes might have a different heading than the direction tangent to the turning trajectory,
- this can cause acceleration in the lateral direction,
- which not only causes discomfort for passengers,
- but a skidding airplane might also cause high loss of lift on one wing,
- which causes loss of altitude,
- and the airplane goes into a bad and dangerous spiral mode.
+During turning, airplanes might have a different heading than the direction
+ tangent to the turning trajectory, this can cause acceleration in the lateral
+ direction, which not only causes discomfort for passengers, but a skidding
+ airplane might also cause high loss of lift on one wing, which causes loss
+ of altitude, and the airplane goes into a bad and dangerous spiral mode.
 \end_layout
 
 \begin_layout Standard
-This necessitates the need for turn coordination,
- this is done using the rudder control action,
- which controls the coordination using a Yaw–Damper autopilot,
- and of course,
- the ailerons control the roll rate of the airplane.
+This necessitates the need for turn coordination, this is done using the
+ rudder control action, which controls the coordination using a Yaw–Damper
+ autopilot, and of course, the ailerons control the roll rate of the airplane.
 \end_layout
 
 \begin_layout Standard
@@ -6797,7 +6911,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/lateralAutopilot.png
+	filename Pictures/lateralAutopilot.png
 	width 65page%
 
 \end_inset
@@ -6836,7 +6950,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/ElevFromPitch.png
+	filename Pictures/ElevFromPitch.png
 	width 75page%
 
 \end_inset
@@ -6875,7 +6989,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/PitchFromAltitude.png
+	filename Pictures/PitchFromAltitude.png
 	width 75page%
 
 \end_inset
@@ -6914,7 +7028,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/ThrottleFromAirspeed.png
+	filename Pictures/ThrottleFromAirspeed.png
 	width 75page%
 
 \end_inset
@@ -6953,7 +7067,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/YawDamper.png
+	filename Pictures/YawDamper.png
 	width 75page%
 
 \end_inset
@@ -6992,7 +7106,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/AileronFromRoll.png
+	filename Pictures/AileronFromRoll.png
 	width 75page%
 
 \end_inset
@@ -7035,7 +7149,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/RollFromHeading.png
+	filename Pictures/RollFromHeading.png
 	width 75page%
 
 \end_inset
@@ -7087,7 +7201,7 @@ AVl files code
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/pleiades.avl"
+filename "Codes/pleiades.avl"
 lstparams "caption={ Geometry Definition File}"
 
 \end_inset
@@ -7098,7 +7212,7 @@ lstparams "caption={ Geometry Definition File}"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/pleiades.run"
+filename "Codes/pleiades.run"
 lstparams "caption={Run configuration file}"
 
 \end_inset
@@ -7109,7 +7223,7 @@ lstparams "caption={Run configuration file}"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/pleiades.eig"
+filename "Codes/pleiades.eig"
 lstparams "caption={ Eigenmode Output File}"
 
 \end_inset
@@ -7124,7 +7238,7 @@ Code Matlab to automate AVL
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/pleiades.m"
+filename "Codes/pleiades.m"
 lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep},caption={matlab code automating AVL utilization}"
 
 \end_inset
@@ -7147,7 +7261,7 @@ literal "true"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/inertia2.m"
+filename "Codes/inertia2.m"
 lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep}"
 
 \end_inset
@@ -7158,7 +7272,7 @@ lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xri
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "MatlabFunctions.lyx"
+filename "MatlabFunctions.23.lyx"
 
 \end_inset
 
@@ -7195,8 +7309,7 @@ begin{landscape}
 
 
 \backslash
-thispagestyle{empty} % Optional:
- Remove header/footer for this page
+thispagestyle{empty} % Optional: Remove header/footer for this page
 \end_layout
 
 \end_inset
@@ -7208,7 +7321,7 @@ thispagestyle{empty} % Optional:
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="66" columns="12">
-<features booktabs="true" islongtable="true" tabularwidth="0.5page%" longtabularalignment="center">
+<features booktabs="true" islongtable="true" longtabularalignment="center">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -14264,8 +14377,7 @@ ADM-141 TALD
 \begin_inset Text
 
 \begin_layout Plain Layout
-Teledyne CAE J700-CA-400 turbojet,
- 790 N
+Teledyne CAE J700-CA-400 turbojet, 790 N
 \end_layout
 
 \end_inset
@@ -14489,8 +14601,7 @@ ADM-160A
 \begin_inset Text
 
 \begin_layout Plain Layout
-Hamilton Sundstrand TJ-50 turbojet;
- 220 N
+Hamilton Sundstrand TJ-50 turbojet; 220 N
 \end_layout
 
 \end_inset
