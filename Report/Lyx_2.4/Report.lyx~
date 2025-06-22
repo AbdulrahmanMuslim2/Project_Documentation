@@ -16,6 +16,7 @@
 \usepackage{wallpaper}
 \usepackage{url}
 \usepackage{appendix}
+\usepackage{pdflscape}
 
 %% uncomment this if you're using beamer presentations
 %\usepackage{calc}
@@ -273,7 +274,7 @@ begin{titlepage}
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename journalThumbnail_en_US.jpg
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/journalThumbnail_en_US.jpg
 	special height=3.5cm
 
 \end_inset
@@ -284,7 +285,7 @@ begin{titlepage}
 
 
 \begin_inset Graphics
-	filename Logo.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Logo.png
 	special height=4cm
 
 \end_inset
@@ -1357,7 +1358,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Intro/My data/Missile/Users/podyd/OneDrive/Pictures/Screenshots/Screenshot 2025-06-16 123821.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/wing.png
 	width 80page%
 
 \end_inset
@@ -1533,7 +1534,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Intro/My data/Missile/Users/podyd/OneDrive/Pictures/Screenshots/Screenshot 2025-06-16 125225.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/canard.png
 	width 80page%
 
 \end_inset
@@ -1708,7 +1709,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Users/podyd/OneDrive/Pictures/Screenshots/Screenshot 2025-06-16 125700.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/tail.png
 	width 80page%
 
 \end_inset
@@ -2138,7 +2139,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Intro/My data/Missile/Users/podyd/OneDrive/Pictures/Screenshots/Screenshot 2025-06-16 150200.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/wedge.png
 	width 80page%
 
 \end_inset
@@ -2191,7 +2192,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Intro/My data/Missile/Users/podyd/OneDrive/Pictures/Screenshots/Screenshot 2025-06-16 150920.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/ogival.png
 	width 80page%
 
 \end_inset
@@ -2426,7 +2427,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Horshow Vortex .png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Horshow Vortex .png
 
 \end_inset
 
@@ -2518,7 +2519,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename trim_condition_avl.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/trim_condition_avl.png
 	width 65line%
 
 \end_inset
@@ -2571,7 +2572,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/Missile/Missile/Design/AVL/plot000.pdf
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/plot000.pdf
 	width 60page%
 
 \end_inset
@@ -2608,7 +2609,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/Missile/Missile/Design/AVL/plot001.pdf
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/plot001.pdf
 	width 60page%
 
 \end_inset
@@ -2645,7 +2646,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/Missile/Missile/Design/AVL/plot002.pdf
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/plot002.pdf
 	width 60page%
 
 \end_inset
@@ -2681,7 +2682,7 @@ Athena Vortex Lattice (AVL) employs several input and output files to define the
 \end_layout
 
 \begin_layout Subsubsection
-Geometry Definition File (.avl)
+Geometry Definition File 
 \end_layout
 
 \begin_layout Standard
@@ -2803,7 +2804,7 @@ Cross-sectional shape:
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "4/Missile/Missile/Design/AVL/pleiades.avl"
+filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/pleiades.avl"
 lstparams "caption={.avl file}"
 literal "true"
 
@@ -2813,7 +2814,7 @@ literal "true"
 \end_layout
 
 \begin_layout Subsubsection
-Mass and Inertia File (.mass)
+Mass and Inertia File 
 \end_layout
 
 \begin_layout Standard
@@ -2838,7 +2839,7 @@ The Mass and Inertia File (with the .mass extension) is a critical component of 
 \end_layout
 
 \begin_layout Subsubsection
-Run Configuration File (.run)
+Run Configuration File 
 \end_layout
 
 \begin_layout Standard
@@ -2915,7 +2916,7 @@ QUIT:
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "4/Missile/Missile/Design/AVL/pleiades.run"
+filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/pleiades.run"
 lstparams "caption={.run file}"
 literal "true"
 
@@ -2925,7 +2926,7 @@ literal "true"
 \end_layout
 
 \begin_layout Subsubsection
-Force and Moment Output File (.ft)
+Force and Moment Output File 
 \end_layout
 
 \begin_layout Standard
@@ -2938,7 +2939,7 @@ The Force and Moment Output File (with the .ft extension) serves as one of the p
 \end_layout
 
 \begin_layout Subsubsection
-Eigenmode Output File (.eig)
+Eigenmode Output File 
 \end_layout
 
 \begin_layout Standard
@@ -2960,7 +2961,7 @@ The Eigenmode Output File (with the .eig extension) contains the dynamic stabili
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "4/Missile/Missile/Design/AVL/pleiades.eig"
+filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/pleiades.eig"
 lstparams "caption={.eig}"
 literal "true"
 
@@ -3176,7 +3177,7 @@ placement document
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3411,7 +3412,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Pictures/CAD/Screenshot from 2025-06-18 00-19-52.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-19-52.png
 	width 75page%
 
 \end_inset
@@ -3458,7 +3459,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Pictures/CAD/Screenshot from 2025-06-18 00-20-44.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-20-44.png
 	width 70page%
 
 \end_inset
@@ -3495,7 +3496,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Pictures/CAD/Screenshot from 2025-06-18 00-21-33.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-21-33.png
 	width 70page%
 
 \end_inset
@@ -3532,7 +3533,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Pictures/CAD/Screenshot from 2025-06-18 00-07-34.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-07-34.png
 	width 70page%
 
 \end_inset
@@ -5159,7 +5160,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/2/Autopilot/Autopilot/Images/Longitudinal Autopilot Diagram.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Longitudinal Autopilot Diagram.png
 	width 70page%
 
 \end_inset
@@ -5226,7 +5227,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/2/Autopilot/Autopilot/Images/lateralAutopilot.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/lateralAutopilot.png
 	width 65page%
 
 \end_inset
@@ -5349,7 +5350,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/2/Autopilot/Autopilot/Images/Control Loops/ThrottleFromAirspeed.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/ThrottleFromAirspeed.png
 	width 75page%
 
 \end_inset
@@ -5390,7 +5391,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/2/Autopilot/Autopilot/Images/Control Loops/YawDamper.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/YawDamper.png
 	width 75page%
 
 \end_inset
@@ -5431,7 +5432,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/2/Autopilot/Autopilot/Images/Control Loops/AileronFromRoll.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/AileronFromRoll.png
 	width 75page%
 
 \end_inset
@@ -5476,7 +5477,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/2/Autopilot/Autopilot/Images/Control Loops/RollFromHeading.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/RollFromHeading.png
 	width 75page%
 
 \end_inset
@@ -5563,7 +5564,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Basic Loads.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Basic Loads.png
 	width 70page%
 
 \end_inset
@@ -5615,7 +5616,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Bending and Torsion.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Bending and Torsion.png
 	width 70page%
 
 \end_inset
@@ -5661,7 +5662,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Axial and Tranverse.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Axial and Tranverse.png
 	width 65page%
 
 \end_inset
@@ -5743,7 +5744,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Wing bend from lift.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Wing bend from lift.png
 	width 60page%
 
 \end_inset
@@ -5795,7 +5796,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Torsion.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Torsion.png
 	width 70page%
 
 \end_inset
@@ -5868,7 +5869,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Truss_design.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Truss_design.png
 	width 70page%
 
 \end_inset
@@ -5930,7 +5931,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Monocoque.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Monocoque.png
 	width 60page%
 
 \end_inset
@@ -5992,7 +5993,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename SemiMono.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/SemiMono.png
 	width 70page%
 
 \end_inset
@@ -6047,7 +6048,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Wing Design.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Wing Design.png
 	width 65page%
 
 \end_inset
@@ -6339,17 +6340,240 @@ They need to be structures with high crushing buckling.
 Guidance and Navigation
 \end_layout
 
+\begin_layout Chapter
+Navigation and Guidance
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
 \begin_layout Standard
-The first missile to use the proportional navigation guidance (PNG) method is the german LARK missile in the late fifties.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "gamalElsheikh"
-literal "true"
+Guided missiles are able to seek out and accurately navigate their way to the correct target without assistance from a human operator.
+ In fact,
+ many of the methods used for missile guidance are the same as those used to navigate manned planes like the commercial airliners you fly aboard.The guided weapons used for attack (as offensive or defensive mean) had to be powerful enough to withstand the increasing targets capabilities and destroy the protective cover before the defenders could be engaged.
+ This power is usually gained from the intelligence of the guidance system with which the weapon is equipped.
+ Therefore,
+ the guidance is indispensable whenever a missile has to be brought to its pre-designed trajectory or target with high precision.
+ The guidance system could be,
+ artificially,
+ divided into three subsystems:
+ navigation or measurement,
+ guidance or computation and steering or control.The navigation observes the actual-trajectory parameters during vehicle flight.
+ The guidance system computes the error between the actual and the desired and then shapes these errors to be ready or appropriate for control.
+ The control subsystem executes (respond to) these guidance commands and generates the lateral forces required to turn the guided vehicle to a new attitude of flight.In this chapter we will discuss the navigation and the guidance of the cruise missiles ,while the missile control will be explained in the autopilot design chapter.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Guidance_NAV)Co.png
 
 \end_inset
 
- ?
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Navigation ,Guidance and control
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Navigation of Cruise missiles
+\end_layout
+
+\begin_layout Section
+Guidance of cruise missiles
+\end_layout
+
+\begin_layout Subsection
+TERRCOM Guidance 
+\end_layout
+
+\begin_layout Standard
+Terrain contour matching (TERCOM) can be defined as a technique for determination of the position location of an airborne vehicle with respect to the terrain over which the vehicle is flying.
+ More specifically,
+ TERCOM is a form of correlation guidance based on a comparison between the measured and the prestored features of the profile of the ground (i.e.,
+ terrain) over which a missile or aircraft is flying.
+ The TERCOM technique,
+ first patented in 1958,
+ relies for its operating principle on the simple fact that the altitude of the ground above sea level varies as a function of location.The TERCOM system relies on a set of digital maps stored in the memory of the missile’s onboard computer.
+ These maps consist of rectangular arrays of numbered squares representing the variation of ground elevation above sea level as a function of location.
+ Consequently,
+ as the missile approaches an area for which the computer memory has a map,
+ the onboard radar altimeter starts providing a stream of groundelevation data.
+ Furthermore,
+ the computer,
+ by comparing these data with the information it has in its memory,
+ can accurately determine the actual trajectory of the missile and instruct the autopilot to return the missile to its planned trajectory.The process of determining air vehicle position by the use of terrain contour matching can generally be described as consisting of three basic steps:
+ (1) data preparation,
+ (2) data acquisition,
+ and (3) data correlation.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/TERRCOM_concept.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+TERRCOM Concept
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Data Preparation:
+ Data preparation consists in selecting a fix point area large enough to accommodate the crosstrack and downtrack navigation arrival uncertainties,
+ securing source material that contains contour information,
+ and then digitizing the terrain elevation data into a matrix of “cells” oriented along the intended flight path.
+ The resulting reference matrix consists of an array of numbers that represent discrete terrain heights (e.g.,
+ above mean sea level) corresponding to a sampling interval (i.e.,
+ resolution) equal to the desired cell size.
+ This reference matrix or map is then stored in the vehicle’s onboard digital computer memory prior to the flight.
+ The Defense Mapping Agency Aerospace Center (DMAAC),
+ St.
+ Louis AFS,
+ Missouri,
+ maintains a file on the type and availability of source data for all areas of the world.
+\end_layout
+
+\begin_layout Standard
+Data Acquisition:
+ As the vehicle flies over the fix point area,
+ data are acquired by sampling the altitude of the vehicle above the terrain directly below it at an interval equal to the reference map cell size.
+ This “sensed altitude” is measured with a radar altimeter.
+ At the same time,
+ the vehicle’s altitude above mean sea level is measured using the combination of a barometric altimeter and a vertical accelerometer to provide the system reference altitude.
+ The acquired terrain elevation samples are then stored in a file in the vehicle’s onboard digital computer memory.This terrain elevation file represents a discrete elevation profile of the terrain along a line coincident with the vehicle’s ground track.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Terrconm data measurement.png
+	scale 75
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Terrain Measurment Method
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Data Correlation:
+ The last step in the terrain contour matching process is the correlation of the data in the terrain elevation file with each column of the reference matrix.
+ The reference column that has the greatest correlation with the terrain elevation file is the column down which the vehicle has flown.
+ With no navigation error,
+ the match column would be the center column of the map,
+ since that is the ground track the navigation system is steering along.
+ However,
+ with downtrack and crosstrack errors,
+ it is probable that some column other than the center one will be flown down.
+ In this case,
+ the system computes the downtrack and crosstrack distance from the center of the map and uses these errors to correct the vehicle’s navigation error.
+\end_layout
+
+\begin_layout Standard
+Using this guidance method in our project would be unapplicable since the reference digital elevation map that is essential for this method was not available for the public in many countries including Egypt.Therefore another method was implemented in this project will be detailed in the next section.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+GPS/INS Guidance 
+\end_layout
+
+\begin_layout Standard
+Similar to Terrain Contour Matching (TERCOM),
+ preflight data is programmed into the onboard computer of the missile.
+ However,
+ instead of relying on terrain elevation maps,
+ this approach utilizes a predefined flight path composed of multiple waypoints,
+ each specifying a geographic location that the missile must follow.
+ By continuously comparing real-time position data from an integrated GPS/INS (Global Positioning System/Inertial Navigation System) with the programmed waypoints,
+ the missile autonomously corrects its trajectory to adhere to the desired flight path.Given that GPS/INS methodologies have already been extensively discussed in the navigation section,
+ this section will instead focus on two critical aspects:
+\end_layout
+
+\begin_layout Enumerate
+Flight Path Selection Criteria – The principles governing the choice of waypoints to optimize survivability,
+ fuel efficiency,
+ and evasion of enemy defenses.
+\end_layout
+
+\begin_layout Enumerate
+Guidance Law Implementation – The control algorithms used to ensure the missile accurately follows the designated path,
+ including proportional navigation,
+ trajectory optimization,
+ or adaptive control strategies.
 \end_layout
 
 \begin_layout Standard

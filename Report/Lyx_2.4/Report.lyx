@@ -16,6 +16,7 @@
 \usepackage{wallpaper}
 \usepackage{url}
 \usepackage{appendix}
+\usepackage{pdflscape}
 
 %% uncomment this if you're using beamer presentations
 %\usepackage{calc}
@@ -273,7 +274,7 @@ begin{titlepage}
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename journalThumbnail_en_US.jpg
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/journalThumbnail_en_US.jpg
 	special height=3.5cm
 
 \end_inset
@@ -284,7 +285,7 @@ begin{titlepage}
 
 
 \begin_inset Graphics
-	filename Logo.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Logo.png
 	special height=4cm
 
 \end_inset
@@ -766,10 +767,6 @@ We aim to set foot and be the first to introduce a method for conceptual design 
  We hope to make this project as the first step for cruise missiles design future projects.
 \end_layout
 
-\begin_layout Part
-Missile Aerodynamic Design 
-\end_layout
-
 \begin_layout Chapter
 Introduction
 \end_layout
@@ -976,6 +973,13 @@ Passive/Infrared homing
 Contrast seekers
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 3.2.2.2 Command guidance system
 \end_layout
@@ -1020,10 +1024,6 @@ Terrain contour matching (TERCOM)
 Tracking VIA missile (TVM)
 \end_layout
 
-\begin_layout Standard
-We will dig deeper in the guidance chapter.
-\end_layout
-
 \begin_layout Subsection
 Classification according to navigation
 \end_layout
@@ -1049,10 +1049,6 @@ Inertial navigation
 
 \begin_layout Itemize
 Integrated navigation
-\end_layout
-
-\begin_layout Standard
-We will dive into details in the navigation chapter.
 \end_layout
 
 \begin_layout Subsection
@@ -1357,7 +1353,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Intro/My data/Missile/Users/podyd/OneDrive/Pictures/Screenshots/Screenshot 2025-06-16 123821.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/wing.png
 	width 80page%
 
 \end_inset
@@ -1387,7 +1383,7 @@ Aerodynamic of wing control
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
-<features booktabs="true" tabularvalignment="middle">
+<features booktabs="true" tabularvalignment="middle" tabularwidth="25page%">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0pt">
 <row>
@@ -1533,7 +1529,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Intro/My data/Missile/Users/podyd/OneDrive/Pictures/Screenshots/Screenshot 2025-06-16 125225.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/canard.png
 	width 80page%
 
 \end_inset
@@ -1562,7 +1558,7 @@ Aerodynamics of canard control
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
-<features booktabs="true" tabularvalignment="middle">
+<features booktabs="true" tabularvalignment="middle" tabularwidth="35page%">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0pt">
 <row>
@@ -1708,7 +1704,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Users/podyd/OneDrive/Pictures/Screenshots/Screenshot 2025-06-16 125700.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/tail.png
 	width 80page%
 
 \end_inset
@@ -2138,7 +2134,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Intro/My data/Missile/Users/podyd/OneDrive/Pictures/Screenshots/Screenshot 2025-06-16 150200.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/wedge.png
 	width 80page%
 
 \end_inset
@@ -2191,8 +2187,9 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Intro/My data/Missile/Users/podyd/OneDrive/Pictures/Screenshots/Screenshot 2025-06-16 150920.png
-	width 80page%
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/ogival.png
+	width 60page%
+	height 30page%
 
 \end_inset
 
@@ -2290,6 +2287,10 @@ Reduce the drag of the body because the rear portion of the body is decreased,
 \end_layout
 
 \begin_layout Chapter
+Missile Aerodynamic design
+\end_layout
+
+\begin_layout Section
 Introduction
 \end_layout
 
@@ -2327,11 +2328,11 @@ literal "true"
 
 \end_layout
 
-\begin_layout Chapter
+\begin_layout Section
 Geometry Estimation
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Data-based Design
 \end_layout
 
@@ -2373,6 +2374,204 @@ nolink "false"
 \begin{equation}
 W_{T0}=f(\lambda,R,W_{PL},M_{max})
 \end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Mass and Moment of Inertia Estimation
+\end_layout
+
+\begin_layout Standard
+The first attempt to estimate moments of inertia was using the paper 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "massandinertia"
+literal "true"
+
+\end_inset
+
+,
+ it explains a very easy method to estimate the moments of inertia of aerodynamic surfaces,
+ as well as simple fuselage shapes,
+ the theory behind the calculations related to aerodynamic surfaces is based on the assumption that the surface is totally solid (not empty from inside) as well as the assumption that material is the same everywhere.
+\end_layout
+
+\begin_layout Standard
+However,
+ equations in the paper are a bit complicated,
+ so they should be treated carefully,
+ and you should verify your code with the check cases in the paper,
+ we have coded the whole method in matlab,
+ and verified the results,
+ but a mistake in the paper was found;
+ there is a conflict in equations (64) and (78).
+\end_layout
+
+\begin_layout Standard
+The conclusion:
+ This method wasn't the very best,
+ the results weren't very accurate,
+ so we went for CAD modelling,
+ for this mission we used Fusion 360 software,
+ for its ease in editing any parameter in the design using the timeline feature,
+ these are the results of the cad model.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-19-52.png
+	width 75page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+View:
+ azimuth,
+ elevation = [
+\begin_inset Formula $45^{\circ}$
+\end_inset
+
+ 
+\begin_inset Formula $45^{\circ}$
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-20-44.png
+	width 70page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+FRONT VIEW
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-21-33.png
+	width 70page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+TOP VIEW
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Screenshot from 2025-06-18 00-07-34.png
+	width 70page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+SIDE SECTION VIEW
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -2426,7 +2625,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Horshow Vortex .png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Horshow Vortex .png
 
 \end_inset
 
@@ -2479,13 +2678,6 @@ The Athena Vortex Lattice (AVL) program computes stability derivatives by numeri
  The stability derivatives are then computed through first-order finite differences.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 Finding the Trim Condition
 \end_layout
@@ -2518,7 +2710,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename trim_condition_avl.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/trim_condition_avl.png
 	width 65line%
 
 \end_inset
@@ -2571,7 +2763,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/Missile/Missile/Design/AVL/plot000.pdf
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/plot000.pdf
 	width 60page%
 
 \end_inset
@@ -2608,7 +2800,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/Missile/Missile/Design/AVL/plot001.pdf
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/plot001.pdf
 	width 60page%
 
 \end_inset
@@ -2645,7 +2837,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/Missile/Missile/Design/AVL/plot002.pdf
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/plot002.pdf
 	width 60page%
 
 \end_inset
@@ -2681,7 +2873,7 @@ Athena Vortex Lattice (AVL) employs several input and output files to define the
 \end_layout
 
 \begin_layout Subsubsection
-Geometry Definition File (.avl)
+Geometry Definition File 
 \end_layout
 
 \begin_layout Standard
@@ -2800,20 +2992,8 @@ Cross-sectional shape:
  Defined via a series of SECTION blocks that specify the body's radius or width at each station.
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand lstinputlisting
-filename "4/Missile/Missile/Design/AVL/pleiades.avl"
-lstparams "caption={.avl file}"
-literal "true"
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection
-Mass and Inertia File (.mass)
+Mass and Inertia File 
 \end_layout
 
 \begin_layout Standard
@@ -2838,7 +3018,7 @@ The Mass and Inertia File (with the .mass extension) is a critical component of 
 \end_layout
 
 \begin_layout Subsubsection
-Run Configuration File (.run)
+Run Configuration File 
 \end_layout
 
 \begin_layout Standard
@@ -2912,20 +3092,8 @@ QUIT:
  Terminates the AVL session after completing analyses.
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand lstinputlisting
-filename "4/Missile/Missile/Design/AVL/pleiades.run"
-lstparams "caption={.run file}"
-literal "true"
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection
-Force and Moment Output File (.ft)
+Force and Moment Output File 
 \end_layout
 
 \begin_layout Standard
@@ -2938,7 +3106,7 @@ The Force and Moment Output File (with the .ft extension) serves as one of the p
 \end_layout
 
 \begin_layout Subsubsection
-Eigenmode Output File (.eig)
+Eigenmode Output File 
 \end_layout
 
 \begin_layout Standard
@@ -2955,18 +3123,6 @@ The Eigenmode Output File (with the .eig extension) contains the dynamic stabili
  diverging behavior.
  The imaginary part corresponds to the natural frequency of oscillation in radians per second,
  describing the periodic nature of each mode.
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand lstinputlisting
-filename "4/Missile/Missile/Design/AVL/pleiades.eig"
-lstparams "caption={.eig}"
-literal "true"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -3176,7 +3332,7 @@ placement document
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3359,246 +3515,1054 @@ Matlab files used to deal with AVL
 The matlab codes are to be found in the appendix.
 \end_layout
 
-\begin_layout Section
-Mass and Moment of Inertia Estimation
-\end_layout
-
-\begin_layout Standard
-The first attempt to estimate moments of inertia was using the paper 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "massandinertia"
-literal "true"
-
-\end_inset
-
-,
- it explains a very easy method to estimate the moments of inertia of aerodynamic surfaces,
- as well as simple fuselage shapes,
- the theory behind the calculations related to aerodynamic surfaces is based on the assumption that the surface is totally solid (not empty from inside) as well as the assumption that material is the same everywhere.
-\end_layout
-
-\begin_layout Standard
-However,
- equations in the paper are a bit complicated,
- so they should be treated carefully,
- and you should verify your code with the check cases in the paper,
- we have coded the whole method in matlab,
- and verified the results,
- but a mistake in the paper was found;
- there is a conflict in equations (64) and (78).
-\end_layout
-
-\begin_layout Standard
-The conclusion:
- This method wasn't the very best,
- the results weren't very accurate,
- so we went for CAD modelling,
- for this mission we used Fusion 360 software,
- for its ease in editing any parameter in the design using the timeline feature,
- these are the results of the cad model.
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-placement document
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Pictures/CAD/Screenshot from 2025-06-18 00-19-52.png
-	width 75page%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-View:
- azimuth,
- elevation = [
-\begin_inset Formula $45^{\circ}$
-\end_inset
-
- 
-\begin_inset Formula $45^{\circ}$
-\end_inset
-
-]
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-placement document
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Pictures/CAD/Screenshot from 2025-06-18 00-20-44.png
-	width 70page%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-FRONT VIEW
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-placement document
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Pictures/CAD/Screenshot from 2025-06-18 00-21-33.png
-	width 70page%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-TOP VIEW
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-placement document
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Pictures/CAD/Screenshot from 2025-06-18 00-07-34.png
-	width 70page%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-SIDE SECTION VIEW
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Chapter
-Data-based Design
+Missile Structural Design
+\end_layout
+
+\begin_layout Section
+Introduction
 \end_layout
 
 \begin_layout Standard
-After searching for technical papers on cruise missile design and finding none,
- we adopted a statistical approach.
+Structural design is a critical aspect of cruise missile development,
+ requiring comprehensive knowledge of load distributions,
+ vibrational dynamics,
+ and advanced design methodologies.
+ The process begins with a preliminary design phase,
+ based on mass and inertia calculations derived from aerodynamic studies.
+ Following initial testing,
+ the next stage involves material selection to achieve optimal structural stiffness and strength,
+ necessitating a thorough understanding of material science.
+ Finally,
+ a detailed design is developed,
+ where each component is carefully analyzed to ensure accurate load distribution and structural integrity.in this introduction we will recall the main srtuctural concepts that we learned.
 \end_layout
 
 \begin_layout Standard
-Thus,
- data collection was conducted (see 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "designCode"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
+Missile structural design consists of three phases,
+ preliminary design,
+ selection of materials,
+ and detailed design.
+\end_layout
+
+\begin_layout Subsection
+Structural Loads 
+\end_layout
+
+\begin_layout Standard
+There are basically three different kinds of loads (or stresses) which can be imposed on structural members:
+ 
+\end_layout
+
+\begin_layout Enumerate
+compression loadings 
+\end_layout
+
+\begin_layout Enumerate
+tension loadings 
+\end_layout
+
+\begin_layout Enumerate
+shear loadings
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Basic Loads.png
+	width 70page%
 
 \end_inset
 
-),
- resulting in this function (by Regression Model) :
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Basic Loads
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Combinations of the three basic loadings (stresses) are combined in these loadings
+\end_layout
+
+\begin_layout Enumerate
+torsion (twisting)
+\end_layout
+
+\begin_layout Enumerate
+bending
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Bending and Torsion.png
+	width 70page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Torsion and Bending
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Loads that are being applied to a member can be thought of as ‘axial’ or ‘transverse’.
+ An axial load is applied in the same direction as the length of the member,
+ whereas a transverse load is applied in a perpendicular direction to the member.
+ In a simple beam bridge,
+ the ‘pillars’ are subjected to axial loads which will ‘compress’ the pillar and the ‘beam’ part (e.g.
+ a railway track) will be subjected to transverse loads,
+ which will cause the member to bend
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Axial and Tranverse.png
+	width 65page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Axial and Transverse Loads
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Tension and compression stresses
+\end_layout
+
+\begin_layout Standard
+A pure compression load causes compression stresses in the member from the squeezing tendency.
+ A pure tension load causes tensile stress in the member from the stretching tendencies.
+ Tension and compression stresses are also referred to as ‘axial’ stresses.Members designed to absorb compression loads are generally referred to as struts.Members intended to support tensile loads are generally referred to as ties.
+\end_layout
+
+\begin_layout Subsection
+Shear Stresses
+\end_layout
+
+\begin_layout Standard
+Shear stresses come from loading which tends to slide one face of the material over an adjacent face.
+ Take our bent beam again.
+ The material,
+ between the upper and lower surfaces,
+ is under shear stress.
+ Shearing stresses can separate material by sliding a part of it in one direction and the rest in the opposite direction.
+ A bolt or a rivet which keeps two materials together is under shear stress if the two materials are forced in different directions.
+ If the shear becomes sufficiently high the bolt (or rivet) will be cut.
+ 
+\end_layout
+
+\begin_layout Subsection
+Bending Stress
+\end_layout
+
+\begin_layout Standard
+Bending forces occurs if,
+ for instance,
+ the beam is fixed at one end and a force is applied.
+ A closer look shows that one side of the beam will be under tensile stress and the other side will be under compression stress.
+ Bending stresses are also referred to as ‘transverse’ stresses.Members designed to absorb loading at right angles to their length (bending loads) are generally referred to as beams.Bending is essential to the missile wing structures.
+ The wing tips of the cruise missile,
+ for example,
+ might move up and down through more than one metre relative to the fuselage.
+ Wing lift applies a bending force to the wing structure.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Wing bend from lift.png
+	width 60page%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Wing Bending From lift
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Torsion Stress
+\end_layout
+
+\begin_layout Standard
+Torsional stress applies to members being twisted.
+ A closer look at the stress lines shows that torsion can be dissolved into tension,
+ compression and shear stresses.
+ A drive shaft (or torque tube) is subjected to torsional stresses.
+ A flexible wing structure can be loaded in torsion from lift forces that appear in the chordwise direction (from leading edge to trailing edge).
+ Besides,
+ a swept wing design can also be forced into torsion from wing bending forces (which will be shown later).
+ Bending and torsion are two important load absorbing qualities for a wing structure.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Torsion.png
+	width 70page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Wing Torsion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Fuselage Structure Design
+\end_layout
+
+\begin_layout Subsubsection
+Truss Design
+\end_layout
+
+\begin_layout Standard
+Since any member is stronger in pure compression or tension than in bending,
+ members carry end loads better than side loads.
+ In order to do this,
+ designers arrange the members in the form of a truss or rigid framework.
+ In order for a truss to be rigid,
+ it must be composed entirely of triangles.
+ When the load on a truss acts in one direction,
+ every alternate member carries tension while the other members carry compression.
+ When the load is reversed,
+ the members which were carrying compression now are subjected to tension and those which were carrying tension are under compression.The construction method of a truss uses horizontal lengths of tubing,
+ called longerons,
+ which are welded in place to form a well-braced framework.
+ Vertical and diagonal struts (or braces) are welded to the longerons and give the structure a rectangular or triangular shape when viewed from the end.
+ These features make it rigid,
+ strong,
+ and light.The truss design has today only very limited application in aviation.
+ The disadvantage is obvious to anybody who has ever entered an aircraft;
+ the truss simply occupies too much space which makes it impractical for use in aircraft designed for air transportation.
+ The advantage,
+ however,
+ is its high rigidity and strength obtained at a reasonable low weight.
+ Another advantage is the improved protection of the crew,
+ important in case a crash occurs (crashworthiness).
+ Smaller aerobatic aircraft,
+ like the Extra300 or Sukhoi Su26,
+ use the truss design for these reasons.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Truss_design.png
+	width 70page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Truss Fuselage Design
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Monocoque designs
+\end_layout
+
+\begin_layout Standard
+Monocoque is a French word meaning ‘single shell’.
+ It describes a type of construction used on an aircraft fuselage (or wing) in which skin panels are shaped over a curved form and then bonded or riveted.all metal monocoque structures use frames (or rings) to support the shape of the shell.
+ Bulkheads are heavier frame members,
+ eventually cast or machined,
+ that allows for attachment of engines,
+ wings,
+ stabilisers,
+ etc.
+ Longitudinal fairing strips joined to the frames is used to support the attachment of the skin panels.
+ Most twisting and bending stresses are carried by the external skin rather than by an open framework,
+ eliminating the need for internal bracing and resulting in a more streamlined aeroplane than with a truss-type.A pure monocoque shell is a simple unstiffened tube of thin skin and as such inefficient,
+ since unsupported skin sheets are unstable in compression and shear.Another disadvantage of the pure monocoque design is the lack of redundancy.
+ If a skin panel fails,
+ no other structural part can act as backup.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Monocoque.png
+	width 60page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Monocoque Fuselage Design
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Semi-monocoque fuselage design
+\end_layout
+
+\begin_layout Standard
+A semi-monocoque shell is the most often used construction for modern,
+ highperformance aircraft.
+ The semi-monocoque structure is highly efficient.Semi-monocoque literally means half a single shell.
+ A semimonocoque fuselage,
+ internally contains braces of longitudinal elements (stringers,
+ longerons and keelsons),
+ transverse elements (frames/rings and bulkheads),
+ externally,the skin.Longerons are heavy stringers often recognised as closed profiles or machined profiles.A keelson (or keel beam) is a heavier and extra strengthened part used to support the structure where large cut-outs are made.The longerons and keelsons carry the major portion of the fuselage bending loadings.
+ The skin carries the shear from the applied external torsion forces.Stringers also carry axial loads induced by the bending loads.Frames primarily serve to maintain the shape of the fuselage and to prevent instability of the structure.Frame loads are generally small and therefore of a light construction.Bulkheads are provided at points where concentrated forces are transferred,
+ for instance at the wing attachment points and stabiliser attachments.
+ The bulkhead structures are quite substantial and serve to distribute the loadings into the fuselage skin.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/SemiMono.png
+	width 70page%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Semi-Monocoque Fuselage Design
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Wing Design
+\end_layout
+
+\begin_layout Standard
+The purpose of the wing is to provide the needed lift.
+ The wing section also serves as fuel storage on most aircraft.Basic structural parts in wings are spars (beams),stringers stiffeners),ribs and wing skin.Wing spars,
+ which are beams,
+ are classified into main spars and auxiliary (support) spars.
+ Spars are the main principal load members of the wing and all structural loads are transferred to this part.
+ The wing structure is built around the spars.
+ The main spar(s) are attached to the fuselage (by various means) to transfer the wing lift and propulsive forces from wing mounted engines.Auxiliary (support/false) spars are typically used as attachment beams for flight control surfaces.Wing ribs provide the aerodynamic shape of the wing.
+ The ribs are attached to the wing spars and assure the required chordwise stiffness of the wing.The wing skin is joined to the ribs,
+ either directly or indirectly via rows of stringers.Modern aircraft wings are typically designed as stressed skin semi-monocoque designs,
+ though many wings of light aircraft may be closer to a monocoque design.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Wing Design.png
+	width 65page%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Wing Structural Design
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Sources of vibration:
+\end_layout
+
+\begin_layout Enumerate
+Thrust Roughness
+\end_layout
+
+\begin_layout Enumerate
+Control Movement
+\end_layout
+
+\begin_layout Enumerate
+Unsteady Aerodynamics
+\end_layout
+
+\begin_layout Enumerate
+Jet Noise
+\end_layout
+
+\begin_layout Standard
+These sources might produce harmonic or random noise.
+\end_layout
+
+\begin_layout Subsubsection*
+Sources of Shock Loads:
+\end_layout
+
+\begin_layout Enumerate
+Engine Ignition
+\end_layout
+
+\begin_layout Enumerate
+Launcher Release
+\end_layout
+
+\begin_layout Enumerate
+Staging Separation
+\end_layout
+
+\begin_layout Subsubsection*
+There are 5 main structural divisions:
+\end_layout
+
+\begin_layout Enumerate
+Tanks
+\end_layout
+
+\begin_layout Enumerate
+Intertanks
+\end_layout
+
+\begin_layout Enumerate
+Interstages
+\end_layout
+
+\begin_layout Enumerate
+Thrust Structures
+\end_layout
+
+\begin_layout Enumerate
+Nose Fairings
+\end_layout
+
+\begin_layout Subsubsection*
+The main design techniques are:
+\end_layout
+
+\begin_layout Enumerate
+Monocoque
+\end_layout
+
+\begin_layout Enumerate
+Semi-Monocoque (This includes ring stiffened shells,
+ stringer ,
+ skin with frames,
+ integral stringer,
+ skin with frames,
+ waffles and corrugations).
+\end_layout
+
+\begin_layout Enumerate
+Cored Faces (This includes honeycombs and truss cores).
+\end_layout
+
+\begin_layout Enumerate
+Trusses (which are combinations of discrete members which can resist only axial loads).
+\end_layout
+
+\begin_layout Section
+Some Important Design Considerations
+\end_layout
+
+\begin_layout Section
+Fuel Tanks
+\end_layout
+
+\begin_layout Standard
+Most important materials are:
+ (1) Steel,
+ (2) Titanium and (3) Glass Fiber.
+ An additional candidates are fibers such as Boron.
+\end_layout
+
+\begin_layout Subsection
+Preliminary Design Steps
+\end_layout
+
+\begin_layout Enumerate
+Calculate membrane tank wall thickness and weights.
+\end_layout
+
+\begin_layout Enumerate
+Compute Buckling Allowables of tanks for pressurized and unpressurized cases.
+\end_layout
+
+\begin_layout Enumerate
+Compare pressurized buckling plus pressure relief allowables to flight loads,
+ if they are less,
+ then additional compression structure is required.
+\end_layout
+
+\begin_layout Enumerate
+Compare the unpressurized buckling allowables to ground winds,
+ if they're less,
+ additional compression structure is required.
+\end_layout
+
+\begin_layout Subsubsection
+For Solid Propellant Motors (SRM)
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{equation}
-W_{T0}=f(\lambda,R,W_{PL},M_{max})
-\end{equation}
+\[
+t_{yield}=\frac{P*R}{F_{ty}}
+\]
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Part
-Control and Simulation
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t_{ult}=\frac{P*R*(FS)}{F_{ty}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+For Liquid Propellant Motors
+\end_layout
+
+\begin_layout Standard
+Use 
+\series bold
+equivalent axial load 
+\series default
+to calculate the thickness.
+\end_layout
+
+\begin_layout Section
+Intertanks and Interstages
+\end_layout
+
+\begin_layout Subsection
+Monocoque
+\end_layout
+
+\begin_layout Standard
+Monocoque structures usually fail in general instability.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F_{b}=C_{b}E\frac{t}{R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The coefficient 
+\begin_inset Formula $C_{b}$
+\end_inset
+
+ is dependent on 
+\begin_inset Formula $\frac{R}{t}$
+\end_inset
+
+,
+ look at fig.
+ C8.12 or table E1.4.6 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bruhn_flight_structures"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+You need to choose the thickness that satisfies both lines of allowables and loads,
+ then multiply by density to find relative weight.
+\end_layout
+
+\begin_layout Subsection
+Honeycomb
+\end_layout
+
+\begin_layout Standard
+The thickness of the core is designed to prevent general instability.
+\end_layout
+
+\begin_layout Standard
+See chapter C12 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bruhn_flight_structures"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Waffle Structures
+\end_layout
+
+\begin_layout Standard
+They fail in general instability at relatively low stress levels.
+\end_layout
+
+\begin_layout Subsection
+Thrust Structures
+\end_layout
+
+\begin_layout Standard
+There are 2 options:
+\end_layout
+
+\begin_layout Standard
+The first is the thrust cone extending from the engine normal to the aft tank bulkhead.
+ But if multiple high thrust engines are used,
+ then beams and trusses are required to carry the loads to the other shell.
+\end_layout
+
+\begin_layout Subsection
+Nose Fairings
+\end_layout
+
+\begin_layout Standard
+They need to be structures with high crushing buckling.
 \end_layout
 
 \begin_layout Chapter
+Navigation and Guidance
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Guided missiles are able to seek out and accurately navigate their way to the correct target without assistance from a human operator.
+ In fact,
+ many of the methods used for missile guidance are the same as those used to navigate manned planes like the commercial airliners you fly aboard.The guided weapons used for attack (as offensive or defensive mean) had to be powerful enough to withstand the increasing targets capabilities and destroy the protective cover before the defenders could be engaged.
+ This power is usually gained from the intelligence of the guidance system with which the weapon is equipped.
+ Therefore,
+ the guidance is indispensable whenever a missile has to be brought to its pre-designed trajectory or target with high precision.
+ The guidance system could be,
+ artificially,
+ divided into three subsystems:
+ navigation or measurement,
+ guidance or computation and steering or control.The navigation observes the actual-trajectory parameters during vehicle flight.
+ The guidance system computes the error between the actual and the desired and then shapes these errors to be ready or appropriate for control.
+ The control subsystem executes (respond to) these guidance commands and generates the lateral forces required to turn the guided vehicle to a new attitude of flight.In this chapter we will discuss the navigation and the guidance of the cruise missiles ,while the missile control will be explained in the autopilot design chapter.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Guidance_NAV)Co.png
+	scale 65
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Navigation ,Guidance and control
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Navigation of Cruise missiles
+\end_layout
+
+\begin_layout Section
+Guidance of cruise missiles
+\end_layout
+
+\begin_layout Subsection
+TERRCOM Guidance 
+\end_layout
+
+\begin_layout Standard
+Terrain contour matching (TERCOM) can be defined as a technique for determination of the position location of an airborne vehicle with respect to the terrain over which the vehicle is flying.
+ More specifically,
+ TERCOM is a form of correlation guidance based on a comparison between the measured and the prestored features of the profile of the ground (i.e.,
+ terrain) over which a missile or aircraft is flying.
+ The TERCOM technique,
+ first patented in 1958,
+ relies for its operating principle on the simple fact that the altitude of the ground above sea level varies as a function of location.The TERCOM system relies on a set of digital maps stored in the memory of the missile’s onboard computer.
+ These maps consist of rectangular arrays of numbered squares representing the variation of ground elevation above sea level as a function of location.
+ Consequently,
+ as the missile approaches an area for which the computer memory has a map,
+ the onboard radar altimeter starts providing a stream of groundelevation data.
+ Furthermore,
+ the computer,
+ by comparing these data with the information it has in its memory,
+ can accurately determine the actual trajectory of the missile and instruct the autopilot to return the missile to its planned trajectory.The process of determining air vehicle position by the use of terrain contour matching can generally be described as consisting of three basic steps:
+ (1) data preparation,
+ (2) data acquisition,
+ and (3) data correlation.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/TERRCOM_concept.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+TERRCOM Concept
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Data Preparation:
+ Data preparation consists in selecting a fix point area large enough to accommodate the crosstrack and downtrack navigation arrival uncertainties,
+ securing source material that contains contour information,
+ and then digitizing the terrain elevation data into a matrix of “cells” oriented along the intended flight path.
+ The resulting reference matrix consists of an array of numbers that represent discrete terrain heights (e.g.,
+ above mean sea level) corresponding to a sampling interval (i.e.,
+ resolution) equal to the desired cell size.
+ This reference matrix or map is then stored in the vehicle’s onboard digital computer memory prior to the flight.
+ The Defense Mapping Agency Aerospace Center (DMAAC),
+ St.
+ Louis AFS,
+ Missouri,
+ maintains a file on the type and availability of source data for all areas of the world.
+\end_layout
+
+\begin_layout Standard
+Data Acquisition:
+ As the vehicle flies over the fix point area,
+ data are acquired by sampling the altitude of the vehicle above the terrain directly below it at an interval equal to the reference map cell size.
+ This “sensed altitude” is measured with a radar altimeter.
+ At the same time,
+ the vehicle’s altitude above mean sea level is measured using the combination of a barometric altimeter and a vertical accelerometer to provide the system reference altitude.
+ The acquired terrain elevation samples are then stored in a file in the vehicle’s onboard digital computer memory.This terrain elevation file represents a discrete elevation profile of the terrain along a line coincident with the vehicle’s ground track.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Terrconm data measurement.png
+	scale 75
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Terrain Measurment Method
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Data Correlation:
+ The last step in the terrain contour matching process is the correlation of the data in the terrain elevation file with each column of the reference matrix.
+ The reference column that has the greatest correlation with the terrain elevation file is the column down which the vehicle has flown.
+ With no navigation error,
+ the match column would be the center column of the map,
+ since that is the ground track the navigation system is steering along.
+ However,
+ with downtrack and crosstrack errors,
+ it is probable that some column other than the center one will be flown down.
+ In this case,
+ the system computes the downtrack and crosstrack distance from the center of the map and uses these errors to correct the vehicle’s navigation error.
+\end_layout
+
+\begin_layout Standard
+Using this guidance method in our project would be unapplicable since the reference digital elevation map that is essential for this method was not available for the public in many countries including Egypt.Therefore another method was implemented in this project will be detailed in the next section.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+GPS/INS Guidance 
+\end_layout
+
+\begin_layout Standard
+Similar to Terrain Contour Matching (TERCOM),
+ preflight data is programmed into the onboard computer of the missile.
+ However,
+ instead of relying on terrain elevation maps,
+ this approach utilizes a predefined flight path composed of multiple waypoints,
+ each specifying a geographic location that the missile must follow.
+ By continuously comparing real-time position data from an integrated GPS/INS (Global Positioning System/Inertial Navigation System) with the programmed waypoints,
+ the missile autonomously corrects its trajectory to adhere to the desired flight path.Given that GPS/INS methodologies have already been extensively discussed in the navigation section,
+ this section will instead focus on two critical aspects:
+\end_layout
+
+\begin_layout Enumerate
+Flight Path Selection Criteria – The principles governing the choice of waypoints to optimize survivability,
+ fuel efficiency,
+ and evasion of enemy defenses.
+\end_layout
+
+\begin_layout Enumerate
+Guidance Law Implementation – The control algorithms used to ensure the missile accurately follows the designated path,
+ including proportional navigation,
+ trajectory optimization,
+ or adaptive control strategies.
+\end_layout
+
+\begin_layout Chapter
+Flight Simulator and Airframe model
+\end_layout
+
+\begin_layout Section
 Flight Simulator
 \end_layout
 
@@ -4033,11 +4997,11 @@ where
 .
 \end_layout
 
-\begin_layout Chapter
+\begin_layout Section
 Oblate Rotating Earth 6-DoF Rigid Body Simulator
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 The Shape of the Earth,
  WGS-84
 \end_layout
@@ -4207,7 +5171,7 @@ Based on a
  neglecting the inclination of Earths axis due to earth's precession around its Z axis).
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Gravitation and Gravity
 \end_layout
 
@@ -4382,7 +5346,7 @@ The down component of
  at the poles.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 
 \size large
 Quaternions
@@ -4409,7 +5373,7 @@ Quaternions,
  they also avoid the gimball lock problem that appears in euler angles rotations for example.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Quaternion Properties
 \end_layout
 
@@ -4523,7 +5487,7 @@ q=\begin{bmatrix}\cos\delta\\
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Vector Rotation by Quaternions
 \end_layout
 
@@ -4553,7 +5517,7 @@ v=q*u*q^{-1}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Direction Cosine Matrix from Quaternion
 \end_layout
 
@@ -4596,7 +5560,7 @@ This shall be used to get DCM from quaternion
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Quaternion Initialization
 \end_layout
 
@@ -4954,11 +5918,7 @@ Output equations that are likely to be needed with the 6-DoF equations are a cal
 \end_layout
 
 \begin_layout Chapter
-Autopilot
-\end_layout
-
-\begin_layout Section
-Introduction
+Autopilot and Control systems
 \end_layout
 
 \begin_layout Standard
@@ -5159,7 +6119,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/2/Autopilot/Autopilot/Images/Longitudinal Autopilot Diagram.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/Longitudinal Autopilot Diagram.png
 	width 70page%
 
 \end_inset
@@ -5226,7 +6186,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/2/Autopilot/Autopilot/Images/lateralAutopilot.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/lateralAutopilot.png
 	width 65page%
 
 \end_inset
@@ -5262,12 +6222,12 @@ placement document
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/2/Autopilot/Autopilot/Images/Control Loops/ElevFromPitch.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/ElevFromPitch.png
 	width 75page%
 
 \end_inset
@@ -5303,12 +6263,12 @@ placement document
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/2/Autopilot/Autopilot/Images/Control Loops/PitchFromAltitude.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/PitchFromAltitude.png
 	width 75page%
 
 \end_inset
@@ -5349,7 +6309,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/2/Autopilot/Autopilot/Images/Control Loops/ThrottleFromAirspeed.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/ThrottleFromAirspeed.png
 	width 75page%
 
 \end_inset
@@ -5390,7 +6350,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/2/Autopilot/Autopilot/Images/Control Loops/YawDamper.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/YawDamper.png
 	width 75page%
 
 \end_inset
@@ -5431,7 +6391,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/2/Autopilot/Autopilot/Images/Control Loops/AileronFromRoll.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/AileronFromRoll.png
 	width 75page%
 
 \end_inset
@@ -5476,7 +6436,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 4/2/Autopilot/Autopilot/Images/Control Loops/RollFromHeading.png
+	filename C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Pictures/RollFromHeading.png
 	width 75page%
 
 \end_inset
@@ -5498,858 +6458,7 @@ Control Loop to calculate roll angle command
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Part
-Missile Structural Design
-\end_layout
-
-\begin_layout Chapter
-Introduction
-\end_layout
-
-\begin_layout Standard
-Structural design is a critical aspect of cruise missile development,
- requiring comprehensive knowledge of load distributions,
- vibrational dynamics,
- and advanced design methodologies.
- The process begins with a preliminary design phase,
- based on mass and inertia calculations derived from aerodynamic studies.
- Following initial testing,
- the next stage involves material selection to achieve optimal structural stiffness and strength,
- necessitating a thorough understanding of material science.
- Finally,
- a detailed design is developed,
- where each component is carefully analyzed to ensure accurate load distribution and structural integrity.in this introduction we will recall the main srtuctural concepts that we learned.
-\end_layout
-
-\begin_layout Standard
-Missile structural design consists of three phases,
- preliminary design,
- selection of materials,
- and detailed design.
-\end_layout
-
-\begin_layout Subsection
-Structural Loads 
-\end_layout
-
-\begin_layout Standard
-There are basically three different kinds of loads (or stresses) which can be imposed on structural members:
- 
-\end_layout
-
-\begin_layout Enumerate
-compression loadings 
-\end_layout
-
-\begin_layout Enumerate
-tension loadings 
-\end_layout
-
-\begin_layout Enumerate
-shear loadings
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement document
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Basic Loads.png
-	width 70page%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Basic Loads
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Combinations of the three basic loadings (stresses) are combined in these loadings
-\end_layout
-
-\begin_layout Enumerate
-torsion (twisting)
-\end_layout
-
-\begin_layout Enumerate
-bending
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement document
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Bending and Torsion.png
-	width 70page%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Torsion and Bending
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Loads that are being applied to a member can be thought of as ‘axial’ or ‘transverse’.
- An axial load is applied in the same direction as the length of the member,
- whereas a transverse load is applied in a perpendicular direction to the member.
- In a simple beam bridge,
- the ‘pillars’ are subjected to axial loads which will ‘compress’ the pillar and the ‘beam’ part (e.g.
- a railway track) will be subjected to transverse loads,
- which will cause the member to bend
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement document
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Axial and Tranverse.png
-	width 65page%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Axial and Transverse Loads
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Tension and compression stresses
-\end_layout
-
-\begin_layout Standard
-A pure compression load causes compression stresses in the member from the squeezing tendency.
- A pure tension load causes tensile stress in the member from the stretching tendencies.
- Tension and compression stresses are also referred to as ‘axial’ stresses.Members designed to absorb compression loads are generally referred to as struts.Members intended to support tensile loads are generally referred to as ties.
-\end_layout
-
-\begin_layout Subsection
-Shear Stresses
-\end_layout
-
-\begin_layout Standard
-Shear stresses come from loading which tends to slide one face of the material over an adjacent face.
- Take our bent beam again.
- The material,
- between the upper and lower surfaces,
- is under shear stress.
- Shearing stresses can separate material by sliding a part of it in one direction and the rest in the opposite direction.
- A bolt or a rivet which keeps two materials together is under shear stress if the two materials are forced in different directions.
- If the shear becomes sufficiently high the bolt (or rivet) will be cut.
- 
-\end_layout
-
-\begin_layout Subsection
-Bending Stress
-\end_layout
-
-\begin_layout Standard
-Bending forces occurs if,
- for instance,
- the beam is fixed at one end and a force is applied.
- A closer look shows that one side of the beam will be under tensile stress and the other side will be under compression stress.
- Bending stresses are also referred to as ‘transverse’ stresses.Members designed to absorb loading at right angles to their length (bending loads) are generally referred to as beams.Bending is essential to the missile wing structures.
- The wing tips of the cruise missile,
- for example,
- might move up and down through more than one metre relative to the fuselage.
- Wing lift applies a bending force to the wing structure.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement document
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Wing bend from lift.png
-	width 60page%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Wing Bending From lift
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Torsion Stress
-\end_layout
-
-\begin_layout Standard
-Torsional stress applies to members being twisted.
- A closer look at the stress lines shows that torsion can be dissolved into tension,
- compression and shear stresses.
- A drive shaft (or torque tube) is subjected to torsional stresses.
- A flexible wing structure can be loaded in torsion from lift forces that appear in the chordwise direction (from leading edge to trailing edge).
- Besides,
- a swept wing design can also be forced into torsion from wing bending forces (which will be shown later).
- Bending and torsion are two important load absorbing qualities for a wing structure.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement document
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Torsion.png
-	width 70page%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Wing Torsion
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Fuselage Structure Design
-\end_layout
-
-\begin_layout Subsubsection
-Truss Design
-\end_layout
-
-\begin_layout Standard
-Since any member is stronger in pure compression or tension than in bending,
- members carry end loads better than side loads.
- In order to do this,
- designers arrange the members in the form of a truss or rigid framework.
- In order for a truss to be rigid,
- it must be composed entirely of triangles.
- When the load on a truss acts in one direction,
- every alternate member carries tension while the other members carry compression.
- When the load is reversed,
- the members which were carrying compression now are subjected to tension and those which were carrying tension are under compression.The construction method of a truss uses horizontal lengths of tubing,
- called longerons,
- which are welded in place to form a well-braced framework.
- Vertical and diagonal struts (or braces) are welded to the longerons and give the structure a rectangular or triangular shape when viewed from the end.
- These features make it rigid,
- strong,
- and light.The truss design has today only very limited application in aviation.
- The disadvantage is obvious to anybody who has ever entered an aircraft;
- the truss simply occupies too much space which makes it impractical for use in aircraft designed for air transportation.
- The advantage,
- however,
- is its high rigidity and strength obtained at a reasonable low weight.
- Another advantage is the improved protection of the crew,
- important in case a crash occurs (crashworthiness).
- Smaller aerobatic aircraft,
- like the Extra300 or Sukhoi Su26,
- use the truss design for these reasons.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement document
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Truss_design.png
-	width 70page%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Truss Fuselage Design
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Monocoque designs
-\end_layout
-
-\begin_layout Standard
-Monocoque is a French word meaning ‘single shell’.
- It describes a type of construction used on an aircraft fuselage (or wing) in which skin panels are shaped over a curved form and then bonded or riveted.all metal monocoque structures use frames (or rings) to support the shape of the shell.
- Bulkheads are heavier frame members,
- eventually cast or machined,
- that allows for attachment of engines,
- wings,
- stabilisers,
- etc.
- Longitudinal fairing strips joined to the frames is used to support the attachment of the skin panels.
- Most twisting and bending stresses are carried by the external skin rather than by an open framework,
- eliminating the need for internal bracing and resulting in a more streamlined aeroplane than with a truss-type.A pure monocoque shell is a simple unstiffened tube of thin skin and as such inefficient,
- since unsupported skin sheets are unstable in compression and shear.Another disadvantage of the pure monocoque design is the lack of redundancy.
- If a skin panel fails,
- no other structural part can act as backup.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement document
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Monocoque.png
-	width 60page%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Monocoque Fuselage Design
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Semi-monocoque fuselage design
-\end_layout
-
-\begin_layout Standard
-A semi-monocoque shell is the most often used construction for modern,
- highperformance aircraft.
- The semi-monocoque structure is highly efficient.Semi-monocoque literally means half a single shell.
- A semimonocoque fuselage,
- internally contains braces of longitudinal elements (stringers,
- longerons and keelsons),
- transverse elements (frames/rings and bulkheads),
- externally,the skin.Longerons are heavy stringers often recognised as closed profiles or machined profiles.A keelson (or keel beam) is a heavier and extra strengthened part used to support the structure where large cut-outs are made.The longerons and keelsons carry the major portion of the fuselage bending loadings.
- The skin carries the shear from the applied external torsion forces.Stringers also carry axial loads induced by the bending loads.Frames primarily serve to maintain the shape of the fuselage and to prevent instability of the structure.Frame loads are generally small and therefore of a light construction.Bulkheads are provided at points where concentrated forces are transferred,
- for instance at the wing attachment points and stabiliser attachments.
- The bulkhead structures are quite substantial and serve to distribute the loadings into the fuselage skin.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement document
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename SemiMono.png
-	width 70page%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Semi-Monocoque Fuselage Design
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Wing Design
-\end_layout
-
-\begin_layout Standard
-The purpose of the wing is to provide the needed lift.
- The wing section also serves as fuel storage on most aircraft.Basic structural parts in wings are spars (beams),stringers stiffeners),ribs and wing skin.Wing spars,
- which are beams,
- are classified into main spars and auxiliary (support) spars.
- Spars are the main principal load members of the wing and all structural loads are transferred to this part.
- The wing structure is built around the spars.
- The main spar(s) are attached to the fuselage (by various means) to transfer the wing lift and propulsive forces from wing mounted engines.Auxiliary (support/false) spars are typically used as attachment beams for flight control surfaces.Wing ribs provide the aerodynamic shape of the wing.
- The ribs are attached to the wing spars and assure the required chordwise stiffness of the wing.The wing skin is joined to the ribs,
- either directly or indirectly via rows of stringers.Modern aircraft wings are typically designed as stressed skin semi-monocoque designs,
- though many wings of light aircraft may be closer to a monocoque design.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement document
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Wing Design.png
-	width 65page%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Wing Structural Design
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Sources of vibration:
-\end_layout
-
-\begin_layout Enumerate
-Thrust Roughness
-\end_layout
-
-\begin_layout Enumerate
-Control Movement
-\end_layout
-
-\begin_layout Enumerate
-Unsteady Aerodynamics
-\end_layout
-
-\begin_layout Enumerate
-Jet Noise
-\end_layout
-
-\begin_layout Standard
-These sources might produce harmonic or random noise.
-\end_layout
-
-\begin_layout Subsubsection*
-Sources of Shock Loads:
-\end_layout
-
-\begin_layout Enumerate
-Engine Ignition
-\end_layout
-
-\begin_layout Enumerate
-Launcher Release
-\end_layout
-
-\begin_layout Enumerate
-Staging Separation
-\end_layout
-
-\begin_layout Subsubsection*
-There are 5 main structural divisions:
-\end_layout
-
-\begin_layout Enumerate
-Tanks
-\end_layout
-
-\begin_layout Enumerate
-Intertanks
-\end_layout
-
-\begin_layout Enumerate
-Interstages
-\end_layout
-
-\begin_layout Enumerate
-Thrust Structures
-\end_layout
-
-\begin_layout Enumerate
-Nose Fairings
-\end_layout
-
-\begin_layout Subsubsection*
-The main design techniques are:
-\end_layout
-
-\begin_layout Enumerate
-Monocoque
-\end_layout
-
-\begin_layout Enumerate
-Semi-Monocoque (This includes ring stiffened shells,
- stringer ,
- skin with frames,
- integral stringer,
- skin with frames,
- waffles and corrugations).
-\end_layout
-
-\begin_layout Enumerate
-Cored Faces (This includes honeycombs and truss cores).
-\end_layout
-
-\begin_layout Enumerate
-Trusses (which are combinations of discrete members which can resist only axial loads).
-\end_layout
-
-\begin_layout Chapter
-Some Important Design Considerations
-\end_layout
-
-\begin_layout Section
-Fuel Tanks
-\end_layout
-
-\begin_layout Standard
-Most important materials are:
- (1) Steel,
- (2) Titanium and (3) Glass Fiber.
- An additional candidates are fibers such as Boron.
-\end_layout
-
-\begin_layout Subsection
-Preliminary Design Steps
-\end_layout
-
-\begin_layout Enumerate
-Calculate membrane tank wall thickness and weights.
-\end_layout
-
-\begin_layout Enumerate
-Compute Buckling Allowables of tanks for pressurized and unpressurized cases.
-\end_layout
-
-\begin_layout Enumerate
-Compare pressurized buckling plus pressure relief allowables to flight loads,
- if they are less,
- then additional compression structure is required.
-\end_layout
-
-\begin_layout Enumerate
-Compare the unpressurized buckling allowables to ground winds,
- if they're less,
- additional compression structure is required.
-\end_layout
-
-\begin_layout Subsubsection
-For Solid Propellant Motors (SRM)
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-t_{yield}=\frac{P*R}{F_{ty}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-t_{ult}=\frac{P*R*(FS)}{F_{ty}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-For Liquid Propellant Motors
-\end_layout
-
-\begin_layout Standard
-Use 
-\series bold
-equivalent axial load 
-\series default
-to calculate the thickness.
-\end_layout
-
-\begin_layout Section
-Intertanks and Interstages
-\end_layout
-
-\begin_layout Subsection
-Monocoque
-\end_layout
-
-\begin_layout Standard
-Monocoque structures usually fail in general instability.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-F_{b}=C_{b}E\frac{t}{R}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The coefficient 
-\begin_inset Formula $C_{b}$
-\end_inset
-
- is dependent on 
-\begin_inset Formula $\frac{R}{t}$
-\end_inset
-
-,
- look at fig.
- C8.12 or table E1.4.6 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "bruhn_flight_structures"
-literal "true"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-You need to choose the thickness that satisfies both lines of allowables and loads,
- then multiply by density to find relative weight.
-\end_layout
-
-\begin_layout Subsection
-Honeycomb
-\end_layout
-
-\begin_layout Standard
-The thickness of the core is designed to prevent general instability.
-\end_layout
-
-\begin_layout Standard
-See chapter C12 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "bruhn_flight_structures"
-literal "true"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsection
-Waffle Structures
-\end_layout
-
-\begin_layout Standard
-They fail in general instability at relatively low stress levels.
-\end_layout
-
-\begin_layout Subsection
-Thrust Structures
-\end_layout
-
-\begin_layout Standard
-There are 2 options:
-\end_layout
-
-\begin_layout Standard
-The first is the thrust cone extending from the engine normal to the aft tank bulkhead.
- But if multiple high thrust engines are used,
- then beams and trusses are required to carry the loads to the other shell.
-\end_layout
-
-\begin_layout Subsection
-Nose Fairings
-\end_layout
-
-\begin_layout Standard
-They need to be structures with high crushing buckling.
-\end_layout
-
-\begin_layout Part
 Guidance and Navigation
-\end_layout
-
-\begin_layout Standard
-The first missile to use the proportional navigation guidance (PNG) method is the german LARK missile in the late fifties.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "gamalElsheikh"
-literal "true"
-
-\end_inset
-
- ?
 \end_layout
 
 \begin_layout Standard
@@ -6373,13 +6482,53 @@ Codes
 \end_layout
 
 \begin_layout Section*
+AVl files code 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/pleiades.avl"
+lstparams "caption={ Geometry Definition File}"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/pleiades.run"
+lstparams "caption={Run configuration file}"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/pleiades.eig"
+lstparams "caption={ Eigenmode Output File}"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
 Code Matlab to automate AVL
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "4/Missile/Missile/Design/AVL/pleiades.m"
+filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/pleiades.m"
 lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep},caption={matlab code automating AVL utilization}"
 literal "true"
 
@@ -6403,7 +6552,7 @@ literal "true"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
-filename "4/Missile/Missile/aerospace-design-toolbox-master/inertia2.m"
+filename "C:/Users/abdul/OneDrive/Desktop/Project_Documentation/Report/Codes/inertia2.m"
 lstparams "language=Matlab,frame=rBL,frameround=fttt,xleftmargin={\\fboxsep},xrightmargin={-\\fboxsep}"
 literal "true"
 
@@ -6463,9 +6612,10 @@ thispagestyle{empty} % Optional:
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="66" columns="12">
-<features booktabs="true" islongtable="true" longtabularalignment="center">
+<features booktabs="true" islongtable="true" tabularwidth="0.5page%" longtabularalignment="center">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
